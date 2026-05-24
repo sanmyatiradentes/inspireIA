@@ -1728,8 +1728,8 @@ async function enviar() {
     const res = await fetch(GEMINI_API_URL, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({contents, generationConfig:{temperature:0.7, maxOutputTokens:2048, topP:0.95}}),
-      signal: AbortSignal.timeout(55000)
+      body: JSON.stringify({contents, generationConfig:{temperature:0.7, maxOutputTokens:1500, topP:0.95}}),
+      signal: AbortSignal.timeout(90000)
     });
     rmTyping();
     if (!res.ok) { const e = await res.text(); addMsg('assistant','⚠️ Erro '+res.status+': '+e.slice(0,200)); btn.disabled=false; input.focus(); return; }
