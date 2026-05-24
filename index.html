@@ -1591,13 +1591,15 @@ function recusarConsent() {
   if (btn) btn.disabled = true;
 }
 
-// Ocultar banner se já consentiu
-if (consentiu) {
-  document.addEventListener('DOMContentLoaded', () => {
+// Ocultar banner se já consentiu e inicializar automaticamente
+document.addEventListener('DOMContentLoaded', () => {
+  if (consentiu) {
     const banner = document.getElementById('consent-banner');
     if (banner) banner.classList.add('hidden');
-  });
-}
+    setStatus('', '⏳ Conectando à InspireIA...');
+    verificarGemini();
+  }
+});
 
 
 const GEMINI_API_URL = '/api/chat'; // Endpoint seguro no Vercel — chave protegida no servidor
