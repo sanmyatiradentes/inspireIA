@@ -1643,15 +1643,33 @@ async function enviar(){
   if(!pronto){setStatus('err','❌ Assistente não conectado. Verifique se o deploy foi feito no Vercel.');return;}
 
   esconderWelcome();
-  const exibir=txt;
   input.value='';input.style.height='auto';btn.disabled=true;
-  addMsg('user',exibir);addTyping();
+  addMsg('user',txt);addTyping();
 
-  // Contexto do servidor (estado/órgão)
   const estado=document.getElementById('cfg-estado')?.value.trim();
   const orgao=document.getElementById('cfg-orgao')?.value.trim();
+  const ctxParts=[];
+  if(estado||orgao)ctxParts.push({text:`[Contexto da InspireIA - usuário: área de vida: ${estado||'não informada'}, papel: ${orgao||'não informado'}]`});
 
-    // Marcar visualmente como "já enviado" mas mantendo na lista
+  const parts=[...ctxParts,{text:txt}];
+  const contents=[
+    ...hist.map(m=>({role:m.role==='assistant'?'model':'user',parts:[{text:m.content}]})),
+    {role:'user',parts}
+  ];
+
+  try{
+    const res=await fetch(GEMINI_API_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({contents,generationConfig:{temperature:0.7,maxOutputTokens:2048,topP:0.95}}),
+      signal:AbortSignal.timeout(55000)
+    });
+    rmTyping();
+    if(!res.ok){const e=await res.text();addMsg('assistant',`⚠️ Erro ${res.status}: ${e.slice(0,200)}`);btn.disabled=false;input.focus();return;}
+    const data=await res.json();
+    const resposta=data?.candidates?.[0]?.content?.parts?.[0]?.text||'⚠️ Resposta vazia.';
+    hist.push({role:'user',content:txt},{role:'assistant',content:resposta});
+    addMsg('assistant',resposta);
   }catch(e){
     rmTyping();
     addMsg('assistant',`⚠️ Erro: ${e.message}`);
@@ -1661,8 +1679,6 @@ async function enviar(){
 
 
 
-// Atualizar badge quando rmArq for chamado
-const _origRmArq=window.rmArq;
 
 // ── GRAVAÇÃO DE ÁUDIO ────────────────────────────────────────────────────
 let mediaRecorder=null, audioChunks=[], gravando=false;
