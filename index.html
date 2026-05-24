@@ -1569,11 +1569,11 @@ footer a:hover{text-decoration:underline;}
 
 <script>
 // ── LGPD CONSENT ──────────────────────────────────────────────────────────
-let consentiu = localStorage.getItem('dbia_consent') === '1';
+let consentiu = localStorage.getItem('inspireia_consent') === '1';
 
 function aceitarConsent() {
   consentiu = true;
-  localStorage.setItem('dbia_consent', '1');
+  localStorage.setItem('inspireia_consent', '1');
   const banner = document.getElementById('consent-banner');
   if (banner) banner.classList.add('hidden');
   setStatus('', '⏳ Conectando ao assistente...');
@@ -1591,8 +1591,8 @@ function recusarConsent() {
   if (btn) btn.disabled = true;
 }
 
-// Ocultar banner se já consentiu e inicializar automaticamente
-document.addEventListener('DOMContentLoaded', () => {
+// Init após carregamento completo — roda depois que todas as funções estão definidas
+window.addEventListener('load', () => {
   if (consentiu) {
     const banner = document.getElementById('consent-banner');
     if (banner) banner.classList.add('hidden');
