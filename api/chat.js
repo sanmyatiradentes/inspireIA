@@ -25,11 +25,11 @@ TITULOS VERIFICADOS EM PORTUGUES:
 - T. Harv Eker: "Os Segredos da Mente Milionária"
 - Renato Cardoso: "Casamento Blindado"
 - Içami Tiba: "Quem Ama Educa"
-- Harville Hendrix: "Fazendo Amor Durar"
-- Stefanie Stahl: "A Criança em Você"
+- Harville Hendrix: "Todo o Amor do Mundo"
+- Stefanie Stahl: "Acolhendo sua Criança Interior"
 - Daniel Siegel: "O Cérebro da Criança"
 - Jim Collins: "Empresas Feitas para Vencer"
-- Simon Sinek: "Comece pelo Porquê" / "Os Líderes Comem por Último"
+- Simon Sinek: "Comece pelo Porquê" / "Líderes se Servem por Último"
 - Napoleon Hill: "Pense e Enriqueça-se"
 - Chris Anderson: "TED Talks — O Guia Oficial do TED"
 - Jack Schafer: "O Interruptor da Amizade"
@@ -78,7 +78,7 @@ BASE DE CONHECIMENTO:
 2. LIDERANÇA, HÁBITOS E ALTA PERFORMANCE:
 • James Clear (Hábitos Atômicos): identidade → sistemas → resultados; 1% melhor por dia gera 37x de melhoria em um ano
 • Greg McKeown (Essencialismo): fazer menos, mas o que é vital; a disciplina de dizer não ao que é bom para dizer sim ao que é essencial
-• Simon Sinek (Comece pelo Porquê / Os Líderes Comem por Último): Círculo de Segurança — líder protege o time, absorve pressão, celebra tentativas
+• Simon Sinek (Comece pelo Porquê / Líderes se Servem por Último): Círculo de Segurança — líder protege o time, absorve pressão, celebra tentativas
 • Jim Collins (Empresas Feitas para Vencer): liderança nível 5 — humildade pessoal + vontade feroz pelos resultados
 • Robert Greenleaf (Servant Leadership): liderar servindo; o líder pergunta "o que minha equipe precisa?" antes de "o que eu preciso?"
 • Amy Edmondson: segurança psicológica — equipes que ousam errar, pedir ajuda e discordar inovam mais
@@ -95,8 +95,8 @@ BASE DE CONHECIMENTO:
 
 4. AMOR, CASAMENTO E RELACIONAMENTOS:
 • Gary Chapman (As 5 Linguagens do Amor): cada pessoa tem uma linguagem primária — falar a errada é amar no idioma errado. As 5: Palavras de Afirmação, Tempo de Qualidade, Presentes, Atos de Serviço, Toque Físico. Descubra a sua e a do outro
-• Harville Hendrix (Fazendo Amor Durar — Imago): espelhar o que o parceiro disse, validar que faz sentido, ter empatia com o que ele sente — mesmo sem concordar; descontamos no parceiro os medos não resolvidos da infância
-• Stefanie Stahl (A Criança em Você): a parte da gente que foi ferida na infância e ainda reage como criança no corpo de adulto; identificar esse padrão é o começo da cura
+• Harville Hendrix (Todo o Amor do Mundo — Imago): espelhar o que o parceiro disse, validar que faz sentido, ter empatia com o que ele sente — mesmo sem concordar; descontamos no parceiro os medos não resolvidos da infância
+• Stefanie Stahl (Acolhendo sua Criança Interior): a parte da gente que foi ferida na infância e ainda reage como criança no corpo de adulto; identificar esse padrão é o começo da cura
 • Renato Cardoso (Casamento Blindado): combinados claros, limites saudáveis, os 5 As — Atenção, Afeto, Apreciação, Aceitação, Ação
 • David Richo (Os 5 As do Amor Adulto): Atenção, Aceitação, Apreciação, Afeição e Autorização — o que todo ser humano precisou na infância e continua precisando nas relações adultas
 
