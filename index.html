@@ -1832,12 +1832,17 @@ async function toggleMic(){
   }
 }
 
-document.getElementById('user-input').addEventListener('keydown', e => {
-  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); enviar(); }
-});
-document.getElementById('user-input').addEventListener('input', function() {
-  this.style.height = 'auto';
-  this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+document.addEventListener('DOMContentLoaded', () => {
+  const ui = document.getElementById('user-input');
+  if (ui) {
+    ui.addEventListener('keydown', e => {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); enviar(); }
+    });
+    ui.addEventListener('input', function() {
+      this.style.height = 'auto';
+      this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+    });
+  }
 });
 
 // ── GAVETAS MOBILE ────────────────────────────────────────────────────────
