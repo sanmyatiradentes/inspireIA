@@ -1602,13 +1602,70 @@ window.addEventListener('load', () => {
 });
 
 
-const GEMINI_API_URL = '/api/chat'; // Endpoint seguro no Vercel — chave protegida no servidor
-const API_KEY = ''; // Não usado — chave fica no servidor
-
-// Prompt protegido no servidor;
-
+const GEMINI_API_URL = '/api/chat';
+const API_KEY = '';
 let hist = [];
 let pronto = false;
+
+// ── FUNÇÕES AUXILIARES DE UI ──────────────────────────────────────────────
+
+function setStatus(tipo, msg) {
+  const el = document.getElementById('status-bar');
+  if (!el) return;
+  el.textContent = msg;
+  el.className = 'status-bar';
+  if (tipo === 'ok') el.classList.add('ok');
+  else if (tipo === 'err') el.classList.add('err');
+}
+
+function esconderWelcome() {
+  const w = document.getElementById('welcome');
+  if (w) w.style.display = 'none';
+}
+
+function fmt(txt) {
+  if (typeof marked !== 'undefined') {
+    return marked.parse(txt);
+  }
+  return txt.replace(/\n/g, '<br>');
+}
+
+function addMsg(role, texto) {
+  const box = document.getElementById('msg-box');
+  if (!box) return;
+  const d = document.createElement('div');
+  d.className = 'msg ' + role;
+  const avatar = role === 'user' ? '👤' : '💕';
+  d.innerHTML = `<div class="mavatar">${avatar}</div><div class="mbubble">${fmt(texto)}</div>`;
+  box.appendChild(d);
+  box.scrollTop = box.scrollHeight;
+}
+
+function addTyping() {
+  const box = document.getElementById('msg-box');
+  if (!box) return;
+  const d = document.createElement('div');
+  d.className = 'msg assistant';
+  d.id = 'typing-indicator';
+  d.innerHTML = `<div class="mavatar">💕</div><div class="mbubble"><div class="typing"><span></span><span></span><span></span></div></div>`;
+  box.appendChild(d);
+  box.scrollTop = box.scrollHeight;
+}
+
+function rmTyping() {
+  const t = document.getElementById('typing-indicator');
+  if (t) t.remove();
+}
+
+function usarSugg(el) {
+  const input = document.getElementById('user-input');
+  if (input) {
+    input.value = el.textContent.replace(/^[0-9]+\.\s*/, '').trim();
+    input.focus();
+    fecharDrawers();
+    document.getElementById('ferramenta')?.scrollIntoView({behavior:'smooth'});
+  }
+}
 
 // Verificar conexão com Gemini ao carregar
 async function verificarGemini(){
@@ -1808,11 +1865,7 @@ function usarLei(texto){
   document.getElementById('ferramenta').scrollIntoView({behavior:'smooth'});
 }
 
-// Iniciar se já consentiu anteriormente
-if(consentiu) {
-  setStatus('', '⏳ Conectando ao assistente...');
-  verificarGemini();
-}
+
 </script>
 </body>
 </html>
