@@ -1724,14 +1724,7 @@ async function enviar() {
     return {role: m.role==='assistant'?'model':'user', parts:[{text:m.content}]};
   }).concat([{role:'user', parts: parts}]);
 
-  var box = document.getElementById('messages');
-  var msgDiv = document.createElement('div');
-  msgDiv.className = 'msg assistant';
-  msgDiv.innerHTML = '<div class="mavatar"></div><div class="mbubble"><div class="typing"><span></span><span></span><span></span></div></div>';
-  box.appendChild(msgDiv);
-  box.scrollTop = box.scrollHeight;
-
-  var respostaCompleta = '';
+  addTyping();
 
   try {
     var res = await fetch(GEMINI_API_URL, {
@@ -1741,48 +1734,29 @@ async function enviar() {
       signal: AbortSignal.timeout(90000)
     });
 
+    rmTyping();
+
     if (!res.ok) {
       var e = await res.text();
-      msgDiv.querySelector('.mbubble').innerHTML = 'Erro ' + res.status + ': ' + e.slice(0,200);
+      addMsg('assistant', 'Erro ' + res.status + ': ' + e.slice(0,200));
       btn.disabled = false;
       input.focus();
       return;
     }
 
-    var reader = res.body.getReader();
-    var decoder = new TextDecoder();
-    var buffer = '';
-    var bubble = msgDiv.querySelector('.mbubble');
-    bubble.innerHTML = '';
+    var data = await res.json();
+    var resposta = data && data.candidates && data.candidates[0] &&
+                   data.candidates[0].content && data.candidates[0].content.parts &&
+                   data.candidates[0].content.parts[0] && data.candidates[0].content.parts[0].text
+                   ? data.candidates[0].content.parts[0].text : 'Resposta vazia.';
 
-    while (true) {
-      var result = await reader.read();
-      if (result.done) break;
-      buffer += decoder.decode(result.value, {stream:true});
-      var lines = buffer.split('\n');
-      buffer = lines.pop();
-      for (var i=0; i<lines.length; i++) {
-        var line = lines[i];
-        if (line.indexOf('data: ') === 0) {
-          var data = line.slice(6).trim();
-          if (data === '[DONE]') break;
-          try {
-            var chunk = JSON.parse(data);
-            if (chunk.text) {
-              respostaCompleta += chunk.text;
-              bubble.innerHTML = fmt(respostaCompleta);
-              box.scrollTop = box.scrollHeight;
-            }
-          } catch(ex) {}
-        }
-      }
-    }
-
-    hist.push({role:'user',content:txt}, {role:'assistant',content:respostaCompleta});
+    hist.push({role:'user',content:txt}, {role:'assistant',content:resposta});
     if (hist.length > 24) hist = hist.slice(-24);
+    addMsg('assistant', resposta);
 
   } catch(err) {
-    msgDiv.querySelector('.mbubble').innerHTML = 'Erro: ' + err.message;
+    rmTyping();
+    addMsg('assistant', 'Erro: ' + err.message);
   }
   btn.disabled = false;
   input.focus();
