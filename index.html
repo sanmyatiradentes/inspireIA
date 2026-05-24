@@ -1711,7 +1711,7 @@ async function enviar() {
   if (!pronto) { setStatus('err', '❌ Assistente não conectado. Verifique o deploy no Vercel.'); return; }
 
   input.value = ''; input.style.height = 'auto'; btn.disabled = true;
-  addMsg('user', txt); addTyping();
+  addMsg('user', txt);
 
   const estado = document.getElementById('cfg-estado')?.value.trim() || '';
   const orgao  = document.getElementById('cfg-orgao')?.value.trim() || '';
@@ -1724,6 +1724,16 @@ async function enviar() {
     {role: 'user', parts}
   ];
 
+  // Criar bolha de resposta vazia para streaming
+  const box = document.getElementById('messages');
+  const msgDiv = document.createElement('div');
+  msgDiv.className = 'msg assistant';
+  msgDiv.innerHTML = '<div class="mavatar">💕</div><div class="mbubble"><div class="typing"><span></span><span></span><span></span></div></div>';
+  box.appendChild(msgDiv);
+  box.scrollTop = box.scrollHeight;
+
+  let respostaCompleta = '';
+
   try {
     const res = await fetch(GEMINI_API_URL, {
       method: 'POST',
@@ -1731,16 +1741,47 @@ async function enviar() {
       body: JSON.stringify({contents, generationConfig:{temperature:0.7, maxOutputTokens:1500, topP:0.95}}),
       signal: AbortSignal.timeout(90000)
     });
-    rmTyping();
-    if (!res.ok) { const e = await res.text(); addMsg('assistant','⚠️ Erro '+res.status+': '+e.slice(0,200)); btn.disabled=false; input.focus(); return; }
-    const data = await res.json();
-    const resposta = data?.candidates?.[0]?.content?.parts?.[0]?.text || '⚠️ Resposta vazia.';
-    hist.push({role:'user',content:txt}, {role:'assistant',content:resposta});
+
+    if (!res.ok) {
+      const e = await res.text();
+      msgDiv.querySelector('.mbubble').innerHTML = '⚠️ Erro ' + res.status + ': ' + e.slice(0,200);
+      btn.disabled = false; input.focus(); return;
+    }
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+    const bubble = msgDiv.querySelector('.mbubble');
+    bubble.innerHTML = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('
+');
+      buffer = lines.pop();
+      for (const line of lines) {
+        if (line.startsWith('data: ')) {
+          const data = line.slice(6).trim();
+          if (data === '[DONE]') break;
+          try {
+            const chunk = JSON.parse(data);
+            if (chunk.text) {
+              respostaCompleta += chunk.text;
+              bubble.innerHTML = fmt(respostaCompleta);
+              box.scrollTop = box.scrollHeight;
+            }
+          } catch(e) {}
+        }
+      }
+    }
+
+    hist.push({role:'user',content:txt}, {role:'assistant',content:respostaCompleta});
     if (hist.length > 24) hist = hist.slice(-24);
-    addMsg('assistant', resposta);
+
   } catch(e) {
-    rmTyping();
-    addMsg('assistant', '⚠️ Erro: ' + e.message);
+    msgDiv.querySelector('.mbubble').innerHTML = '⚠️ Erro: ' + e.message;
   }
   btn.disabled = false; input.focus();
 }
