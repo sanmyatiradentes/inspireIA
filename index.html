@@ -1568,15 +1568,99 @@ footer a:hover{text-decoration:underline;}
 </footer>
 
 <script>
-// ── LGPD CONSENT ──────────────────────────────────────────────────────────
+// ════════════════════════════════════════════════════════
+// InspireIA — Script principal
+// ════════════════════════════════════════════════════════
+
+const GEMINI_API_URL = '/api/chat';
+let hist = [];
+let pronto = false;
 let consentiu = localStorage.getItem('inspireia_consent') === '1';
+
+// ── UI HELPERS ───────────────────────────────────────────
+
+function setStatus(tipo, msg) {
+  const el = document.getElementById('status-txt');
+  if (!el) return;
+  el.textContent = msg;
+  const dot = el.previousElementSibling;
+  if (!dot) return;
+  if (tipo === 'ok')  dot.style.background = '#22c55e';
+  else if (tipo === 'err') dot.style.background = '#ef4444';
+  else dot.style.background = '#f59e0b';
+}
+
+function esconderWelcome() {
+  const w = document.getElementById('welcome');
+  if (w) w.style.display = 'none';
+}
+
+function fmt(txt) {
+  try { if (typeof marked !== 'undefined') return marked.parse(txt); } catch(e) {}
+  return txt.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
+}
+
+function addMsg(role, texto) {
+  const box = document.getElementById('messages');
+  if (!box) return;
+  esconderWelcome();
+  const d = document.createElement('div');
+  d.className = 'msg ' + role;
+  d.innerHTML = '<div class="mavatar">' + (role==='user'?'👤':'💕') + '</div><div class="mbubble">' + fmt(texto) + '</div>';
+  box.appendChild(d);
+  box.scrollTop = box.scrollHeight;
+}
+
+function addTyping() {
+  const box = document.getElementById('messages');
+  if (!box) return;
+  const d = document.createElement('div');
+  d.className = 'msg assistant';
+  d.id = 'typing-indicator';
+  d.innerHTML = '<div class="mavatar">💕</div><div class="mbubble"><div class="typing"><span></span><span></span><span></span></div></div>';
+  box.appendChild(d);
+  box.scrollTop = box.scrollHeight;
+}
+
+function rmTyping() {
+  const t = document.getElementById('typing-indicator');
+  if (t) t.remove();
+}
+
+function limpar() {
+  hist = [];
+  const box = document.getElementById('messages');
+  if (box) box.innerHTML = '';
+  const w = document.getElementById('welcome');
+  if (w) w.style.display = '';
+}
+
+function usarSugg(el) {
+  const input = document.getElementById('user-input');
+  if (!input) return;
+  input.value = el.textContent.replace(/^→\s*\d+\.\s*/, '').trim();
+  input.focus();
+  fecharDrawers();
+  document.getElementById('ferramenta')?.scrollIntoView({behavior:'smooth'});
+}
+
+function usarLei(texto) {
+  const input = document.getElementById('user-input');
+  if (!input) return;
+  input.value = texto;
+  input.focus();
+  fecharDrawers();
+  document.getElementById('ferramenta')?.scrollIntoView({behavior:'smooth'});
+}
+
+// ── CONSENT ──────────────────────────────────────────────
 
 function aceitarConsent() {
   consentiu = true;
   localStorage.setItem('inspireia_consent', '1');
   const banner = document.getElementById('consent-banner');
   if (banner) banner.classList.add('hidden');
-  setStatus('', '⏳ Conectando ao assistente...');
+  setStatus('', '⏳ Conectando à InspireIA...');
   verificarGemini();
 }
 
@@ -1591,268 +1675,129 @@ function recusarConsent() {
   if (btn) btn.disabled = true;
 }
 
-// Init após carregamento completo — roda depois que todas as funções estão definidas
-window.addEventListener('load', () => {
-  if (consentiu) {
-    const banner = document.getElementById('consent-banner');
-    if (banner) banner.classList.add('hidden');
-    setStatus('', '⏳ Conectando à InspireIA...');
-    verificarGemini();
-  }
-});
+// ── GEMINI ───────────────────────────────────────────────
 
-
-const GEMINI_API_URL = '/api/chat';
-const API_KEY = '';
-let hist = [];
-let pronto = false;
-
-// ── FUNÇÕES AUXILIARES DE UI ──────────────────────────────────────────────
-
-function setStatus(tipo, msg) {
-  const el = document.getElementById('status-txt');
-  if (!el) return;
-  el.textContent = msg;
-  const dot = el.previousElementSibling;
-  if (dot) {
-    dot.style.background = tipo === 'ok' ? '#22c55e' : tipo === 'err' ? '#ef4444' : '#f59e0b';
-  }
-}
-
-function esconderWelcome() {
-  const w = document.getElementById('welcome');
-  if (w) w.style.display = 'none';
-}
-
-function fmt(txt) {
+async function verificarGemini() {
+  if (!consentiu) return;
+  setStatus('', '⏳ Conectando à InspireIA...');
   try {
-    if (typeof marked !== 'undefined') return marked.parse(txt);
-  } catch(e) {}
-  return txt.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/
-/g,'<br>');
-}
-
-function addMsg(role, texto) {
-  const box = document.getElementById('messages');
-  if (!box) return;
-  const d = document.createElement('div');
-  d.className = 'msg ' + role;
-  const avatar = role === 'user' ? '👤' : '💕';
-  d.innerHTML = `<div class="mavatar">${avatar}</div><div class="mbubble">${fmt(texto)}</div>`;
-  box.appendChild(d);
-  box.scrollTop = box.scrollHeight;
-}
-
-function addTyping() {
-  const box = document.getElementById('messages');
-  if (!box) return;
-  const d = document.createElement('div');
-  d.className = 'msg assistant';
-  d.id = 'typing-indicator';
-  d.innerHTML = `<div class="mavatar">💕</div><div class="mbubble"><div class="typing"><span></span><span></span><span></span></div></div>`;
-  box.appendChild(d);
-  box.scrollTop = box.scrollHeight;
-}
-
-function rmTyping() {
-  const t = document.getElementById('typing-indicator');
-  if (t) t.remove();
-}
-
-function limpar() {
-  hist = [];
-  const box = document.getElementById('messages');
-  if (box) box.innerHTML = '';
-  const welcome = document.getElementById('welcome');
-  if (welcome) welcome.style.display = '';
-}
-
-function usarSugg(el) {
-  const input = document.getElementById('user-input');
-  if (input) {
-    input.value = el.textContent.replace(/^→\s*\d+\.\s*/, '').trim();
-    input.focus();
-    fecharDrawers();
-    document.getElementById('ferramenta')?.scrollIntoView({behavior:'smooth'});
-  }
-}
-
-// Verificar conexão com Gemini ao carregar
-async function verificarGemini(){
-  if(!consentiu)return;
-  setStatus('','⏳ Conectando à InspireIA...');
-  try{
-    const r=await fetch(GEMINI_API_URL,{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        contents:[{role:'user',parts:[{text:'oi'}]}],
-        generationConfig:{maxOutputTokens:5,temperature:0}
+    const r = await fetch(GEMINI_API_URL, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        contents: [{role:'user', parts:[{text:'oi'}]}],
+        generationConfig: {maxOutputTokens: 5, temperature: 0}
       }),
-      signal:AbortSignal.timeout(20000)
+      signal: AbortSignal.timeout(20000)
     });
-    if(r.ok){
-      setStatus('ok','💕 InspireIA ativa · Google Gemini 2.5 Flash · Sua mentora comportamental está pronta');
-      pronto=true;
-    }else{
-      const err=await r.text();
-      setStatus('err',`❌ Erro ${r.status}: ${err.slice(0,120)}`);
+    if (r.ok) {
+      setStatus('ok', '💕 InspireIA ativa · Google Gemini 2.5 Flash · Sua mentora está pronta');
+      pronto = true;
+    } else {
+      const err = await r.text();
+      setStatus('err', '❌ Erro ' + r.status + ': ' + err.slice(0,100));
     }
-  }catch(e){
-    setStatus('err',`❌ Erro de conexão: ${e.message}. Verifique o deploy no Vercel ou o endpoint da API.`);
+  } catch(e) {
+    setStatus('err', '❌ Erro de conexão: ' + e.message);
   }
 }
 
-async function enviar(){
-  if(!consentiu){alert('Aceite os termos de privacidade para usar a InspireIA.');return;}
-  const input=document.getElementById('user-input');
-  const btn=document.getElementById('btn-send');
-  const txt=input.value.trim();
-  if(!txt)return;
-  if(!pronto){setStatus('err','❌ Assistente não conectado. Verifique se o deploy foi feito no Vercel.');return;}
+async function enviar() {
+  if (!consentiu) { alert('Aceite os termos de privacidade para usar a InspireIA.'); return; }
+  const input = document.getElementById('user-input');
+  const btn = document.getElementById('btn-send');
+  const txt = input.value.trim();
+  if (!txt) return;
+  if (!pronto) { setStatus('err', '❌ Assistente não conectado. Verifique o deploy no Vercel.'); return; }
 
-  esconderWelcome();
-  input.value='';input.style.height='auto';btn.disabled=true;
-  addMsg('user',txt);addTyping();
+  input.value = ''; input.style.height = 'auto'; btn.disabled = true;
+  addMsg('user', txt); addTyping();
 
-  const estado=document.getElementById('cfg-estado')?.value.trim();
-  const orgao=document.getElementById('cfg-orgao')?.value.trim();
-  const ctxParts=[];
-  if(estado||orgao)ctxParts.push({text:`[Contexto da InspireIA - usuário: área de vida: ${estado||'não informada'}, papel: ${orgao||'não informado'}]`});
+  const estado = document.getElementById('cfg-estado')?.value.trim() || '';
+  const orgao  = document.getElementById('cfg-orgao')?.value.trim() || '';
+  const ctxParts = [];
+  if (estado || orgao) ctxParts.push({text: '[Contexto: área de vida: ' + estado + ', papel: ' + orgao + ']'});
 
-  const parts=[...ctxParts,{text:txt}];
-  const contents=[
-    ...hist.map(m=>({role:m.role==='assistant'?'model':'user',parts:[{text:m.content}]})),
-    {role:'user',parts}
+  const parts = [...ctxParts, {text: txt}];
+  const contents = [
+    ...hist.map(m => ({role: m.role==='assistant'?'model':'user', parts:[{text:m.content}]})),
+    {role: 'user', parts}
   ];
 
-  try{
-    const res=await fetch(GEMINI_API_URL,{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({contents,generationConfig:{temperature:0.7,maxOutputTokens:2048,topP:0.95}}),
-      signal:AbortSignal.timeout(55000)
+  try {
+    const res = await fetch(GEMINI_API_URL, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({contents, generationConfig:{temperature:0.7, maxOutputTokens:2048, topP:0.95}}),
+      signal: AbortSignal.timeout(55000)
     });
     rmTyping();
-    if(!res.ok){const e=await res.text();addMsg('assistant',`⚠️ Erro ${res.status}: ${e.slice(0,200)}`);btn.disabled=false;input.focus();return;}
-    const data=await res.json();
-    const resposta=data?.candidates?.[0]?.content?.parts?.[0]?.text||'⚠️ Resposta vazia.';
-    hist.push({role:'user',content:txt},{role:'assistant',content:resposta});
-    addMsg('assistant',resposta);
-  }catch(e){
+    if (!res.ok) { const e = await res.text(); addMsg('assistant','⚠️ Erro '+res.status+': '+e.slice(0,200)); btn.disabled=false; input.focus(); return; }
+    const data = await res.json();
+    const resposta = data?.candidates?.[0]?.content?.parts?.[0]?.text || '⚠️ Resposta vazia.';
+    hist.push({role:'user',content:txt}, {role:'assistant',content:resposta});
+    if (hist.length > 24) hist = hist.slice(-24);
+    addMsg('assistant', resposta);
+  } catch(e) {
     rmTyping();
-    addMsg('assistant',`⚠️ Erro: ${e.message}`);
+    addMsg('assistant', '⚠️ Erro: ' + e.message);
   }
-  btn.disabled=false;input.focus();
+  btn.disabled = false; input.focus();
 }
 
+// ── ÁUDIO ────────────────────────────────────────────────
 
+let mediaRecorder = null, audioChunks = [], gravando = false;
 
-
-// ── GRAVAÇÃO DE ÁUDIO ────────────────────────────────────────────────────
-let mediaRecorder=null, audioChunks=[], gravando=false;
-
-async function toggleMic(){
-  if(!consentiu){alert('Aceite os termos de privacidade para usar a InspireIA.');return;}
-  if(!pronto){setStatus('err','❌ Assistente não conectado.');return;}
-
-  if(gravando){
-    // Parar gravação
-    mediaRecorder.stop();
-    gravando=false;
-    document.getElementById('btn-mic').classList.remove('gravando');
-    document.getElementById('btn-mic').title='Gravar áudio';
+async function toggleMic() {
+  if (!consentiu) { alert('Aceite os termos para usar a InspireIA.'); return; }
+  if (!pronto) { setStatus('err','❌ Assistente não conectado.'); return; }
+  const btnMic = document.getElementById('btn-mic');
+  if (gravando) {
+    mediaRecorder.stop(); gravando = false;
+    if (btnMic) { btnMic.classList.remove('gravando'); btnMic.textContent='🎤'; btnMic.title='Gravar áudio'; }
     return;
   }
-
-  // Iniciar gravação
-  try{
-    const stream=await navigator.mediaDevices.getUserMedia({audio:true});
-    audioChunks=[];
-    mediaRecorder=new MediaRecorder(stream);
-    mediaRecorder.ondataavailable=e=>{if(e.data.size>0)audioChunks.push(e.data);};
-    mediaRecorder.onstop=async()=>{
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({audio:true});
+    audioChunks = [];
+    mediaRecorder = new MediaRecorder(stream);
+    mediaRecorder.ondataavailable = e => { if(e.data.size>0) audioChunks.push(e.data); };
+    mediaRecorder.onstop = async () => {
       stream.getTracks().forEach(t=>t.stop());
-      const blob=new Blob(audioChunks,{type:'audio/webm'});
-
-      // Verificar tamanho (máx 10MB para áudio gravado)
-      if(blob.size>10*1024*1024){
-        addMsg('assistant','⚠️ Gravação muito longa. Tente uma mensagem mais curta.');
-        return;
-      }
-
-      // Converter para base64 e enviar ao Gemini
-      const reader=new FileReader();
-      reader.onload=async()=>{
-        const b64=reader.result.split(',')[1];
-        esconderWelcome();
-        addMsg('user','🎤 Áudio gravado — analisando...');
-        addTyping();
-
-        const parts=[
-          {inline_data:{mime_type:'audio/webm',data:b64}},
-          {text:'Transcreva e analise este áudio conforme seu propósito de desburocratizar o serviço público.'}
-        ];
-        const contents=[
-          ...hist.map(m=>({role:m.role==='assistant'?'model':'user',parts:[{text:m.content}]})),
-          {role:'user',parts}
-        ];
-
-        try{
-          const res=await fetch(GEMINI_API_URL,{
-            method:'POST',
-            headers:{'Content-Type':'application/json'},
-            body:JSON.stringify({
-              contents,
-              generationConfig:{temperature:.65,maxOutputTokens:8192}
-            })
-          });
-          if(!res.ok)throw new Error(`HTTP ${res.status}`);
-          const data=await res.json();
-          const resp=data.candidates?.[0]?.content?.parts?.[0]?.text||'Não foi possível processar o áudio.';
-          rmTyping();addMsg('assistant',resp);
-          hist.push({role:'user',content:'[Áudio gravado]'});
-          hist.push({role:'assistant',content:resp});
-          if(hist.length>24)hist=hist.slice(-24);
-        }catch(e){
-          rmTyping();addMsg('assistant',`⚠️ Erro ao processar áudio: ${e.message}`);
-        }
+      const blob = new Blob(audioChunks, {type:'audio/webm'});
+      if (blob.size > 10*1024*1024) { addMsg('assistant','⚠️ Gravação muito longa.'); return; }
+      const reader = new FileReader();
+      reader.onload = async () => {
+        const b64 = reader.result.split(',')[1];
+        addMsg('user','🎤 Áudio gravado — analisando...'); addTyping();
+        const parts = [{inline_data:{mime_type:'audio/webm',data:b64}},{text:'Transcreva e analise este áudio como mentora comportamental InspireIA.'}];
+        const contents = [...hist.map(m=>({role:m.role==='assistant'?'model':'user',parts:[{text:m.content}]})),{role:'user',parts}];
+        try {
+          const res = await fetch(GEMINI_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents,generationConfig:{temperature:.65,maxOutputTokens:2048}})});
+          const data = await res.json();
+          const resp = data?.candidates?.[0]?.content?.parts?.[0]?.text || 'Não foi possível processar o áudio.';
+          rmTyping(); addMsg('assistant',resp);
+          hist.push({role:'user',content:'[Áudio]'},{role:'assistant',content:resp});
+          if(hist.length>24) hist=hist.slice(-24);
+        } catch(e) { rmTyping(); addMsg('assistant','⚠️ Erro: '+e.message); }
       };
       reader.readAsDataURL(blob);
     };
-
-    mediaRecorder.start();
-    gravando=true;
-    document.getElementById('btn-mic').classList.add('gravando');
-    document.getElementById('btn-mic').title='Clique para parar gravação';
-    document.getElementById('btn-mic').textContent='⏹';
-
-  }catch(e){
-    addMsg('assistant','⚠️ Não foi possível acessar o microfone. Verifique as permissões do navegador.');
-  }
+    mediaRecorder.start(); gravando = true;
+    if (btnMic) { btnMic.classList.add('gravando'); btnMic.textContent='⏹'; btnMic.title='Parar gravação'; }
+  } catch(e) { addMsg('assistant','⚠️ Não foi possível acessar o microfone.'); }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const ui = document.getElementById('user-input');
-  if (ui) {
-    ui.addEventListener('keydown', e => {
-      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); enviar(); }
-    });
-    ui.addEventListener('input', function() {
-      this.style.height = 'auto';
-      this.style.height = Math.min(this.scrollHeight, 120) + 'px';
-    });
-  }
-});
+// ── GAVETAS MOBILE ───────────────────────────────────────
 
-// ── GAVETAS MOBILE ────────────────────────────────────────────────────────
-function toggleDrawer(id){
+function toggleDrawer(id) {
   const gavetas = ['drawer-sugg','drawer-leis'];
   const btns = {'drawer-sugg':'btn-sugg','drawer-leis':'btn-leis'};
-  gavetas.forEach(g=>{
+  gavetas.forEach(g => {
     const el = document.getElementById(g);
     const btn = document.getElementById(btns[g]);
-    if(g===id){
+    if (g===id) {
       const isOpen = el.classList.contains('open');
       el.classList.toggle('open');
       if(btn) btn.classList.toggle('active', !isOpen);
@@ -1863,24 +1808,34 @@ function toggleDrawer(id){
   });
 }
 
-function fecharDrawers(){
-  ['drawer-sugg','drawer-leis'].forEach(g=>{
-    document.getElementById(g)?.classList.remove('open');
-  });
-  ['btn-sugg','btn-leis'].forEach(b=>{
-    document.getElementById(b)?.classList.remove('active');
-  });
+function fecharDrawers() {
+  ['drawer-sugg','drawer-leis'].forEach(g => document.getElementById(g)?.classList.remove('open'));
+  ['btn-sugg','btn-leis'].forEach(b => document.getElementById(b)?.classList.remove('active'));
 }
 
-function usarLei(texto){
-  const input = document.getElementById('user-input');
-  input.value = texto;
-  input.focus();
-  fecharDrawers();
-  document.getElementById('ferramenta').scrollIntoView({behavior:'smooth'});
-}
+// ── INIT ─────────────────────────────────────────────────
 
-
+document.addEventListener('DOMContentLoaded', function() {
+  // Listeners do input
+  const ui = document.getElementById('user-input');
+  if (ui) {
+    ui.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); enviar(); }
+    });
+    ui.addEventListener('input', function() {
+      this.style.height = 'auto';
+      this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+    });
+  }
+  // Se já consentiu, esconde banner e conecta
+  if (consentiu) {
+    const banner = document.getElementById('consent-banner');
+    if (banner) banner.classList.add('hidden');
+    setStatus('', '⏳ Conectando à InspireIA...');
+    verificarGemini();
+  }
+});
 </script>
+
 </body>
 </html>
