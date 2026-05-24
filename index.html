@@ -1568,30 +1568,28 @@ footer a:hover{text-decoration:underline;}
 </footer>
 
 <script>
-// ════════════════════════════════════════════════════════
-// InspireIA — Script principal
-// ════════════════════════════════════════════════════════
+// InspireIA - Script principal
 
 const GEMINI_API_URL = '/api/chat';
 let hist = [];
 let pronto = false;
 let consentiu = localStorage.getItem('inspireia_consent') === '1';
 
-// ── UI HELPERS ───────────────────────────────────────────
+// --- UI helpers ---
 
 function setStatus(tipo, msg) {
-  const el = document.getElementById('status-txt');
+  var el = document.getElementById('status-txt');
   if (!el) return;
   el.textContent = msg;
-  const dot = el.previousElementSibling;
+  var dot = el.previousElementSibling;
   if (!dot) return;
-  if (tipo === 'ok')  dot.style.background = '#22c55e';
+  if (tipo === 'ok') dot.style.background = '#22c55e';
   else if (tipo === 'err') dot.style.background = '#ef4444';
   else dot.style.background = '#f59e0b';
 }
 
 function esconderWelcome() {
-  const w = document.getElementById('welcome');
+  var w = document.getElementById('welcome');
   if (w) w.style.display = 'none';
 }
 
@@ -1601,87 +1599,88 @@ function fmt(txt) {
 }
 
 function addMsg(role, texto) {
-  const box = document.getElementById('messages');
+  var box = document.getElementById('messages');
   if (!box) return;
   esconderWelcome();
-  const d = document.createElement('div');
+  var d = document.createElement('div');
   d.className = 'msg ' + role;
-  d.innerHTML = '<div class="mavatar">' + (role==='user'?'👤':'💕') + '</div><div class="mbubble">' + fmt(texto) + '</div>';
+  d.innerHTML = '<div class="mavatar">' + (role==='user'?'person':'heart') + '</div><div class="mbubble">' + fmt(texto) + '</div>';
+  d.querySelector('.mavatar').textContent = role==='user' ? '' : '';
   box.appendChild(d);
   box.scrollTop = box.scrollHeight;
 }
 
 function addTyping() {
-  const box = document.getElementById('messages');
+  var box = document.getElementById('messages');
   if (!box) return;
-  const d = document.createElement('div');
+  var d = document.createElement('div');
   d.className = 'msg assistant';
   d.id = 'typing-indicator';
-  d.innerHTML = '<div class="mavatar">💕</div><div class="mbubble"><div class="typing"><span></span><span></span><span></span></div></div>';
+  d.innerHTML = '<div class="mavatar"></div><div class="mbubble"><div class="typing"><span></span><span></span><span></span></div></div>';
   box.appendChild(d);
   box.scrollTop = box.scrollHeight;
 }
 
 function rmTyping() {
-  const t = document.getElementById('typing-indicator');
+  var t = document.getElementById('typing-indicator');
   if (t) t.remove();
 }
 
 function limpar() {
   hist = [];
-  const box = document.getElementById('messages');
+  var box = document.getElementById('messages');
   if (box) box.innerHTML = '';
-  const w = document.getElementById('welcome');
+  var w = document.getElementById('welcome');
   if (w) w.style.display = '';
 }
 
 function usarSugg(el) {
-  const input = document.getElementById('user-input');
+  var input = document.getElementById('user-input');
   if (!input) return;
-  input.value = el.textContent.replace(/^→\s*\d+\.\s*/, '').trim();
+  input.value = el.textContent.replace(/^.*?\d+\.\s*/, '').trim();
   input.focus();
   fecharDrawers();
-  document.getElementById('ferramenta')?.scrollIntoView({behavior:'smooth'});
+  var f = document.getElementById('ferramenta');
+  if (f) f.scrollIntoView({behavior:'smooth'});
 }
 
 function usarLei(texto) {
-  const input = document.getElementById('user-input');
+  var input = document.getElementById('user-input');
   if (!input) return;
   input.value = texto;
   input.focus();
   fecharDrawers();
-  document.getElementById('ferramenta')?.scrollIntoView({behavior:'smooth'});
 }
 
-// ── CONSENT ──────────────────────────────────────────────
+// --- Consent ---
 
 function aceitarConsent() {
   consentiu = true;
   localStorage.setItem('inspireia_consent', '1');
-  const banner = document.getElementById('consent-banner');
+  var banner = document.getElementById('consent-banner');
   if (banner) banner.classList.add('hidden');
-  setStatus('', '⏳ Conectando à InspireIA...');
+  setStatus('', 'Conectando...');
   verificarGemini();
 }
 
 function recusarConsent() {
   consentiu = false;
-  const banner = document.getElementById('consent-banner');
+  var banner = document.getElementById('consent-banner');
   if (banner) banner.classList.add('hidden');
-  setStatus('err', '🔒 Você não aceitou os termos. Recarregue a página para tentar novamente.');
-  const input = document.getElementById('user-input');
-  const btn = document.getElementById('btn-send');
+  setStatus('err', 'Voce nao aceitou os termos. Recarregue a pagina para tentar novamente.');
+  var input = document.getElementById('user-input');
+  var btn = document.getElementById('btn-send');
   if (input) input.disabled = true;
   if (btn) btn.disabled = true;
 }
 
-// ── GEMINI ───────────────────────────────────────────────
+// --- Gemini ---
 
 async function verificarGemini() {
   if (!consentiu) return;
-  setStatus('', '⏳ Conectando à InspireIA...');
+  setStatus('', 'Conectando a InspireIA...');
   try {
-    const r = await fetch(GEMINI_API_URL, {
+    var r = await fetch(GEMINI_API_URL, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -1690,93 +1689,91 @@ async function verificarGemini() {
       }),
       signal: AbortSignal.timeout(20000)
     });
-    // Com streaming, qualquer resposta 2xx significa que o servidor está ok
     if (r.status >= 200 && r.status < 300) {
-      setStatus('ok', '💕 InspireIA ativa · Google Gemini 2.5 Flash · Sua mentora está pronta');
+      setStatus('ok', 'InspireIA ativa - Gemini 2.5 Flash - Sua mentora esta pronta');
       pronto = true;
-      // Consumir o stream para não deixar conexão pendurada
-      const reader = r.body.getReader();
-      const pump = async () => { const {done} = await reader.read(); if (!done) pump(); };
-      pump().catch(()=>{});
+      try { var reader = r.body.getReader(); reader.cancel(); } catch(e) {}
     } else {
-      setStatus('err', '❌ Erro ' + r.status + '. Verifique o deploy no Vercel.');
+      setStatus('err', 'Erro ' + r.status + '. Verifique o deploy no Vercel.');
     }
   } catch(e) {
-    setStatus('err', '❌ Erro de conexão: ' + e.message);
+    setStatus('err', 'Erro de conexao: ' + e.message);
   }
 }
 
 async function enviar() {
-  if (!consentiu) { alert('Aceite os termos de privacidade para usar a InspireIA.'); return; }
-  const input = document.getElementById('user-input');
-  const btn = document.getElementById('btn-send');
-  const txt = input.value.trim();
+  if (!consentiu) { alert('Aceite os termos para usar a InspireIA.'); return; }
+  var input = document.getElementById('user-input');
+  var btn = document.getElementById('btn-send');
+  var txt = input.value.trim();
   if (!txt) return;
-  if (!pronto) { setStatus('err', '❌ Assistente não conectado. Verifique o deploy no Vercel.'); return; }
+  if (!pronto) { setStatus('err', 'Assistente nao conectado. Verifique o deploy.'); return; }
 
-  input.value = ''; input.style.height = 'auto'; btn.disabled = true;
+  input.value = '';
+  input.style.height = 'auto';
+  btn.disabled = true;
   addMsg('user', txt);
 
-  const estado = document.getElementById('cfg-estado')?.value.trim() || '';
-  const orgao  = document.getElementById('cfg-orgao')?.value.trim() || '';
-  const ctxParts = [];
-  if (estado || orgao) ctxParts.push({text: '[Contexto: área de vida: ' + estado + ', papel: ' + orgao + ']'});
+  var estado = (document.getElementById('cfg-estado') || {value:''}).value.trim();
+  var orgao  = (document.getElementById('cfg-orgao')  || {value:''}).value.trim();
+  var ctxParts = [];
+  if (estado || orgao) ctxParts.push({text: '[Contexto: area de vida: ' + estado + ', papel: ' + orgao + ']'});
 
-  const parts = [...ctxParts, {text: txt}];
-  const contents = [
-    ...hist.map(m => ({role: m.role==='assistant'?'model':'user', parts:[{text:m.content}]})),
-    {role: 'user', parts}
-  ];
+  var parts = ctxParts.concat([{text: txt}]);
+  var contents = hist.map(function(m) {
+    return {role: m.role==='assistant'?'model':'user', parts:[{text:m.content}]};
+  }).concat([{role:'user', parts: parts}]);
 
-  // Criar bolha de resposta vazia para streaming
-  const box = document.getElementById('messages');
-  const msgDiv = document.createElement('div');
+  var box = document.getElementById('messages');
+  var msgDiv = document.createElement('div');
   msgDiv.className = 'msg assistant';
-  msgDiv.innerHTML = '<div class="mavatar">💕</div><div class="mbubble"><div class="typing"><span></span><span></span><span></span></div></div>';
+  msgDiv.innerHTML = '<div class="mavatar"></div><div class="mbubble"><div class="typing"><span></span><span></span><span></span></div></div>';
   box.appendChild(msgDiv);
   box.scrollTop = box.scrollHeight;
 
-  let respostaCompleta = '';
+  var respostaCompleta = '';
 
   try {
-    const res = await fetch(GEMINI_API_URL, {
+    var res = await fetch(GEMINI_API_URL, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({contents, generationConfig:{temperature:0.7, maxOutputTokens:1500, topP:0.95}}),
+      body: JSON.stringify({contents: contents, generationConfig:{temperature:0.7, maxOutputTokens:1500, topP:0.95}}),
       signal: AbortSignal.timeout(90000)
     });
 
     if (!res.ok) {
-      const e = await res.text();
-      msgDiv.querySelector('.mbubble').innerHTML = '⚠️ Erro ' + res.status + ': ' + e.slice(0,200);
-      btn.disabled = false; input.focus(); return;
+      var e = await res.text();
+      msgDiv.querySelector('.mbubble').innerHTML = 'Erro ' + res.status + ': ' + e.slice(0,200);
+      btn.disabled = false;
+      input.focus();
+      return;
     }
 
-    const reader = res.body.getReader();
-    const decoder = new TextDecoder();
-    let buffer = '';
-    const bubble = msgDiv.querySelector('.mbubble');
+    var reader = res.body.getReader();
+    var decoder = new TextDecoder();
+    var buffer = '';
+    var bubble = msgDiv.querySelector('.mbubble');
     bubble.innerHTML = '';
 
     while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      buffer += decoder.decode(value, { stream: true });
-      const lines = buffer.split('
-');
+      var result = await reader.read();
+      if (result.done) break;
+      buffer += decoder.decode(result.value, {stream:true});
+      var lines = buffer.split('\n');
       buffer = lines.pop();
-      for (const line of lines) {
-        if (line.startsWith('data: ')) {
-          const data = line.slice(6).trim();
+      for (var i=0; i<lines.length; i++) {
+        var line = lines[i];
+        if (line.indexOf('data: ') === 0) {
+          var data = line.slice(6).trim();
           if (data === '[DONE]') break;
           try {
-            const chunk = JSON.parse(data);
+            var chunk = JSON.parse(data);
             if (chunk.text) {
               respostaCompleta += chunk.text;
               bubble.innerHTML = fmt(respostaCompleta);
               box.scrollTop = box.scrollHeight;
             }
-          } catch(e) {}
+          } catch(ex) {}
         }
       }
     }
@@ -1784,66 +1781,71 @@ async function enviar() {
     hist.push({role:'user',content:txt}, {role:'assistant',content:respostaCompleta});
     if (hist.length > 24) hist = hist.slice(-24);
 
-  } catch(e) {
-    msgDiv.querySelector('.mbubble').innerHTML = '⚠️ Erro: ' + e.message;
+  } catch(err) {
+    msgDiv.querySelector('.mbubble').innerHTML = 'Erro: ' + err.message;
   }
-  btn.disabled = false; input.focus();
+  btn.disabled = false;
+  input.focus();
 }
 
-// ── ÁUDIO ────────────────────────────────────────────────
+// --- Audio ---
 
-let mediaRecorder = null, audioChunks = [], gravando = false;
+var mediaRecorder = null, audioChunks = [], gravando = false;
 
 async function toggleMic() {
   if (!consentiu) { alert('Aceite os termos para usar a InspireIA.'); return; }
-  if (!pronto) { setStatus('err','❌ Assistente não conectado.'); return; }
-  const btnMic = document.getElementById('btn-mic');
+  if (!pronto) { setStatus('err','Assistente nao conectado.'); return; }
+  var btnMic = document.getElementById('btn-mic');
   if (gravando) {
-    mediaRecorder.stop(); gravando = false;
-    if (btnMic) { btnMic.classList.remove('gravando'); btnMic.textContent='🎤'; btnMic.title='Gravar áudio'; }
+    mediaRecorder.stop();
+    gravando = false;
+    if (btnMic) { btnMic.classList.remove('gravando'); btnMic.textContent=''; btnMic.title='Gravar audio'; }
     return;
   }
   try {
-    const stream = await navigator.mediaDevices.getUserMedia({audio:true});
+    var stream = await navigator.mediaDevices.getUserMedia({audio:true});
     audioChunks = [];
     mediaRecorder = new MediaRecorder(stream);
-    mediaRecorder.ondataavailable = e => { if(e.data.size>0) audioChunks.push(e.data); };
-    mediaRecorder.onstop = async () => {
-      stream.getTracks().forEach(t=>t.stop());
-      const blob = new Blob(audioChunks, {type:'audio/webm'});
-      if (blob.size > 10*1024*1024) { addMsg('assistant','⚠️ Gravação muito longa.'); return; }
-      const reader = new FileReader();
-      reader.onload = async () => {
-        const b64 = reader.result.split(',')[1];
-        addMsg('user','🎤 Áudio gravado — analisando...'); addTyping();
-        const parts = [{inline_data:{mime_type:'audio/webm',data:b64}},{text:'Transcreva e analise este áudio como mentora comportamental InspireIA.'}];
-        const contents = [...hist.map(m=>({role:m.role==='assistant'?'model':'user',parts:[{text:m.content}]})),{role:'user',parts}];
+    mediaRecorder.ondataavailable = function(e) { if(e.data.size>0) audioChunks.push(e.data); };
+    mediaRecorder.onstop = async function() {
+      stream.getTracks().forEach(function(t){t.stop();});
+      var blob = new Blob(audioChunks, {type:'audio/webm'});
+      if (blob.size > 10*1024*1024) { addMsg('assistant','Gravacao muito longa.'); return; }
+      var reader = new FileReader();
+      reader.onload = async function() {
+        var b64 = reader.result.split(',')[1];
+        addMsg('user','Audio gravado - analisando...');
+        addTyping();
+        var parts = [{inline_data:{mime_type:'audio/webm',data:b64}},{text:'Transcreva e analise este audio como mentora InspireIA.'}];
+        var contents = hist.map(function(m){return {role:m.role==='assistant'?'model':'user',parts:[{text:m.content}]};}).concat([{role:'user',parts:parts}]);
         try {
-          const res = await fetch(GEMINI_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents,generationConfig:{temperature:.65,maxOutputTokens:2048}})});
-          const data = await res.json();
-          const resp = data?.candidates?.[0]?.content?.parts?.[0]?.text || 'Não foi possível processar o áudio.';
+          var res = await fetch(GEMINI_API_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents:contents,generationConfig:{temperature:.65,maxOutputTokens:1500}})});
+          var data = await res.json();
+          var resp = (data.candidates&&data.candidates[0]&&data.candidates[0].content&&data.candidates[0].content.parts&&data.candidates[0].content.parts[0]&&data.candidates[0].content.parts[0].text) || 'Nao foi possivel processar o audio.';
           rmTyping(); addMsg('assistant',resp);
-          hist.push({role:'user',content:'[Áudio]'},{role:'assistant',content:resp});
+          hist.push({role:'user',content:'[Audio]'},{role:'assistant',content:resp});
           if(hist.length>24) hist=hist.slice(-24);
-        } catch(e) { rmTyping(); addMsg('assistant','⚠️ Erro: '+e.message); }
+        } catch(e) { rmTyping(); addMsg('assistant','Erro: '+e.message); }
       };
       reader.readAsDataURL(blob);
     };
-    mediaRecorder.start(); gravando = true;
-    if (btnMic) { btnMic.classList.add('gravando'); btnMic.textContent='⏹'; btnMic.title='Parar gravação'; }
-  } catch(e) { addMsg('assistant','⚠️ Não foi possível acessar o microfone.'); }
+    mediaRecorder.start();
+    gravando = true;
+    if (btnMic) { btnMic.classList.add('gravando'); btnMic.textContent=''; btnMic.title='Parar gravacao'; }
+  } catch(e) { addMsg('assistant','Nao foi possivel acessar o microfone.'); }
 }
 
-// ── GAVETAS MOBILE ───────────────────────────────────────
+// --- Gavetas ---
 
 function toggleDrawer(id) {
-  const gavetas = ['drawer-sugg','drawer-leis'];
-  const btns = {'drawer-sugg':'btn-sugg','drawer-leis':'btn-leis'};
-  gavetas.forEach(g => {
-    const el = document.getElementById(g);
-    const btn = document.getElementById(btns[g]);
+  var gavetas = ['drawer-sugg','drawer-leis'];
+  var btns = {'drawer-sugg':'btn-sugg','drawer-leis':'btn-leis'};
+  gavetas.forEach(function(g) {
+    var el = document.getElementById(g);
+    var btn = document.getElementById(btns[g]);
+    if (!el) return;
     if (g===id) {
-      const isOpen = el.classList.contains('open');
+      var isOpen = el.classList.contains('open');
       el.classList.toggle('open');
       if(btn) btn.classList.toggle('active', !isOpen);
     } else {
@@ -1854,15 +1856,20 @@ function toggleDrawer(id) {
 }
 
 function fecharDrawers() {
-  ['drawer-sugg','drawer-leis'].forEach(g => document.getElementById(g)?.classList.remove('open'));
-  ['btn-sugg','btn-leis'].forEach(b => document.getElementById(b)?.classList.remove('active'));
+  ['drawer-sugg','drawer-leis'].forEach(function(g) {
+    var el = document.getElementById(g);
+    if (el) el.classList.remove('open');
+  });
+  ['btn-sugg','btn-leis'].forEach(function(b) {
+    var el = document.getElementById(b);
+    if (el) el.classList.remove('active');
+  });
 }
 
-// ── INIT ─────────────────────────────────────────────────
+// --- Init ---
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Listeners do input
-  const ui = document.getElementById('user-input');
+  var ui = document.getElementById('user-input');
   if (ui) {
     ui.addEventListener('keydown', function(e) {
       if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); enviar(); }
@@ -1872,11 +1879,10 @@ document.addEventListener('DOMContentLoaded', function() {
       this.style.height = Math.min(this.scrollHeight, 120) + 'px';
     });
   }
-  // Se já consentiu, esconde banner e conecta
   if (consentiu) {
-    const banner = document.getElementById('consent-banner');
+    var banner = document.getElementById('consent-banner');
     if (banner) banner.classList.add('hidden');
-    setStatus('', '⏳ Conectando à InspireIA...');
+    setStatus('', 'Conectando...');
     verificarGemini();
   }
 });
