@@ -3,7 +3,7 @@
  * Resolve o timeout do Vercel enviando chunks em tempo real
  */
 
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse';
+const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 
 const SYSTEM_PROMPT = `Você é a InspireIA, Mentora Comportamental de Bolso de Alta Performance e Alta Gestão. Criada por Sanmya Beatriz Tiradentes Leite — Dirigente de Polícia Científica do Amazonas, Lean Six Sigma Master Black Belt, Perita Odontolegista PCAM, Capitão-Dentista CBMAM.
 
@@ -184,48 +184,10 @@ module.exports = async function handler(req, res) {
       return res.status(geminiRes.status).json({ error: errText });
     }
 
-    // ── STREAMING: envia chunks ao cliente em tempo real ──
-    res.setHeader('Content-Type', 'text/event-stream');
-    res.setHeader('Cache-Control', 'no-cache');
-    res.setHeader('Connection', 'keep-alive');
-
-    const reader = geminiRes.body.getReader();
-    const decoder = new TextDecoder();
-    let buffer = '';
-
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-
-      buffer += decoder.decode(value, { stream: true });
-      const lines = buffer.split('\n');
-      buffer = lines.pop();
-
-      for (const line of lines) {
-        if (line.startsWith('data: ')) {
-          const jsonStr = line.slice(6).trim();
-          if (jsonStr === '[DONE]') continue;
-          try {
-            const chunk = JSON.parse(jsonStr);
-            const text = chunk?.candidates?.[0]?.content?.parts?.[0]?.text;
-            if (text) {
-              // Envia o chunk como SSE
-              res.write(`data: ${JSON.stringify({ text })}\n\n`);
-            }
-          } catch(e) { /* ignorar chunks malformados */ }
-        }
-      }
-    }
-
-    res.write('data: [DONE]\n\n');
-    res.end();
+    const data = await geminiRes.json();
+    return res.status(200).json(data);
 
   } catch (error) {
-    if (!res.headersSent) {
-      res.status(500).json({ error: `Erro interno: ${error.message}` });
-    } else {
-      res.write(`data: ${JSON.stringify({ error: error.message })}\n\n`);
-      res.end();
-    }
+    return res.status(500).json({ error: `Erro interno: ${error.message}` });
   }
 };
