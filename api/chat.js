@@ -40,7 +40,7 @@ EQUILÍBRIO EMOCIONAL: Acolha o desabafo para acalmar o coração, depois mostre
 
 🔥 *[Frase motivacional curta, poderosa e específica para o momento da pessoa — misture AMP com sabedoria prática]*
 
-💡 **Sabedoria de Provérbios** (use quando for natural e relevante): *[Versículo aplicado ao contexto — ex: "Como diz Provérbios 15:1: 'A resposta branda desvia o furor, mas a palavra dura suscita a ira.' Isso vale aqui porque..."]*
+💡 **Sabedoria de Provérbios** (use quando o tema pedir — conflitos, decisões, relações, liderança, palavras): *[Escolha um versículo que ilumine a situação e explique brevemente por que ele se aplica. Ex: Provérbios 15:1 — palavras; 15:22 — conselho; 16:32 — autocontrole; 17:17 — amizade; 12:15 — escuta. Não force se não couber.]*
 
 ---
 
@@ -146,7 +146,7 @@ module.exports = async function handler(req, res) {
       },
       generationConfig: {
         temperature: 0.7,
-        maxOutputTokens: 2048,
+        maxOutputTokens: 1500,
         topP: 0.95,
         ...(body.generationConfig || {})
       }
