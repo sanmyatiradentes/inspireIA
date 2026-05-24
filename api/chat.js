@@ -149,32 +149,50 @@ FORMATAÇÃO:
 • Respostas objetivas — clareza e profundidade, não volume`;
 
 module.exports = async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Método não permitido' });
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') return res.status(200).end();
+  if (req.method !== 'POST') return res.status(405).json({ error: 'Método não permitido' });
+
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) return res.status(500).json({ error: 'GEMINI_API_KEY não configurada.' });
+
+  let body = req.body || {};
+  if (typeof body === 'string') {
+    try { body = JSON.parse(body); } catch(e) {
+      return res.status(400).json({ error: 'Body inválido' });
+    }
   }
 
-  const API_KEY = process.env.GEMINI_API_KEY;
-  if (!API_KEY) {
-    return res.status(500).json({ error: 'Chave de API não configurada.' });
-  }
+  const userContents = Array.isArray(body.contents) ? body.contents : [];
+
+  const safeUserContents = userContents.map((c, i) => ({
+    role: c.role || (i % 2 === 0 ? 'user' : 'model'),
+    parts: c.parts || [{ text: '' }]
+  }));
+
+  const contents = [
+    { role: 'user', parts: [{ text: SYSTEM_PROMPT }] },
+    { role: 'model', parts: [{ text: 'Entendido! Sou a InspireIA, sua mentora comportamental de bolso. Estou pronta para te ajudar com liderança, relacionamentos, comunicação e propósito. Como posso ajudar hoje?' }] },
+    ...safeUserContents,
+  ];
+
+  const GEMINI_ENDPOINT = `${GEMINI_URL}&key=${apiKey}`;
 
   try {
-    const body = req.body;
-    const requestBody = {
-      ...body,
-      system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
-      generationConfig: {
-        temperature: 0.7,
-        maxOutputTokens: 1500,
-        topP: 0.95,
-        ...(body.generationConfig || {})
-      }
-    };
-
-    const geminiRes = await fetch(`${GEMINI_URL}&key=${API_KEY}`, {
+    const geminiRes = await fetch(GEMINI_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(requestBody),
+      body: JSON.stringify({
+        contents,
+        generationConfig: {
+          temperature: 0.7,
+          maxOutputTokens: 4096,
+          topP: 0.95,
+        },
+      }),
     });
 
     if (!geminiRes.ok) {
@@ -182,7 +200,6 @@ module.exports = async function handler(req, res) {
       return res.status(geminiRes.status).json({ error: errText });
     }
 
-    // Acumular resposta completa do stream e devolver como JSON
     const reader = geminiRes.body.getReader();
     const decoder = new TextDecoder();
     let fullText = '';
@@ -208,10 +225,13 @@ module.exports = async function handler(req, res) {
     }
 
     return res.status(200).json({
-      candidates: [{ content: { parts: [{ text: fullText }], role: 'model' }, finishReason: 'STOP' }]
+      candidates: [{
+        content: { parts: [{ text: fullText }], role: 'model' },
+        finishReason: 'STOP',
+      }]
     });
 
-  } catch (error) {
-    return res.status(500).json({ error: `Erro: ${error.message}` });
+  } catch (err) {
+    return res.status(500).json({ error: err.message });
   }
 };
