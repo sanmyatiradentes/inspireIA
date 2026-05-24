@@ -1690,12 +1690,16 @@ async function verificarGemini() {
       }),
       signal: AbortSignal.timeout(20000)
     });
-    if (r.ok) {
+    // Com streaming, qualquer resposta 2xx significa que o servidor está ok
+    if (r.status >= 200 && r.status < 300) {
       setStatus('ok', '💕 InspireIA ativa · Google Gemini 2.5 Flash · Sua mentora está pronta');
       pronto = true;
+      // Consumir o stream para não deixar conexão pendurada
+      const reader = r.body.getReader();
+      const pump = async () => { const {done} = await reader.read(); if (!done) pump(); };
+      pump().catch(()=>{});
     } else {
-      const err = await r.text();
-      setStatus('err', '❌ Erro ' + r.status + ': ' + err.slice(0,100));
+      setStatus('err', '❌ Erro ' + r.status + '. Verifique o deploy no Vercel.');
     }
   } catch(e) {
     setStatus('err', '❌ Erro de conexão: ' + e.message);
