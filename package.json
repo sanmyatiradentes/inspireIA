@@ -1,0 +1,8 @@
+{
+  "name": "inspireia",
+  "version": "1.0.0",
+  "description": "InspireIA - Mentora Comportamental de Bolso",
+  "engines": {
+    "node": "18.x"
+  }
+}
