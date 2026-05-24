@@ -1610,12 +1610,13 @@ let pronto = false;
 // ── FUNÇÕES AUXILIARES DE UI ──────────────────────────────────────────────
 
 function setStatus(tipo, msg) {
-  const el = document.getElementById('status-bar');
+  const el = document.getElementById('status-txt');
   if (!el) return;
   el.textContent = msg;
-  el.className = 'status-bar';
-  if (tipo === 'ok') el.classList.add('ok');
-  else if (tipo === 'err') el.classList.add('err');
+  const dot = el.previousElementSibling;
+  if (dot) {
+    dot.style.background = tipo === 'ok' ? '#22c55e' : tipo === 'err' ? '#ef4444' : '#f59e0b';
+  }
 }
 
 function esconderWelcome() {
@@ -1624,14 +1625,15 @@ function esconderWelcome() {
 }
 
 function fmt(txt) {
-  if (typeof marked !== 'undefined') {
-    return marked.parse(txt);
-  }
-  return txt.replace(/\n/g, '<br>');
+  try {
+    if (typeof marked !== 'undefined') return marked.parse(txt);
+  } catch(e) {}
+  return txt.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/
+/g,'<br>');
 }
 
 function addMsg(role, texto) {
-  const box = document.getElementById('msg-box');
+  const box = document.getElementById('messages');
   if (!box) return;
   const d = document.createElement('div');
   d.className = 'msg ' + role;
@@ -1642,7 +1644,7 @@ function addMsg(role, texto) {
 }
 
 function addTyping() {
-  const box = document.getElementById('msg-box');
+  const box = document.getElementById('messages');
   if (!box) return;
   const d = document.createElement('div');
   d.className = 'msg assistant';
@@ -1657,10 +1659,18 @@ function rmTyping() {
   if (t) t.remove();
 }
 
+function limpar() {
+  hist = [];
+  const box = document.getElementById('messages');
+  if (box) box.innerHTML = '';
+  const welcome = document.getElementById('welcome');
+  if (welcome) welcome.style.display = '';
+}
+
 function usarSugg(el) {
   const input = document.getElementById('user-input');
   if (input) {
-    input.value = el.textContent.replace(/^[0-9]+\.\s*/, '').trim();
+    input.value = el.textContent.replace(/^→\s*\d+\.\s*/, '').trim();
     input.focus();
     fecharDrawers();
     document.getElementById('ferramenta')?.scrollIntoView({behavior:'smooth'});
