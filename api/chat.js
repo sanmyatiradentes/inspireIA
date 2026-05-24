@@ -44,7 +44,7 @@ EQUILÍBRIO EMOCIONAL: Acolha o desabafo para acalmar o coração, depois mostre
 ━━━ BASE DE CONHECIMENTO ━━━
 
 1. PROPÓSITO E MENTALIDADE:
-• Rick Warren & Tiago Brunet: felicidade nasce ao usar talentos para servir ao próximo
+• Rick Warren & Tiago Brunet: felicidade nasce ao usar talentos para servir ao próximo — tirar o foco do próprio umbigo é o primeiro passo
 • Napoleon Hill & W. Clement Stone (AMP): semente de aprendizado em cada problema; atitude mental positiva como escolha diária
 • T. Harv Eker (Mente Milionária): quebrar mentalidade de escassez; prosperidade começa no pensamento
 • Luiz Gaziri (Ciência da Felicidade): bem-estar vem antes do sucesso; helper's high ao ajudar o próximo
@@ -77,7 +77,7 @@ EQUILÍBRIO EMOCIONAL: Acolha o desabafo para acalmar o coração, depois mostre
 
 5. PARENTALIDADE CONSCIENTE:
 • Daniel Siegel: acolher sentimento antes de corrigir comportamento — conectar antes de redirecionar
-• Içami Tiba: amor sem limites não é amor, é abandono com carinho
+• Içami Tiba (Quem Ama Educa): amor sem limites não é amor, é abandono com carinho; disciplina com afeto é o que forma caráter
 • Pamela Druckerman (método Cadre): limites firmes como moldura que dá segurança; La Pause — ensinar a esperar
 • Jessica Alexander (Hygge): presença plena e aconchego constroem filhos emocionalmente saudáveis
 • Gustavo Cerbasi: educação financeira começa na infância
@@ -90,13 +90,17 @@ EQUILÍBRIO EMOCIONAL: Acolha o desabafo para acalmar o coração, depois mostre
 • Cortisol: humilhação e ameaça paralisam e fecham o pensamento criativo
 • Ocitocina: confiança e conexão — liberada pelo toque, olho no olho, gratidão
 • Neuroplasticidade: o cérebro muda com novos hábitos — nunca é tarde
+• Helper's High: o bem-estar químico gerado por ajudar o próximo — servir literalmente faz bem ao cérebro
 
 7. CONFLITOS, NEGOCIAÇÃO E PERSUASÃO:
 • Fisher & Ury (Como Chegar ao Sim): separar pessoas do problema; focar em interesses, não posições; criar opções de ganho mútuo
 • Chris Voss (Nunca Divida ao Meio): espelhamento, rótulos emocionais ("parece que você está frustrado com..."), pergunta calibrada ("como posso fazer isso?")
 • Robert Cialdini (Armas da Persuasão): Reciprocidade, Compromisso, Prova Social, Autoridade, Afeição, Escassez, Unidade
 • William Isaacs: debate é sobre vencer; diálogo é sobre entender
-• BATNA: quem conhece suas alternativas negocia com calma
+• BATNA (Melhor Alternativa ao Acordo Negociado): quem conhece suas alternativas negocia com calma — quem não tem alternativas capitula por medo
+• ZOPA (Zona de Possível Acordo): o espaço onde os interesses reais de ambos se encontram — encontrá-lo é o objetivo da negociação saudável
+• Gustavo Ferreira (Gatilhos Mentais, DVS Editora): versão brasileira aplicada — 32 gatilhos de comunicação e persuasão; urgência, exclusividade, prova social, autoridade e storytelling aplicados com ética para mobilizar pessoas em torno de causas reais
+• Daniel Dana: conflito não resolvido drena energia, saúde e relacionamentos. Diálogo estruturado — sem ataques, com escuta genuína — é o antídoto
 
 8. ORATÓRIA E COMUNICAÇÃO EM PÚBLICO:
 • Dale Carnegie (Como Falar em Público e Encantar as Pessoas): estrutura, ritmo, conexão emocional com a audiência
