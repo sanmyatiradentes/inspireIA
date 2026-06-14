@@ -515,9 +515,6 @@ footer a:hover{text-decoration:underline;}
   .diag-grid{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr 1fr}.steps::before{display:none}
   .eixos-grid{grid-template-columns:1fr}
-  .chat-app{grid-template-columns:1fr;height:auto}
-  .chat-sidebar{display:none}
-.messages{height:420px}
   .realizacoes{grid-template-columns:1fr 1fr}
 }
 @media(max-width:600px){
@@ -629,53 +626,43 @@ footer a:hover{text-decoration:underline;}
 .mobile-lei-chip:hover{background:var(--navy);color:#fff}
 
 
-
-  .chat-main{border-radius:0!important}
-}
-
-}
-
-
-
-  .chat-sidebar{display:none!important}
-  .chat-mobile-bar{display:flex!important}
-  .chat-main{border-radius:14px 14px 0 0;min-height:0;}
-  .messages{height:320px!important;min-height:200px;}
-  .mobile-drawer.open{display:flex}
-}
-@media(min-width:861px){
-  .chat-mobile-bar{display:none!important}
-  .mobile-drawer{display:none!important}
-}
-
-
 /* ── RESPONSIVO CHAT ── */
 @media(max-width:900px){
   .chat-app{
     grid-template-columns:1fr;
     height:auto;
-    min-height:560px;
+    min-height:78vh;
     border-radius:14px 14px 0 0;
   }
   .chat-sidebar{display:none!important}
   .chat-main{
     height:auto;
-    min-height:560px;
+    min-height:78vh;
     border-radius:14px 14px 0 0;
   }
   .messages{
-    height:320px;
+    height:58vh;
+    min-height:380px;
     flex:none;
   }
   .chat-mobile-bar{display:flex!important}
+  #user-input{
+    font-size:1rem;
+    padding:0.85rem 1rem;
+    min-height:48px;
+    max-height:160px;
+  }
+  .btn-send,.btn-mic,.btn-attach{width:48px;height:48px;font-size:1.2rem;}
 }
 @media(min-width:901px){
   .chat-mobile-bar{display:none!important}
   .mobile-drawer{display:none!important}
 }
 @media(max-width:560px){
-  .chat-app{min-height:480px}
-  .messages{height:260px}
+  .chat-app{min-height:84vh}
+  .messages{height:62vh;min-height:340px}
+  .chat-input-wrap{padding:0.9rem 0.9rem calc(0.9rem + env(safe-area-inset-bottom));}
+  #user-input{font-size:1rem;}
 }
 
 
