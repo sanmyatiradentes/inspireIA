@@ -1,0 +1,461 @@
+[
+ {
+  "area_id": "lideranca",
+  "area_nome": "Liderança",
+  "licoes": [
+   {
+    "titulo": "O círculo de segurança",
+    "fonte": "Simon Sinek — Líderes se servem por último",
+    "ideia": "Sinek observa que as pessoas só dão o melhor de si quando sentem que estão protegidas dentro do grupo. Se o perigo vem de dentro, como o medo de ser exposto, humilhado ou culpado sozinho, cada um gasta energia se defendendo em vez de trabalhar. O papel do líder é ampliar esse círculo e cuidar de quem está nele. Pense num chefe de plantão que, diante de uma reclamação externa injusta, assume a conversa com a direção antes de procurar culpados na equipe. A mensagem que fica é simples: aqui eu não estou sozinho, e isso muda tudo.",
+    "pratica": "Escolha uma pressão externa que hoje recai sobre alguém da equipe e tome para você a parte que cabe ao líder resolver.",
+    "pergunta": "Quem na minha equipe hoje se sente fora do círculo de proteção, e por quê?"
+   },
+   {
+    "titulo": "Comece pelo porquê",
+    "fonte": "Simon Sinek — Comece pelo porquê",
+    "ideia": "Sinek desenha três círculos: o que fazemos, como fazemos e por que fazemos. A maioria das pessoas comunica de fora para dentro, falando de tarefas e prazos, mas o que move gente de verdade é o propósito, o porquê. Quando um gestor público pede um novo controle de planilha só dizendo que é obrigatório, recebe cumprimento mínimo. Quando explica que aquele registro garante que uma família receba uma resposta mais rápida, o mesmo trabalho ganha sentido. O porquê não é discurso bonito; é a razão concreta que liga a tarefa à vida de alguém.",
+    "pratica": "Na próxima tarefa que você delegar, comece explicando a quem ela serve e só depois diga o que e como fazer.",
+    "pergunta": "Se alguém da minha equipe tivesse que explicar o porquê do nosso trabalho, o que diria?"
+   },
+   {
+    "titulo": "A janela e o espelho",
+    "fonte": "Jim Collins — Empresas feitas para vencer",
+    "ideia": "Collins estudou líderes que transformaram organizações comuns em excelentes e encontrou um padrão curioso, que ele chamou de nível 5: uma mistura de humildade pessoal com vontade férrea pelo resultado. Um hábito marcante desses líderes é olhar pela janela quando as coisas dão certo, apontando o mérito dos outros e até da sorte, e olhar no espelho quando dão errado, assumindo a responsabilidade. Imagine um diretor que, na reunião de balanço, nomeia quem resolveu o gargalo do mês e, ao falar do atraso, diz que a falha de planejamento foi dele.",
+    "pratica": "Hoje, dê crédito público e específico a uma pessoa da equipe por um resultado que muita gente atribui a você.",
+    "pergunta": "Quando algo dá errado, meu primeiro movimento é procurar o espelho ou a janela?"
+   },
+   {
+    "titulo": "Primeiro quem, depois o quê",
+    "fonte": "Jim Collins — Empresas feitas para vencer",
+    "ideia": "Collins usa a imagem de um ônibus: antes de decidir para onde ir, o bom líder cuida de colocar as pessoas certas a bordo e de ajudar as erradas a descer, ou a mudar de lugar. Com as pessoas certas, a direção pode até mudar que o grupo se adapta. No serviço público nem sempre se escolhe quem entra, mas sempre se escolhe onde cada um senta. Um servidor apagado num setor burocrático pode brilhar no atendimento ou na análise. Perguntar quem combina com qual desafio costuma resolver mais do que trocar o planejamento pela quarta vez.",
+    "pratica": "Pense em uma pessoa da equipe que parece desmotivada e pergunte a ela, com curiosidade, em que tipo de tarefa se sente mais útil.",
+    "pergunta": "Estou tentando resolver com processos um problema que é de pessoas no lugar errado?"
+   },
+   {
+    "titulo": "Fatos duros, fé firme",
+    "fonte": "Jim Collins — Empresas feitas para vencer",
+    "ideia": "Collins batizou de paradoxo de Stockdale a capacidade de encarar os fatos mais duros da realidade sem perder a convicção de que, no fim, o grupo vai prevalecer. Os otimistas ingênuos, que repetem que tudo estará resolvido até o Natal, se quebram a cada promessa frustrada. O líder maduro diz: o orçamento foi cortado pela metade, isso é sério, e nós vamos encontrar um jeito de manter o essencial funcionando. Ele não esconde o problema nem se rende a ele. A equipe confia em quem diz a verdade e ainda assim aponta um caminho.",
+    "pratica": "Escreva numa frase o fato mais duro que sua equipe enfrenta agora e, ao lado, a razão concreta pela qual vocês podem atravessá-lo.",
+    "pergunta": "Que verdade incômoda eu tenho evitado dizer à minha equipe?"
+   },
+   {
+    "titulo": "Quem serve, faz crescer",
+    "fonte": "Robert Greenleaf — O servo como líder",
+    "ideia": "Greenleaf propôs que o grande líder é, antes de tudo, alguém que quer servir, e só depois decide liderar. Para saber se isso está acontecendo, ele sugeriu um teste: as pessoas lideradas estão crescendo? Estão ficando mais sábias, mais saudáveis, mais livres e mais capazes de agir sozinhas? Um coordenador que resolve tudo pessoalmente pode parecer dedicado, mas, se a equipe continua dependente dele para cada decisão, ninguém cresceu. Servir não é fazer pelos outros; é criar condições para que eles se tornem melhores do que eram.",
+    "pratica": "Identifique uma decisão que você costuma tomar sozinho e transfira-a hoje para alguém da equipe, oferecendo apoio, não controle.",
+    "pergunta": "Daqui a um ano, minha equipe dependerá menos ou mais de mim?"
+   },
+   {
+    "titulo": "Escutar antes de resolver",
+    "fonte": "Robert Greenleaf — O servo como líder",
+    "ideia": "Greenleaf dizia que o líder servidor responde a qualquer problema primeiro escutando. Parece óbvio, mas a maioria de nós, ao ouvir uma queixa, já está montando a solução na cabeça antes de a pessoa terminar a frase. Imagine um servidor que chega dizendo que o sistema travou de novo. O líder apressado manda abrir chamado; o líder que escuta descobre que o problema real é que ninguém foi treinado no módulo novo. Escutar de verdade economiza retrabalho e mostra respeito, porque comunica que a experiência do outro importa.",
+    "pratica": "Na próxima conversa com alguém da equipe, faça duas perguntas antes de oferecer qualquer solução.",
+    "pergunta": "Quantas vezes hoje eu respondi antes de realmente entender?"
+   },
+   {
+    "titulo": "Erro dito cedo vale ouro",
+    "fonte": "Amy Edmondson — A organização sem medo",
+    "ideia": "Edmondson chama de segurança psicológica a crença compartilhada de que é seguro arriscar-se diante do grupo: perguntar, admitir um erro, discordar. Ela mostra que equipes com essa segurança não erram menos; elas relatam mais erros, e por isso corrigem antes que virem desastre. Um laboratório em que o técnico tem medo de avisar que trocou uma amostra é muito mais perigoso do que um em que ele avisa no mesmo minuto. O líder cria esse clima quando reconhece que o trabalho é incerto e diz claramente que precisa ouvir o que está dando errado.",
+    "pratica": "Abra a próxima reunião dizendo que quer saber de um problema que ainda não chegou até você, e agradeça a quem trouxer.",
+    "pergunta": "O que minha equipe sabe e ainda não teve coragem de me contar?"
+   },
+   {
+    "titulo": "Como você recebe a má notícia",
+    "fonte": "Amy Edmondson — A organização sem medo",
+    "ideia": "Para Edmondson, a segurança psicológica se constrói ou se destrói no momento em que alguém traz uma notícia ruim. Se o líder franze a testa, levanta a voz ou procura culpado, a equipe aprende rapidinho a esconder problemas. Se agradece, pergunta o que aconteceu e pensa junto no próximo passo, a equipe aprende que falar compensa. Pense num servidor que avisa que um prazo legal vai estourar. A primeira frase do chefe, algo como obrigado por avisar agora, define se na próxima vez ele vai avisar com uma semana ou com uma hora de antecedência.",
+    "pratica": "Prepare de antemão a frase que você vai dizer na próxima vez que receber uma má notícia, começando por um agradecimento.",
+    "pergunta": "Qual foi a minha reação, de verdade, na última vez que alguém me trouxe um problema?"
+   },
+   {
+    "titulo": "Discordar e se comprometer",
+    "fonte": "Princípios de liderança da Amazon — Tenha convicção; discorde e se comprometa",
+    "ideia": "Um dos princípios de liderança da Amazon pede que as pessoas discordem com respeito quando não concordam com uma decisão, mesmo que isso seja desconfortável, e que, uma vez decidido, se comprometam por inteiro. Nada de concordar na reunião e sabotar no corredor, nem de obedecer de braços cruzados esperando dar errado. Imagine uma equipe que debate a nova escala de plantão: quem é contra expõe seus argumentos, a chefia decide, e todos fazem a escala funcionar. Se a experiência mostrar que estava errada, revisa-se depois, com dados, e não com fofoca.",
+    "pratica": "Na próxima decisão de que você discordar, diga isso claramente uma vez e, depois de decidido, anuncie que vai apoiar de verdade.",
+    "pergunta": "Existe alguma decisão que eu aceitei em voz alta mas continuo resistindo em silêncio?"
+   },
+   {
+    "titulo": "Portas de ida e volta",
+    "fonte": "Jeff Bezos — Cartas aos acionistas da Amazon",
+    "ideia": "Bezos separa as decisões em dois tipos. Algumas são como portas de mão única: depois de atravessar, não dá para voltar, e merecem cuidado, análise e consulta. A maioria, porém, é como porta de mão dupla: se não der certo, é só voltar. O erro comum das organizações, especialmente as grandes e as públicas, é tratar toda decisão como irreversível, e aí tudo demora meses. Mudar o layout de um formulário interno ou testar um novo horário de reunião são portas de ida e volta. Decida rápido, observe e ajuste.",
+    "pratica": "Escolha uma decisão parada na sua mesa, pergunte se ela é reversível e, se for, tome-a hoje com um prazo para reavaliar.",
+    "pergunta": "Quantas decisões reversíveis eu estou tratando como se fossem definitivas?"
+   },
+   {
+    "titulo": "Comece pelo cidadão",
+    "fonte": "Princípios de liderança da Amazon — Obsessão pelo cliente",
+    "ideia": "Na Amazon, os líderes são orientados a partir do cliente e trabalhar de trás para frente: primeiro se imagina a experiência ideal de quem será atendido, e só depois se desenha o processo. No serviço público, o cliente é o cidadão. Em vez de começar perguntando quais documentos a norma exige, comece perguntando como seria ideal para uma mãe que precisa de um laudo receber a informação. Muitas exigências que pareciam intocáveis aparecem como simples costume quando vistas pelos olhos de quem espera do outro lado do balcão.",
+    "pratica": "Escreva em um parágrafo como seria a experiência perfeita de um usuário do seu serviço e marque um ponto em que a realidade está longe disso.",
+    "pergunta": "Se eu fosse o cidadão atendido pelo meu setor, o que me deixaria mais frustrado?"
+   },
+   {
+    "titulo": "Vá onde o trabalho acontece",
+    "fonte": "Taiichi Ohno — O Sistema Toyota de Produção",
+    "ideia": "No pensamento Lean, nascido na Toyota com Ohno, gemba é o lugar real onde o valor é criado: o chão de fábrica, o balcão, a bancada do laboratório. A ideia é que relatórios e planilhas mostram uma sombra do problema, e só olhando de perto se entende o que acontece. Um gestor que passa uma manhã acompanhando a recepção de vestígios descobre que a fila nasce de um carimbo que só uma pessoa pode dar. Nenhum indicador mostraria isso. Ir ao gemba não é fiscalizar; é observar com respeito e perguntar.",
+    "pratica": "Reserve trinta minutos esta semana para observar em silêncio uma etapa do trabalho da sua equipe, anotando o que surpreende você.",
+    "pergunta": "Há quanto tempo eu não vejo com meus próprios olhos o trabalho que eu gerencio?"
+   },
+   {
+    "titulo": "Um por cento por dia",
+    "fonte": "Masaaki Imai — Kaizen",
+    "ideia": "Imai popularizou no Ocidente o kaizen, palavra japonesa para melhoria contínua feita em pequenos passos, por todos, todos os dias. Em vez de esperar o grande projeto de reestruturação que nunca sai do papel, cada pessoa melhora um pedacinho do próprio trabalho. Uma servidora que cansou de procurar os mesmos modelos de ofício cria uma pasta organizada e compartilha com o setor; isso economiza minutos a cada dia para dez pessoas. Somadas ao longo de um ano, essas pequenas melhorias mudam a cara de um serviço sem precisar de verba nem de decreto.",
+    "pratica": "Peça a cada pessoa da equipe uma pequena irritação do dia a dia que poderia ser resolvida em menos de uma hora, e resolva uma delas.",
+    "pergunta": "Que pequena melhoria eu venho adiando por achar que é pequena demais para importar?"
+   },
+   {
+    "titulo": "Pergunte por que cinco vezes",
+    "fonte": "Taiichi Ohno — O Sistema Toyota de Produção",
+    "ideia": "Ohno ensinava que, diante de um problema, é preciso perguntar por que repetidas vezes, até chegar à causa de raiz, e não ficar no sintoma. O laudo atrasou. Por quê? Faltou reagente. Por quê? O pedido foi feito tarde. Por quê? Ninguém controla o estoque mínimo. Por quê? Essa tarefa nunca foi atribuída a alguém. Repare que a solução final, nomear um responsável pelo estoque, é bem diferente de cobrar o perito pelo atraso. A técnica tira o foco da culpa e o coloca no processo.",
+    "pratica": "Pegue um problema recorrente da sua equipe e faça com ela a cadeia de porquês até encontrar algo que dependa de vocês mudar.",
+    "pergunta": "Estou tratando o sintoma ou a causa do problema que mais me incomoda hoje?"
+   },
+   {
+    "titulo": "Pare a linha para consertar",
+    "fonte": "Jeffrey Liker — O modelo Toyota",
+    "ideia": "Liker descreve como, na Toyota, qualquer operário pode puxar uma corda, o andon, e parar a linha quando percebe um defeito. Parece caro, mas sai muito mais barato do que deixar o defeito seguir adiante e se multiplicar. A lição para qualquer equipe é criar um jeito simples e legítimo de qualquer pessoa dizer: espera, tem algo errado aqui. Num cartório, numa perícia ou num atendimento, dar a um servidor novo a autoridade de pausar um procedimento duvidoso protege a qualidade e mostra confiança no olhar de quem está na ponta.",
+    "pratica": "Combine com a equipe um sinal claro para pausar uma tarefa quando algo parecer errado, e deixe explícito que usar esse sinal será valorizado.",
+    "pergunta": "Na minha equipe, quem está na ponta se sente autorizado a parar quando vê um erro?"
+   },
+   {
+    "titulo": "O combustível que não custa nada",
+    "fonte": "Lee Cockerell — Criando magia",
+    "ideia": "Cockerell, que dirigiu as operações do Walt Disney World, fala de um combustível gratuito que qualquer líder tem à mão: reconhecimento, apreciação e encorajamento. Ele não depende de orçamento, gratificação ou plano de carreira, coisas que no serviço público muitas vezes estão fora do alcance do chefe. Um bilhete dizendo que você percebeu o cuidado com que alguém atendeu uma família em luto pode valer mais do que um elogio genérico em reunião. O segredo é ser específico, sincero e frequente, e não guardar a gratidão para a festa de fim de ano.",
+    "pratica": "Antes de terminar o dia, envie uma mensagem curta a alguém da equipe dizendo exatamente o que você viu de bom no trabalho dela.",
+    "pergunta": "Quem na minha equipe faz um bom trabalho silencioso e nunca ouviu isso de mim?"
+   },
+   {
+    "titulo": "Elimine as chateações",
+    "fonte": "Lee Cockerell — Criando magia",
+    "ideia": "Uma das regras de Cockerell é eliminar as chateações, aqueles pequenos aborrecimentos que desgastam clientes e funcionários: filas sem explicação, formulários repetidos, regras que ninguém sabe para que servem. Na Disney, isso era tratado como trabalho sério, porque a soma de pequenos incômodos estraga a experiência inteira. No serviço público, pense no cidadão que precisa voltar três vezes porque cada atendente pede um documento diferente. Remover essa chateação, com uma lista única e visível, muda a percepção de todo o órgão sem custo algum.",
+    "pratica": "Pergunte a quem atende o público qual é a reclamação mais repetida da semana e decida uma ação para reduzi-la.",
+    "pergunta": "Qual chateação no meu setor todo mundo já aceitou como normal?"
+   },
+   {
+    "titulo": "O importante antes do urgente",
+    "fonte": "Stephen Covey — Os 7 hábitos das pessoas altamente eficazes",
+    "ideia": "Covey divide as atividades em quatro quadrantes, cruzando importância e urgência. O líder que vive apagando incêndio passa o dia no quadrante do urgente e importante e, no cansaço, foge para o urgente e sem importância, como mensagens e interrupções. Ele chama de quadrante II o importante que não é urgente: planejar, treinar a equipe, cuidar de relações, prevenir problemas. É justamente esse quadrante que reduz os incêndios do futuro. Um chefe que reserva duas horas semanais para capacitar a equipe terá menos crises do que um que só reage.",
+    "pratica": "Bloqueie na agenda desta semana um horário fixo para uma atividade importante e não urgente, e proteja-o como se fosse uma audiência.",
+    "pergunta": "Que coisa importante eu venho empurrando porque ela nunca parece urgente?"
+   },
+   {
+    "titulo": "Seu círculo de influência",
+    "fonte": "Stephen Covey — Os 7 hábitos das pessoas altamente eficazes",
+    "ideia": "Covey distingue o círculo de preocupação, tudo aquilo que nos afeta, do círculo de influência, aquilo sobre o qual podemos agir. Pessoas reativas gastam energia reclamando do que não controlam, e o círculo de influência encolhe. Pessoas proativas se concentram no que está ao alcance, e o círculo cresce. No serviço público, o gestor não muda a lei orçamentária, mas pode mudar como organiza a escala, como acolhe um servidor novo e como comunica as prioridades. Equipes percebem rapidamente se o chefe é um reclamador ou um fazedor.",
+    "pratica": "Liste três queixas que você repetiu esta semana e, para cada uma, escreva uma ação que está dentro do seu círculo de influência.",
+    "pergunta": "Quanto da minha energia hoje foi para coisas que eu não posso mudar?"
+   },
+   {
+    "titulo": "Não precisa ser o mais esperto",
+    "fonte": "Carol Dweck — Mindset",
+    "ideia": "Dweck mostra que líderes com mentalidade fixa precisam provar o tempo todo que são os mais inteligentes da sala; por isso se cercam de quem concorda e tratam críticas como ameaça. Líderes com mentalidade de crescimento veem habilidade como algo que se desenvolve, então buscam aprender, admitem o que não sabem e se alegram com o talento dos outros. Imagine um diretor que, diante de uma técnica nova, pede ao perito mais jovem que lhe explique. Em vez de perder autoridade, ele mostra à equipe que aprender é o padrão da casa.",
+    "pratica": "Pergunte hoje a alguém da equipe sobre um assunto em que ela sabe mais do que você e escute como aprendiz.",
+    "pergunta": "Em que situação eu tenho fingido saber algo só para não parecer menos competente?"
+   }
+  ]
+ },
+ {
+  "area_id": "relacionamentos",
+  "area_nome": "Amor e Relacionamentos",
+  "licoes": [
+   {
+    "titulo": "Cada um fala uma língua",
+    "fonte": "Gary Chapman — As 5 linguagens do amor",
+    "ideia": "Chapman percebeu que as pessoas expressam e recebem amor por cinco caminhos principais: palavras de afirmação, tempo de qualidade, presentes, atos de serviço e toque físico. O problema é que tendemos a amar na nossa língua, não na do outro. Um marido que lava o carro da esposa todo sábado acha que está dizendo eu te amo, mas ela, que sente amor em conversas sem pressa, só registra que ele passou a manhã fora. Ninguém está errado; estão falando idiomas diferentes. Aprender a língua do outro é uma das formas mais concretas de cuidado.",
+    "pratica": "Observe do que a pessoa amada mais reclama ou pede, porque isso costuma revelar a linguagem dela, e ofereça um gesto nessa língua hoje.",
+    "pergunta": "Eu tenho amado as pessoas próximas do jeito que elas sentem ou do jeito que eu gosto de dar?"
+   },
+   {
+    "titulo": "O tanque emocional",
+    "fonte": "Gary Chapman — As 5 linguagens do amor",
+    "ideia": "Chapman usa a imagem de um tanque de amor dentro de cada pessoa. Quando está cheio, a gente tolera melhor as falhas do outro, conversa com calma e se sente seguro. Quando está vazio, qualquer coisa vira briga. Isso vale também para a família: uma mãe idosa que se queixa de tudo talvez não esteja implicando com a comida, mas sentindo o tanque baixo pela falta de visitas. Antes de discutir o conteúdo da reclamação, vale perguntar se aquele tanque está sendo abastecido do jeito que a pessoa reconhece.",
+    "pratica": "Pense em alguém da família que anda irritadiço e faça hoje um gesto simples para abastecer o tanque dele, sem cobrar nada em troca.",
+    "pergunta": "De quem é o tanque que anda vazio ao meu redor, e o meu, como está?"
+   },
+   {
+    "titulo": "Depois da paixão, a escolha",
+    "fonte": "Gary Chapman — As 5 linguagens do amor",
+    "ideia": "Chapman explica que a fase de paixão intensa, em que tudo no outro parece perfeito, costuma durar em média uns dois anos. Quando ela passa, muitos casais concluem que o amor acabou, quando na verdade só terminou a parte que acontece sozinha. A partir daí, o amor passa a ser uma escolha diária de cuidar, com intenção e esforço. É como uma planta que nasceu espontaneamente no quintal: para continuar viva, agora precisa de rega. Saber disso tira o peso de achar que algo está errado quando a euforia diminui.",
+    "pratica": "Escolha hoje um gesto de cuidado que você fazia no começo da relação e que foi abandonado, e repita-o.",
+    "pergunta": "Estou esperando sentir para agir, ou estou disposto a agir para voltar a sentir?"
+   },
+   {
+    "titulo": "Os quatro cavaleiros",
+    "fonte": "John Gottman — Sete princípios para o casamento dar certo",
+    "ideia": "Gottman observou milhares de casais e identificou quatro comportamentos que, quando viram hábito, anunciam o fim da relação: crítica, que ataca a pessoa em vez do problema; desprezo, que aparece em sarcasmo e revirar de olhos; defensividade, que nunca assume parte alguma; e obstrução, que é se fechar como um muro. O desprezo é o mais destrutivo de todos. Dizer você nunca pensa em ninguém é crítica; dizer fiquei chateado porque não avisou do atraso é queixa. Reconhecer esses cavaleiros já é meio caminho para mandá-los embora.",
+    "pratica": "Na próxima discussão, preste atenção em qual dos quatro cavaleiros aparece em você primeiro, sem julgar, só para conhecê-lo.",
+    "pergunta": "Qual desses quatro comportamentos é mais frequente em mim quando estou magoado?"
+   },
+   {
+    "titulo": "Comece a conversa com suavidade",
+    "fonte": "John Gottman — Sete princípios para o casamento dar certo",
+    "ideia": "Gottman mostrou que o jeito como uma conversa difícil começa costuma determinar como ela termina. Um início áspero, cheio de acusação, quase sempre leva a uma discussão ruim. Um início suave fala de si e do que sente, descreve a situação sem rotular a pessoa e faz um pedido claro. Compare você é um egoísta que só pensa no celular com eu me sinto sozinha no jantar quando a gente fica no telefone; podemos deixar os aparelhos longe da mesa? O assunto é o mesmo, mas a segunda frase convida o outro a ajudar, não a se defender.",
+    "pratica": "Antes de levantar um assunto delicado hoje, escreva a primeira frase começando por eu sinto e terminando com um pedido.",
+    "pergunta": "Como costumam ser as primeiras palavras que eu uso quando estou incomodado?"
+   },
+   {
+    "titulo": "Responda aos pequenos chamados",
+    "fonte": "John Gottman — Sete princípios para o casamento dar certo",
+    "ideia": "Gottman percebeu que a relação é construída em momentos minúsculos, que ele chama de pedidos de conexão: um comentário sobre um pássaro na janela, uma notícia lida em voz alta, um suspiro. Em cada um, o outro pode se voltar, responder com interesse, ou se afastar, ignorando. Casais que duraram se voltavam um para o outro na grande maioria das vezes. Isso vale para amizades: quando um amigo manda a foto de um prato que cozinhou, ele não quer avaliação culinária, quer companhia. Um olha que bonito pode ser o tijolo do dia.",
+    "pratica": "Hoje, sempre que alguém próximo fizer um comentário pequeno, pare um segundo e responda com interesse genuíno.",
+    "pergunta": "Que chamados das pessoas que amo eu tenho deixado passar sem resposta?"
+   },
+   {
+    "titulo": "Conheça o mapa do outro",
+    "fonte": "John Gottman — Sete princípios para o casamento dar certo",
+    "ideia": "Gottman chama de mapas do amor o conhecimento detalhado que temos do mundo interior do outro: seus medos atuais, sonhos, preocupações do trabalho, o nome do colega que o irrita. Casais com mapas ricos atravessam crises melhor, porque cada um sabe onde o outro está. O problema é que as pessoas mudam e o mapa envelhece. Você pode conhecer o sabor de sorvete preferido do seu marido em 2010 e não fazer ideia do que tira o sono dele hoje. Atualizar esse mapa exige perguntas abertas e curiosidade sincera, como se fosse um primeiro encontro.",
+    "pratica": "Faça hoje a alguém próximo uma pergunta aberta sobre algo que o preocupa ou anima neste momento, e apenas escute.",
+    "pergunta": "Eu saberia dizer qual é o maior sonho e o maior medo atual da pessoa que mais amo?"
+   },
+   {
+    "titulo": "A arte de consertar",
+    "fonte": "John Gottman — Sete princípios para o casamento dar certo",
+    "ideia": "Todo casal briga; a diferença entre relações que duram e as que não duram está nas tentativas de reparo, pequenos gestos que freiam a escalada no meio da discussão. Pode ser uma piada, um toque na mão, um espera, eu me expressei mal, ou um vamos fazer uma pausa? Gottman mostrou que o essencial é que o outro aceite a tentativa, em vez de usá-la para continuar a briga. Entre amigos e irmãos funciona do mesmo jeito: quem aprende a oferecer e aceitar reparos não precisa vencer discussões para manter a relação.",
+    "pratica": "Combine com a pessoa amada uma frase ou gesto que signifique vamos baixar a temperatura, para usar na próxima discussão.",
+    "pergunta": "Quando alguém tenta fazer as pazes comigo no meio de uma briga, eu aceito ou continuo atacando?"
+   },
+   {
+    "titulo": "Problemas que não se resolvem",
+    "fonte": "John Gottman — Sete princípios para o casamento dar certo",
+    "ideia": "Uma descoberta surpreendente de Gottman é que a maior parte dos conflitos de um casal é perpétua: nasce de diferenças de personalidade ou de valores e nunca será resolvida de vez. Um é organizado, o outro é bagunceiro; um gosta de economizar, o outro de aproveitar. Casais felizes não eliminam essas diferenças; aprendem a conversar sobre elas com humor e respeito, como se fala de uma dor nas costas antiga. O que adoece a relação não é ter o problema, é ficar travado nele, repetindo a mesma briga sem nunca ouvir o sonho por trás da posição do outro.",
+    "pratica": "Escolha uma briga repetida da sua relação e pergunte ao outro, com calma, o que aquilo significa para ele no fundo.",
+    "pergunta": "Que diferença eu venho tentando eliminar quando talvez precise aprender a conviver com ela?"
+   },
+   {
+    "titulo": "Deixe-se influenciar por quem ama",
+    "fonte": "John Gottman — Sete princípios para o casamento dar certo",
+    "ideia": "Gottman observou que relações estáveis têm parceiros dispostos a aceitar a influência um do outro, ou seja, a levar a sério a opinião do outro e, às vezes, mudar de ideia por causa dela. Quando um dos dois trata toda sugestão como ameaça ao seu poder, o outro desiste de falar e a relação esfria. Aceitar influência não é ceder em tudo; é dizer você tem razão nisso, vamos fazer do seu jeito, com sinceridade. Um marido que muda a rota da viagem porque a esposa ponderou sobre o cansaço das crianças fortalece algo maior que o roteiro.",
+    "pratica": "Hoje, adote uma sugestão de alguém próximo que você normalmente rejeitaria por teimosia, e diga a ele que fez isso.",
+    "pergunta": "Quando foi a última vez que mudei de ideia por causa de alguém que amo?"
+   },
+   {
+    "titulo": "Por que escolhemos quem escolhemos",
+    "fonte": "Harville Hendrix — Todo o amor do mundo",
+    "ideia": "Hendrix, criador da terapia Imago, propõe que nos apaixonamos por pessoas que, sem percebermos, lembram traços de quem cuidou de nós na infância, inclusive os que nos feriram. É como se uma parte de nós buscasse uma segunda chance de curar uma ferida antiga. Por isso as brigas do casal costumam tocar em dores muito antigas: a esposa que se desespera quando o marido se cala talvez esteja revivendo o silêncio de um pai distante. Entender isso transforma o conflito de ataque pessoal em oportunidade de cura para os dois.",
+    "pratica": "Na próxima vez que uma reação sua parecer desproporcional, pergunte-se a quem da sua infância aquela situação lembra.",
+    "pergunta": "Que ferida antiga minha costuma ser tocada nas brigas com quem amo?"
+   },
+   {
+    "titulo": "Espelhar, validar, sentir junto",
+    "fonte": "Harville Hendrix — Todo o amor do mundo",
+    "ideia": "Hendrix propõe um diálogo estruturado em três passos. Primeiro, espelhar: repetir com as próprias palavras o que o outro disse e perguntar se entendeu bem. Depois, validar: mostrar que aquilo faz sentido do ponto de vista dele, mesmo que você veja diferente. Por fim, ter empatia: imaginar e nomear o que ele deve estar sentindo. Parece artificial no começo, mas desacelera a conversa e faz o outro se sentir ouvido de verdade. Funciona muito bem com irmãos e pais, quando discussões antigas sempre terminam do mesmo jeito.",
+    "pratica": "Numa conversa difícil hoje, antes de responder, diga deixa eu ver se entendi e repita o que ouviu.",
+    "pergunta": "Quando alguém desabafa comigo, ele sai se sentindo compreendido ou corrigido?"
+   },
+   {
+    "titulo": "A criança sombra nas brigas",
+    "fonte": "Stefanie Stahl — Acolhendo sua criança interior",
+    "ideia": "Stahl descreve uma criança sombra dentro de cada adulto, formada pelas crenças dolorosas da infância, como eu não sou suficiente ou eu sempre sou deixado de lado. Quando algo no presente toca essa crença, reagimos com uma força que não combina com o tamanho do fato. Uma amiga que esquece seu aniversário vira prova de que ninguém se importa. Stahl sugere identificar essas crenças e responder a elas como um adulto gentil responderia a uma criança assustada, separando o que está acontecendo agora do que foi vivido lá atrás.",
+    "pratica": "Quando sentir uma mágoa forte hoje, escreva a frase que sua criança sombra está dizendo e responda a ela como um adulto acolhedor.",
+    "pergunta": "Qual crença antiga sobre mim mesmo costuma ser despertada nas minhas relações?"
+   },
+   {
+    "titulo": "Agradar demais também afasta",
+    "fonte": "Stefanie Stahl — Acolhendo sua criança interior",
+    "ideia": "Stahl mostra que, para se proteger das dores da criança sombra, criamos estratégias de proteção: alguns buscam perfeição, outros se fecham, outros tentam agradar a todos. A pessoa que nunca diz não, que topa todos os favores da família e engole os incômodos, parece fácil de conviver, mas vai acumulando ressentimento e, um dia, explode ou se afasta. Relações saudáveis precisam de pessoas inteiras, com limites. Dizer com carinho desta vez não vou poder ajudar é, muitas vezes, mais honesto e mais amoroso do que um sim contrariado.",
+    "pratica": "Identifique um pedido que você vai atender hoje só por medo de desagradar e experimente recusá-lo com gentileza.",
+    "pergunta": "Que estratégia de proteção eu uso para não sentir rejeição?"
+   },
+   {
+    "titulo": "Amor inteligente, não só emoção",
+    "fonte": "Renato e Cristiane Cardoso — Casamento blindado",
+    "ideia": "Renato e Cristiane Cardoso insistem que um casamento sólido não pode ser guiado apenas pelas emoções do momento, porque elas mudam como o tempo. Eles propõem um amor inteligente, em que a razão orienta as atitudes mesmo quando a vontade é revidar ou se fechar. Na prática, é escolher não responder aquela mensagem atravessada no calor da raiva, e voltar ao assunto quando os dois estiverem calmos. Quem decide com a cabeça fria protege a relação de palavras que, depois, não se consegue desdizer.",
+    "pratica": "Se hoje algo irritar você no relacionamento, espere pelo menos uma hora antes de responder e decida o que dizer pensando no que quer construir.",
+    "pergunta": "Quantas das minhas reações recentes eu teria mudado se tivesse esperado esfriar?"
+   },
+   {
+    "titulo": "Atenção é o primeiro presente",
+    "fonte": "David Richo — How to Be an Adult in Relationships",
+    "ideia": "Richo resume o que todo ser humano precisa receber para se sentir amado em cinco As: atenção, aceitação, apreciação, afeição e permissão para ser quem é. A atenção vem primeiro e é a mais simples de esquecer. Atenção plena é estar com o outro sem estar ao mesmo tempo no celular, na lista de tarefas ou preparando a resposta. Um amigo que conta uma decepção no trabalho percebe imediatamente se você está presente ou só fazendo hum hum. Sem atenção, os outros As nem chegam a acontecer.",
+    "pratica": "Escolha uma conversa hoje para dar atenção total: celular longe, olhos no outro e nenhuma interrupção.",
+    "pergunta": "Das pessoas que amo, quem tem recebido só a minha atenção dividida?"
+   },
+   {
+    "titulo": "Deixar o outro ser quem é",
+    "fonte": "David Richo — How to Be an Adult in Relationships",
+    "ideia": "Entre os cinco As de Richo, aceitação e permissão andam juntas. Aceitar é receber o outro como ele é, não como projeto de reforma. Permitir é dar liberdade para que ele viva suas escolhas, amizades e ritmos, sem controle disfarçado de cuidado. Pense numa irmã que vive tentando convencer a outra a mudar de emprego, de cabelo e de namorado. Por mais que haja amor, a mensagem que chega é você do jeito que é não basta. Amor maduro confia que o outro é adulto e tem o direito de seguir o próprio caminho.",
+    "pratica": "Observe hoje um impulso de corrigir ou controlar alguém próximo e, em vez disso, diga algo que mostre aceitação.",
+    "pergunta": "Que pessoa querida eu ainda trato como alguém que precisa ser consertado?"
+   },
+   {
+    "titulo": "Conta bancária emocional",
+    "fonte": "Stephen Covey — Os 7 hábitos das pessoas altamente eficazes",
+    "ideia": "Covey compara a confiança numa relação a uma conta bancária. Cada gentileza, promessa cumprida, desculpa sincera e escuta atenta é um depósito. Cada grosseria, promessa quebrada ou fofoca é uma retirada. Quando a conta está alta, um deslize é perdoado com facilidade; quando está no vermelho, até um comentário neutro é recebido como ataque. Um pai que vive prometendo ir ao jogo do filho e nunca vai está sacando todo mês. Vale para cunhados, amigos e colegas: a qualidade da conversa difícil depende do saldo acumulado antes dela.",
+    "pratica": "Faça hoje um depósito deliberado na relação com alguém com quem o saldo anda baixo: cumpra uma pequena promessa ou peça desculpas.",
+    "pergunta": "Em qual relação importante minha conta está no vermelho?"
+   },
+   {
+    "titulo": "Primeiro compreender, depois falar",
+    "fonte": "Stephen Covey — Os 7 hábitos das pessoas altamente eficazes",
+    "ideia": "O quinto hábito de Covey é procurar primeiro compreender, depois ser compreendido. A maioria de nós escuta com a intenção de responder, filtrando tudo pela própria experiência e já preparando conselho. Covey propõe a escuta empática, que busca entender o mundo como o outro o vê, antes de qualquer opinião. Quando um amigo diz que está pensando em largar a faculdade, o impulso é listar os motivos para não fazer isso. Escutar primeiro pode revelar que o problema real é uma depressão escondida, e não a faculdade.",
+    "pratica": "Na próxima vez que alguém trouxer um problema, segure o conselho e faça apenas perguntas até ele dizer que se sentiu entendido.",
+    "pergunta": "Eu escuto para entender ou para responder?"
+   },
+   {
+    "titulo": "O amor também se aprende",
+    "fonte": "Carol Dweck — Mindset",
+    "ideia": "Dweck mostra que a mentalidade fixa também invade o amor. Quem a tem acredita que, se a relação é certa, tudo deve fluir sem esforço, e que qualquer conflito prova que o par está errado ou que alguém tem um defeito irreparável. Já quem tem mentalidade de crescimento entende que as habilidades de conviver, conversar e resolver problemas se desenvolvem com prática. Um casal que discute sobre dinheiro pela primeira vez pode concluir que não combina ou pode concluir que ainda não aprendeu a conversar sobre isso. A segunda conclusão abre caminho.",
+    "pratica": "Diante de uma dificuldade atual numa relação, troque a frase nós não combinamos por nós ainda não aprendemos a lidar com isso.",
+    "pergunta": "Que dificuldade eu tenho tratado como defeito permanente quando poderia ser algo a aprender?"
+   },
+   {
+    "titulo": "O pacto do aconchego",
+    "fonte": "Jessica Alexander e Iben Sandahl — Crianças dinamarquesas",
+    "ideia": "Os dinamarqueses chamam de hygge o clima de aconchego e união em que as pessoas se sentem à vontade juntas. Alexander e Sandahl descrevem como as famílias combinam, nesses momentos, deixar de lado reclamações, competições e assuntos que dividem, e todos colaboram para o encontro dar certo. Pense no almoço de domingo que sempre vira debate político ou cobrança sobre a vida de alguém. Um acordo simples, de que aquele tempo é para estar juntos e não para resolver pendências, pode transformar a reunião da família num lugar de descanso.",
+    "pratica": "Proponha para o próximo encontro de família ou amigos um acordo leve: naquele tempo, nada de reclamações nem temas que dividem.",
+    "pergunta": "Os encontros com as pessoas que amo têm sido descanso ou campo de batalha?"
+   }
+  ]
+ },
+ {
+  "area_id": "filhos",
+  "area_nome": "Educação dos Filhos",
+  "licoes": [
+   {
+    "titulo": "Conectar antes de corrigir",
+    "fonte": "Daniel Siegel e Tina Payne Bryson — O cérebro da criança",
+    "ideia": "Siegel e Bryson explicam que, durante uma birra, o lado emocional do cérebro da criança está no comando, e argumentos lógicos simplesmente não chegam. Por isso propõem conectar e redirecionar: primeiro acolher a emoção, com um abraço, um tom calmo e palavras como eu sei que você queria muito; só depois, já mais calma, a criança consegue ouvir sobre regras e alternativas. Imagine um menino de quatro anos chorando porque o irmão pegou o brinquedo. Abaixar à altura dele e reconhecer a raiva funciona muito melhor do que um sermão sobre dividir.",
+    "pratica": "Na próxima explosão do seu filho, fique na altura dos olhos dele e nomeie o que ele sente antes de dizer qualquer regra.",
+    "pergunta": "Quando meu filho está fora de si, eu tento acalmá-lo ou convencê-lo?"
+   },
+   {
+    "titulo": "Nomear para acalmar",
+    "fonte": "Daniel Siegel e Tina Payne Bryson — O cérebro da criança",
+    "ideia": "Siegel e Bryson ensinam que contar em palavras o que aconteceu ajuda a criança a organizar emoções fortes. Quando ela transforma um susto em história, com começo, meio e fim, o lado que pensa ajuda a acalmar o lado que sente. Uma menina de seis anos que caiu da bicicleta e ficou com medo de voltar a pedalar pode ser convidada a contar o que viu, o que sentiu e o que aconteceu depois. Repetir essa história algumas vezes, com calma, costuma diminuir o medo, em vez de evitar o assunto como se nada tivesse acontecido.",
+    "pratica": "Se seu filho viveu algo assustador recentemente, peça que ele conte a história para você, ajudando com perguntas simples.",
+    "pergunta": "Eu tenho ajudado meu filho a contar suas experiências difíceis ou mudo logo de assunto?"
+   },
+   {
+    "titulo": "Desafie o andar de cima",
+    "fonte": "Daniel Siegel e Tina Payne Bryson — O cérebro da criança",
+    "ideia": "Os autores comparam o cérebro a uma casa de dois andares: embaixo, as reações rápidas e emocionais; em cima, ainda em construção até a vida adulta, o planejamento, a empatia e o autocontrole. Diante de um conflito, os pais podem provocar o andar de baixo, com ameaças e gritos, ou convidar o andar de cima a trabalhar. Quando um filho de nove anos se recusa a fazer a lição, em vez de faça agora ou fica sem videogame, experimente perguntar o que ele acha que ajudaria a terminar mais rápido. Pensar junto fortalece justamente a parte que precisa crescer.",
+    "pratica": "Diante da próxima recusa do seu filho, troque a ordem por uma pergunta que o convide a propor uma solução.",
+    "pergunta": "Minhas reações costumam acender o andar de baixo ou chamar o andar de cima do meu filho?"
+   },
+   {
+    "titulo": "Treinador das emoções",
+    "fonte": "John Gottman — Inteligência emocional e a arte de educar nossos filhos",
+    "ideia": "Gottman descreve pais que funcionam como treinadores emocionais. Em vez de ignorar ou punir a tristeza e a raiva, eles percebem a emoção, enxergam nela uma oportunidade de aproximação, escutam com empatia, ajudam a criança a dar nome ao que sente e, então, colocam limites e buscam soluções juntos. Um filho de oito anos que chora porque não foi chamado para a festa de um colega não precisa ouvir que isso é bobagem. Precisa ouvir que deve ter doído, e depois pensar com você no que fazer com esse sentimento.",
+    "pratica": "Quando seu filho expressar uma emoção difícil hoje, diga em voz alta o nome do que ele parece sentir e pergunte se você acertou.",
+    "pergunta": "Que emoções do meu filho eu costumo minimizar porque me deixam desconfortável?"
+   },
+   {
+    "titulo": "Limite também é amor",
+    "fonte": "Içami Tiba — Quem ama educa!",
+    "ideia": "Tiba insistia que amar um filho não é atender todos os seus desejos, mas prepará-lo para a vida, e isso inclui ouvir não. Pais que evitam frustrar os filhos para não perder o carinho deles acabam criando jovens que não toleram regras nem contrariedades. Um adolescente que pode chegar a qualquer hora e nunca enfrenta consequência não está sendo amado com mais intensidade; está sendo deixado sozinho com decisões grandes demais. Um limite firme, explicado com calma e mantido com coerência, comunica algo precioso: eu me importo com o que acontece com você.",
+    "pratica": "Escolha um combinado que vem sendo quebrado em casa e reafirme-o hoje com calma, explicando a consequência e cumprindo-a se necessário.",
+    "pergunta": "Que não eu tenho evitado dizer ao meu filho por medo de ele se afastar?"
+   },
+   {
+    "titulo": "Não faça o que ele já pode",
+    "fonte": "Içami Tiba — Quem ama educa!",
+    "ideia": "Tiba alertava para o risco de pais que fazem pelos filhos o que eles já conseguem fazer sozinhos: arrumar a mochila, lembrar do trabalho escolar, resolver a briga com o professor. Isso parece cuidado, mas rouba da criança a chance de se tornar responsável e competente. Uma criança de sete anos pode guardar os brinquedos; um adolescente de catorze pode preparar o próprio lanche e cuidar da roupa que vai usar. Quando os pais assumem tudo, o filho aprende que alguém sempre vai resolver por ele, e o mundo lá fora não funciona assim.",
+    "pratica": "Identifique uma tarefa que você ainda faz pelo seu filho e que ele já tem idade para fazer, e passe-a para ele a partir de hoje.",
+    "pergunta": "O que eu faço pelo meu filho mais para me sentir útil do que para ajudá-lo a crescer?"
+   },
+   {
+    "titulo": "Moldura firme, liberdade dentro",
+    "fonte": "Pamela Druckerman — Crianças francesas não fazem manha",
+    "ideia": "Druckerman, uma americana criando filhos em Paris, notou que os pais franceses usam a ideia de cadre, que significa moldura. Algumas regras são inegociáveis e muito claras, como hora de dormir, sentar à mesa e não bater; dentro dessa moldura, porém, a criança tem bastante liberdade para escolher, explorar e brincar. A firmeza não está em tudo, mas no pouco que realmente importa. Isso evita o cansaço de negociar cada detalhe do dia e dá à criança segurança, porque ela sabe onde estão as bordas.",
+    "pratica": "Escolha as três regras da sua casa que são realmente inegociáveis e, nas demais situações de hoje, ofereça escolhas ao seu filho.",
+    "pergunta": "Eu sou firme no que importa ou fico brigando por tudo e cedendo no essencial?"
+   },
+   {
+    "titulo": "A pequena pausa",
+    "fonte": "Pamela Druckerman — Crianças francesas não fazem manha",
+    "ideia": "Druckerman descreve la pause, hábito de muitas mães francesas de esperar alguns minutos antes de correr ao berço quando o bebê acorda à noite. A ideia é que bebês se mexem e resmungam entre um ciclo de sono e outro, e, se forem pegados imediatamente, podem não aprender a voltar a dormir sozinhos. Não se trata de deixar chorar sem limite, mas de observar antes de intervir. A mesma lógica serve de dia: dar um momento para a criança pequena tentar resolver uma frustração antes de os pais entrarem em cena.",
+    "pratica": "Na próxima vez que seu filho pequeno resmungar ou se frustrar, espere alguns instantes observando antes de intervir.",
+    "pergunta": "Eu intervenho para ajudar meu filho ou para aliviar a minha própria ansiedade?"
+   },
+   {
+    "titulo": "Aprender a esperar",
+    "fonte": "Pamela Druckerman — Crianças francesas não fazem manha",
+    "ideia": "Druckerman percebeu que as crianças francesas ouvem com frequência um espera, e que isso é tratado como aprendizado, não como crueldade. Esperar a vez de falar, esperar o lanche no horário certo, esperar a mãe terminar a conversa com a vizinha. Saber lidar com a frustração da espera ajuda a criança a se entreter sozinha e a lidar melhor com o próprio desejo. Uma criança de cinco anos que interrompe toda conversa pode aprender a tocar no braço da mãe e aguardar um instante, sendo atendida logo em seguida.",
+    "pratica": "Combine com seu filho um sinal para quando ele quiser falar enquanto você conversa com alguém, e honre-o atendendo logo depois.",
+    "pergunta": "Eu tenho ensinado meu filho a esperar ou atendo tudo na hora para evitar choro?"
+   },
+   {
+    "titulo": "Deixe brincar livre",
+    "fonte": "Jessica Alexander e Iben Sandahl — Crianças dinamarquesas",
+    "ideia": "As autoras mostram que, na Dinamarca, o brincar livre, sem adulto conduzindo, é tratado como parte central da educação. Ao inventar regras, negociar com amigos, se frustrar e tentar de novo, a criança desenvolve autocontrole, criatividade e capacidade de lidar com desafios. Uma agenda lotada de cursos, por melhores que sejam, pode tirar justamente esse espaço. Uma tarde com caixas de papelão e nenhuma instrução pode ensinar mais sobre resolução de problemas do que uma aula estruturada. O papel dos pais é dar tempo e espaço, e resistir à vontade de dirigir.",
+    "pratica": "Reserve hoje um período sem telas e sem atividade dirigida para seu filho brincar do jeito que quiser.",
+    "pergunta": "Quanto tempo livre de verdade meu filho tem na semana?"
+   },
+   {
+    "titulo": "Mudar a moldura da história",
+    "fonte": "Jessica Alexander e Iben Sandahl — Crianças dinamarquesas",
+    "ideia": "Alexander e Sandahl descrevem o hábito dinamarquês de reenquadrar, ou seja, olhar para uma situação difícil por um ângulo mais realista e esperançoso, sem negar o problema. Em vez de rotular uma criança de preguiçosa ou chorona, os pais buscam descrever o comportamento e ver as qualidades por trás dele. Um filho teimoso também pode ser alguém persistente. Um jogo perdido pode virar uma pergunta sobre o que deu para aprender. As palavras que os pais repetem viram a voz interna da criança, e essa voz a acompanha pela vida inteira.",
+    "pratica": "Pense em um rótulo negativo que você usa para seu filho e encontre a qualidade que existe por trás desse comportamento.",
+    "pergunta": "Que rótulos eu repito tanto que meu filho pode estar acreditando neles?"
+   },
+   {
+    "titulo": "Firmeza calma, sem ultimatos",
+    "fonte": "Jessica Alexander e Iben Sandahl — Crianças dinamarquesas",
+    "ideia": "Segundo as autoras, os pais dinamarqueses evitam ultimatos e lutas de poder, como ou você come agora ou vai ficar de castigo a semana inteira. A ideia é que a criança raramente se comporta mal porque é má; quase sempre há uma necessidade, um cansaço ou uma dificuldade por trás. Ameaças grandes geram medo ou revolta, mas não ensinam. Isso não significa ausência de limites; significa firmeza calma, sem gritos nem humilhação. Um adulto que se mantém sereno diante da birra ensina mais sobre controle emocional do que qualquer castigo exagerado.",
+    "pratica": "Na próxima situação tensa com seu filho, substitua a ameaça por uma frase calma que diga o limite e ofereça uma saída.",
+    "pergunta": "Quantas ameaças eu fiz esta semana que eu nem pretendia cumprir?"
+   },
+   {
+    "titulo": "Elogie o esforço, não o talento",
+    "fonte": "Carol Dweck — Mindset",
+    "ideia": "Dweck pesquisou o efeito dos elogios e descobriu que dizer a uma criança que ela é muito inteligente pode prejudicá-la: ela passa a evitar desafios para não perder o rótulo. Já elogiar o processo, o esforço, a estratégia e a persistência a encoraja a enfrentar tarefas difíceis. Quando seu filho de dez anos tira nota alta em matemática, troque você é um gênio por gostei de ver como você refez os exercícios que tinha errado. A mensagem é que a capacidade cresce com o trabalho, e não que se nasce pronto ou não.",
+    "pratica": "Hoje, sempre que for elogiar seu filho, descreva o que ele fez em vez de qualificar quem ele é.",
+    "pergunta": "Meus elogios ensinam meu filho a buscar desafios ou a proteger uma imagem?"
+   },
+   {
+    "titulo": "Como você recebe a nota baixa",
+    "fonte": "Carol Dweck — Mindset",
+    "ideia": "Dweck mostra que as crianças aprendem a mentalidade dos pais observando como eles reagem a fracassos. Se toda nota baixa vira tragédia, a criança entende que errar revela incapacidade. Se os pais perguntam o que aconteceu, o que dá para mudar na forma de estudar e que ajuda seria útil, ela aprende que o erro é informação. Um adolescente que chega com uma prova ruim e encontra curiosidade em vez de sermão tende a trazer a próxima, em vez de esconder. A reação ao fracasso ensina mais do que qualquer discurso sobre esforço.",
+    "pratica": "Diante do próximo resultado ruim do seu filho, comece perguntando o que ele acha que aconteceu, antes de qualquer cobrança.",
+    "pergunta": "O que meu filho aprende sobre o erro ao ver como eu reajo aos meus e aos dele?"
+   },
+   {
+    "titulo": "Mesada como sala de aula",
+    "fonte": "Gustavo Cerbasi — Pais inteligentes enriquecem seus filhos",
+    "ideia": "Cerbasi defende que a mesada, quando bem usada, é uma das melhores ferramentas de educação financeira, porque deixa a criança decidir e errar com valores pequenos. Para funcionar, precisa ter valor e data combinados e regras claras sobre o que ela deve cobrir. Se um filho de nove anos gasta tudo em figurinhas na primeira semana e depois não tem para o lanche especial, a lição é muito mais forte do que qualquer explicação. O papel dos pais é resistir à tentação de socorrer, e depois conversar sobre o que ele faria diferente.",
+    "pratica": "Defina com seu filho um valor, uma data e uma responsabilidade clara para a mesada, e combine que não haverá adiantamentos.",
+    "pergunta": "Meu filho tem tido chances reais de errar com dinheiro enquanto o erro ainda é barato?"
+   },
+   {
+    "titulo": "Dinheiro na conversa da família",
+    "fonte": "Gustavo Cerbasi — Pais inteligentes enriquecem seus filhos",
+    "ideia": "Cerbasi incentiva os pais a incluir os filhos, de acordo com a idade, nas conversas sobre o orçamento da casa. Quando um adolescente pede um celular caro, em vez de um simples não temos dinheiro, os pais podem mostrar quanto a família ganha, quanto custa a casa e o que precisaria ser cortado para aquela compra. Ele passa a entender que dinheiro é feito de escolhas e de prioridades. Isso tira o assunto do campo do segredo ou da culpa e prepara o jovem para cuidar da própria vida financeira.",
+    "pratica": "Escolha uma decisão de gasto da família desta semana e explique ao seu filho as opções e por que vocês escolheram uma delas.",
+    "pergunta": "O que meu filho sabe, de verdade, sobre como o dinheiro funciona na nossa casa?"
+   },
+   {
+    "titulo": "A linguagem do amor do seu filho",
+    "fonte": "Gary Chapman e Ross Campbell — As cinco linguagens do amor das crianças",
+    "ideia": "Chapman e Campbell aplicam as cinco linguagens do amor às crianças e mostram que cada filho tende a se sentir amado de um jeito principal: palavras de carinho, tempo exclusivo, presentes, ajuda prática ou contato físico. Uma criança que vive puxando a mão dos pais para mostrar algo talvez esteja pedindo tempo de qualidade, não um brinquedo novo. Pais costumam amar todos os filhos do mesmo jeito e se surpreendem quando um deles parece carente. Observar como a criança demonstra carinho e do que ela mais reclama ajuda a descobrir sua língua.",
+    "pratica": "Passe hoje quinze minutos exclusivos com um dos seus filhos, fazendo algo que ele escolha, sem celular por perto.",
+    "pergunta": "Cada um dos meus filhos se sente amado do jeito que precisa, ou só do jeito que eu sei dar?"
+   },
+   {
+    "titulo": "Acordo ganha-ganha com o adolescente",
+    "fonte": "Stephen Covey — Os 7 hábitos das pessoas altamente eficazes",
+    "ideia": "O quarto hábito de Covey é pensar ganha-ganha: buscar acordos em que os dois lados saem satisfeitos, em vez de um vencer e o outro perder. Com adolescentes, isso é ouro. Na briga pelo celular, impor uma regra sem conversa gera desobediência escondida; ceder a tudo gera descontrole. Sentar juntos, entender o que o jovem valoriza, como falar com os amigos à noite, e o que os pais precisam, como sono e boas notas, permite um acordo que ele ajudou a construir e que, por isso, tem muito mais chance de cumprir.",
+    "pratica": "Escolha um ponto de atrito com seu filho adolescente e marque uma conversa para construir juntos um acordo por escrito.",
+    "pergunta": "Nas negociações com meu filho, alguém sempre sai perdendo?"
+   },
+   {
+    "titulo": "Casa onde dá para contar",
+    "fonte": "Amy Edmondson — A organização sem medo",
+    "ideia": "Edmondson estudou segurança psicológica em equipes de trabalho, mas a ideia cabe perfeitamente em casa: as pessoas só contam erros e problemas quando sentem que não serão humilhadas por isso. Um adolescente que vê os pais explodirem por qualquer deslize aprende a esconder, e o perigo é que ele também esconda o que é grave, como uma pressão de amigos ou uma mensagem estranha na internet. Pais que recebem as notícias ruins com calma, agradecem a sinceridade e só depois tratam das consequências se tornam o primeiro lugar a que o filho recorre.",
+    "pratica": "Diga ao seu filho, com todas as letras, que ele pode contar qualquer coisa e que você vai manter a calma, e cumpra isso na próxima vez.",
+    "pergunta": "Se meu filho estivesse em apuros hoje, eu seria a primeira pessoa que ele procuraria?"
+   },
+   {
+    "titulo": "Quando o filho toca sua ferida",
+    "fonte": "Stefanie Stahl — Acolhendo sua criança interior",
+    "ideia": "Stahl mostra como crenças dolorosas da nossa própria infância seguem vivas e são despertadas em situações do presente, e poucas pessoas as despertam tanto quanto os filhos. A mãe que cresceu ouvindo que era desobediente pode sentir uma raiva enorme diante de um simples não da filha de três anos, porque ali não reage só à criança, mas à própria história. Reconhecer quando a reação é desproporcional ajuda a separar o passado do presente. Cuidar da própria criança interior é uma das melhores coisas que os pais podem fazer pelos filhos.",
+    "pratica": "Quando seu filho despertar em você uma irritação muito forte hoje, respire e pergunte-se de onde vem esse tamanho de reação.",
+    "pergunta": "Que comportamento dos meus filhos mexe com alguma ferida da minha própria infância?"
+   },
+   {
+    "titulo": "Adolescência é potência",
+    "fonte": "Daniel Siegel — Cérebro adolescente",
+    "ideia": "Siegel combate a ideia de que a adolescência é só uma fase de hormônios descontrolados a ser suportada. Ele mostra que o cérebro passa por uma grande reorganização, que traz intensidade emocional, vontade de estar com os amigos, busca por novidade e muita criatividade. Essas características têm riscos, mas também são a força que leva o jovem a explorar o mundo e inventar novas soluções. Em vez de só reprimir um filho de quinze anos que quer tudo diferente, os pais podem ajudá-lo a canalizar essa energia para desafios que valham a pena, com segurança.",
+    "pratica": "Pergunte hoje ao seu filho adolescente o que ele gostaria de experimentar de novo e pense com ele em uma forma segura de fazer isso.",
+    "pergunta": "Eu vejo a adolescência do meu filho como problema a conter ou como força a orientar?"
+   }
+  ]
+ }
+]

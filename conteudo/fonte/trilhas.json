@@ -1,0 +1,686 @@
+[
+ {
+  "id": "lideranca-servidora",
+  "nome": "Liderança Servidora",
+  "subtitulo": "Lidere servindo: sua equipe cresce, confia e entrega mais.",
+  "para_quem": "Para quem coordena pessoas — com cargo de chefia ou não — e quer ser o líder que gostaria de ter tido.",
+  "fontes": "Robert Greenleaf, Simon Sinek, Amy Edmondson, Jim Collins",
+  "dias": [
+   {
+    "titulo": "O líder que você teve",
+    "acao": "Pegue papel e escreva o nome do melhor e do pior chefe que já teve, com três atitudes concretas de cada um. Circule a atitude do melhor chefe que você ainda não pratica.",
+    "por_que": "Greenleaf dizia que o líder servidor é, antes de tudo, alguém que escolhe servir; enxergar o contraste na própria história torna essa escolha concreta."
+   },
+   {
+    "titulo": "Meça seu tempo de escuta",
+    "acao": "Ao fim do expediente, anote quantos minutos você passou hoje ouvindo alguém da equipe sem dar ordem nem cobrar prazo. Só anote, sem se julgar.",
+    "por_que": "O que é medido fica visível: sem um ponto de partida, a impressão de que “eu escuto bastante” costuma ser otimista."
+   },
+   {
+    "titulo": "Escuta sem interromper",
+    "acao": "Nas conversas de trabalho de hoje, conte mentalmente até três depois que a pessoa terminar de falar, e só então responda. Repare quantas vezes você teria interrompido.",
+    "por_que": "Greenleaf colocava a escuta como o primeiro hábito do líder servidor, e perceber o impulso de interromper é o primeiro passo para controlá-lo."
+   },
+   {
+    "titulo": "Seu porquê em uma frase",
+    "acao": "Escreva em uma frase por que sua equipe existe — não o que ela faz, mas para quem e para quê. Exemplo: “Para que famílias tenham respostas com verdade e rapidez.”",
+    "por_que": "Sinek mostra que as pessoas se engajam mais com o propósito (o porquê) do que com as tarefas (o quê), e o líder precisa enxergá-lo primeiro."
+   },
+   {
+    "titulo": "Termômetro da segurança",
+    "acao": "Responda por escrito sobre a última reunião: quem falou, quem ficou calado e se alguém trouxe um problema ou um erro. Guarde a resposta para comparar no fim da trilha.",
+    "por_que": "Edmondson chama de segurança psicológica a confiança de que se pode falar, errar e discordar sem punição; o silêncio da equipe é o sintoma mais comum da falta dela."
+   },
+   {
+    "titulo": "Janela e espelho",
+    "acao": "Lembre o último resultado bom e o último problema da equipe. Escreva quem merece o crédito pelo primeiro e qual foi a sua parte no segundo.",
+    "por_que": "Collins observou que os líderes mais eficazes que estudou olham pela janela para dar crédito aos outros e para o espelho para assumir a responsabilidade."
+   },
+   {
+    "titulo": "Uma necessidade de cada um",
+    "acao": "Liste as pessoas que você lidera e, ao lado de cada nome, escreva uma coisa de que ela precisa para trabalhar melhor. Onde não souber, coloque um ponto de interrogação: essas são suas próximas conversas.",
+    "por_que": "Greenleaf propôs que o teste do líder servidor é se as pessoas lideradas crescem — e não dá para servir quem você não conhece."
+   },
+   {
+    "titulo": "Pergunte do que precisam",
+    "acao": "Escolha uma pessoa marcada com interrogação ontem e pergunte, em particular: “O que eu poderia fazer, ou deixar de fazer, para facilitar o seu trabalho?” Apenas ouça e anote.",
+    "por_que": "Perguntar em vez de presumir é a forma mais simples de servir; Greenleaf defendia escutar para entender antes de agir."
+   },
+   {
+    "titulo": "Admita que pode errar",
+    "acao": "Na próxima reunião, diga algo como: “Posso estar deixando passar alguma coisa, preciso que vocês me digam.” Depois, espere em silêncio pelo menos cinco segundos.",
+    "por_que": "Edmondson identificou que líderes que reconhecem a própria falibilidade abrem espaço para que a equipe fale o que vê."
+   },
+   {
+    "titulo": "Agradeça a notícia ruim",
+    "acao": "Na próxima vez que alguém trouxer um problema ou um erro, sua primeira frase será: “Obrigado(a) por me avisar.” Só depois pergunte o que aconteceu.",
+    "por_que": "Segundo Edmondson, a reação do líder à primeira má notícia ensina à equipe se vale a pena trazer a segunda."
+   },
+   {
+    "titulo": "Remova um obstáculo",
+    "acao": "Pegue uma das necessidades que você ouviu nos últimos dias e resolva-a hoje: um acesso, uma autorização, uma informação, um equipamento. Avise a pessoa quando estiver feito.",
+    "por_que": "Servir é agir sobre o que se ouviu; um obstáculo removido comunica mais respeito do que qualquer discurso."
+   },
+   {
+    "titulo": "Coma por último",
+    "acao": "Hoje, deixe a equipe ir antes de você em algo concreto: escolher primeiro a data da folga, falar primeiro na reunião, receber primeiro o recurso novo.",
+    "por_que": "Sinek usa a imagem dos oficiais dos fuzileiros navais americanos, que comem depois da tropa, para mostrar que a confiança nasce quando o líder põe o grupo antes do próprio conforto."
+   },
+   {
+    "titulo": "Elogio específico em público",
+    "acao": "Reconheça na frente do grupo uma contribuição concreta de alguém: o que a pessoa fez e que diferença isso fez. Evite o genérico “bom trabalho”.",
+    "por_que": "O elogio específico mostra que você realmente viu o esforço e reforça exatamente o comportamento que você quer ver repetido."
+   },
+   {
+    "titulo": "Comece pelo porquê",
+    "acao": "Ao passar a próxima tarefa, comece pelo motivo: para quem ela importa e o que acontece se não for bem feita. Só depois explique o que fazer e como.",
+    "por_que": "Sinek mostra que começar pelo porquê dá sentido à tarefa e aumenta o compromisso, porque a pessoa sabe a quem está servindo."
+   },
+   {
+    "titulo": "Pergunte antes de responder",
+    "acao": "Quando alguém trouxer um problema hoje, responda primeiro com uma pergunta: “O que você acha que devemos fazer?” Só complemente depois de ouvir.",
+    "por_que": "Greenleaf queria que as pessoas lideradas se tornassem mais autônomas; resolver tudo por elas gera dependência."
+   },
+   {
+    "titulo": "Fatos duros, com esperança",
+    "acao": "Escolha o problema mais incômodo da sua área e diga à equipe, com clareza, o tamanho real dele — e por que você confia que vão superá-lo. Termine com o primeiro passo.",
+    "por_que": "Collins descreve o “paradoxo de Stockdale”: encarar os fatos mais duros da realidade sem perder a certeza de que se vai vencer no final."
+   },
+   {
+    "titulo": "Fale do futuro de alguém",
+    "acao": "Marque 15 minutos com uma pessoa da equipe só para falar do desenvolvimento dela: onde quer estar em dois anos e que experiência a ajudaria. Saiam com um passo concreto.",
+    "por_que": "É o teste de Greenleaf na prática: as pessoas estão crescendo por causa da sua liderança?"
+   },
+   {
+    "titulo": "Delegue algo que você gosta",
+    "acao": "Entregue a alguém uma tarefa que você costuma segurar por gosto ou por controle, combinando só o resultado esperado e o prazo. Resista à vontade de corrigir o caminho.",
+    "por_que": "Collins observou que líderes que constroem algo duradouro preparam sucessores em vez de se tornarem indispensáveis."
+   },
+   {
+    "titulo": "Peça feedback sobre você",
+    "acao": "Pergunte a duas pessoas da equipe: “Uma coisa que eu deveria começar a fazer e uma que deveria parar?” Agradeça sem se defender e escolha uma delas para mudar.",
+    "por_que": "Edmondson mostra que o líder que pede e acolhe críticas dá o exemplo da segurança que espera da equipe."
+   },
+   {
+    "titulo": "Seu ritual de servir",
+    "acao": "Defina um gesto semanal fixo de liderança servidora — por exemplo, toda segunda, 10 minutos perguntando “do que você precisa?”. Coloque na agenda como compromisso recorrente.",
+    "por_que": "O que vira rotina deixa de depender de força de vontade; é assim que uma prática passa a fazer parte de quem você é."
+   },
+   {
+    "titulo": "Revise e passe adiante",
+    "acao": "Releia suas anotações, compare com o termômetro do dia 5 e escreva o que mudou na equipe e em você, terminando com a frase “Eu sou um líder que...”. Depois, ensine uma dessas práticas a outro líder.",
+    "por_que": "Ensinar consolida o aprendizado, e Greenleaf via o líder servidor completo como aquele que forma outros líderes servidores."
+   }
+  ]
+ },
+ {
+  "id": "cnv",
+  "nome": "Comunicação Não-Violenta",
+  "subtitulo": "Diga o que precisa sem ferir — e ouça sem se defender.",
+  "para_quem": "Para quem quer conversas difíceis menos explosivas no trabalho, no casamento ou com a família.",
+  "fontes": "Marshall Rosenberg, John Gottman, Chris Voss",
+  "dias": [
+   {
+    "titulo": "Suas frases-gatilho",
+    "acao": "Durante o dia, anote no celular toda vez que você disser ou pensar “você sempre...” ou “você nunca...”. À noite, conte quantas foram.",
+    "por_que": "Rosenberg mostrou que generalizações e rótulos soam como ataque, e quem se sente atacado passa a se defender em vez de ouvir."
+   },
+   {
+    "titulo": "Fato ou julgamento?",
+    "acao": "Pegue três reclamações que você tem de alguém e reescreva cada uma como uma câmera filmaria: o que foi dito ou feito, e quando. “Ele é desleixado” vira “Ele entregou o relatório dois dias depois do prazo”.",
+    "por_que": "O primeiro passo da CNV de Rosenberg é separar observação de avaliação, porque fatos abrem a conversa e julgamentos a fecham."
+   },
+   {
+    "titulo": "Dê nome ao que sente",
+    "acao": "Três vezes hoje — de manhã, no almoço e à noite — pare e nomeie o que sente com uma palavra precisa: frustrado, ansioso, aliviado, magoado. Evite “bem” e “mal”.",
+    "por_que": "Rosenberg ensina que reconhecer o próprio sentimento com precisão é a ponte para descobrir o que você realmente precisa."
+   },
+   {
+    "titulo": "A necessidade por trás",
+    "acao": "Pegue um incômodo de hoje e complete: “Sinto ___ porque preciso de ___.” Exemplo: “Sinto irritação porque preciso de respeito ao meu tempo.”",
+    "por_que": "Para Rosenberg, todo sentimento aponta para uma necessidade atendida ou não — e é ela que precisamos comunicar, não a culpa do outro."
+   },
+   {
+    "titulo": "Os quatro cavaleiros",
+    "acao": "Conheça os quatro padrões que Gottman associou a relações em crise — crítica, desprezo, defensividade e muro de silêncio — e anote qual deles você mais usa. Seja honesto: só você vai ler.",
+    "por_que": "Gottman observou que esses quatro padrões preveem o desgaste das relações; reconhecer o seu é o que permite trocá-lo."
+   },
+   {
+    "titulo": "Repare no seu corpo",
+    "acao": "Na próxima discussão ou momento tenso, perceba onde o corpo reage: mandíbula, peito, mãos, voz. Depois, anote qual foi o primeiro sinal.",
+    "por_que": "Gottman mostrou que, quando o coração dispara, ficamos “inundados” e a capacidade de ouvir cai; conhecer seu sinal de alerta permite parar antes."
+   },
+   {
+    "titulo": "Pedido, não exigência",
+    "acao": "Transforme uma reclamação em um pedido concreto e possível: o quê, quando e como. Em vez de “Me ajuda mais”, diga “Você pode lavar a louça do jantar às terças e quintas?”.",
+    "por_que": "Rosenberg diferencia pedido de exigência: um pedido claro e positivo dá ao outro uma forma real de colaborar."
+   },
+   {
+    "titulo": "Os quatro passos inteiros",
+    "acao": "Use hoje, com alguém próximo, a frase completa: “Quando [fato], eu me sinto [sentimento], porque preciso de [necessidade]. Você poderia [pedido]?” Comece por um assunto pequeno.",
+    "por_que": "Praticar o modelo de Rosenberg em situações leves treina o cérebro para usá-lo quando o assunto pesar."
+   },
+   {
+    "titulo": "Começo suave",
+    "acao": "Antes de levantar um assunto delicado hoje, comece falando de você, não do outro, e inclua algo que você valoriza. Exemplo: “Eu gosto quando a gente janta junto; tenho sentido falta disso.”",
+    "por_que": "Gottman verificou que a forma como uma conversa começa costuma prever como ela vai terminar."
+   },
+   {
+    "titulo": "Espelhe as palavras",
+    "acao": "Numa conversa de hoje, repita em tom de pergunta as duas ou três últimas palavras importantes que a pessoa disse — “Prazo apertado?” — e espere. Ela tende a explicar mais.",
+    "por_que": "Voss, ex-negociador do FBI, usa o espelhamento porque faz o outro se sentir ouvido e continuar falando sem que você precise interrogá-lo."
+   },
+   {
+    "titulo": "Rotule a emoção do outro",
+    "acao": "Quando alguém estiver tenso, diga “Parece que você está [sentimento] com isso” e fique em silêncio. Evite o “eu entendo”.",
+    "por_que": "Voss chama isso de empatia tática: nomear em voz alta a emoção do outro tende a diminuir a intensidade dela."
+   },
+   {
+    "titulo": "Pergunte “como” e “o quê”",
+    "acao": "Troque o “Por que você fez isso?” por “O que aconteceu?” ou “Como a gente resolve isso?”. Use essas perguntas pelo menos duas vezes hoje.",
+    "por_que": "Voss mostra que perguntas abertas com “como” e “o quê” convidam à solução, enquanto “por quê” costuma soar como acusação."
+   },
+   {
+    "titulo": "Assuma uma parte",
+    "acao": "Na próxima crítica que receber, antes de explicar, reconheça a parte verdadeira: “Você tem razão, eu me atrasei.” Só então dê contexto, se ainda for preciso.",
+    "por_que": "Gottman aponta assumir a própria parcela de responsabilidade como o antídoto da defensividade."
+   },
+   {
+    "titulo": "Pausa de 20 minutos",
+    "acao": "Combine hoje com alguém próximo uma palavra-código para pausar discussões quentes: “Quando eu disser ‘pausa’, volto em 20 minutos.” Se usar, faça algo que acalme nesse tempo — não fique ensaiando argumentos.",
+    "por_que": "Gottman observou que o corpo leva cerca de 20 minutos para sair da inundação; continuar discutindo antes disso só piora."
+   },
+   {
+    "titulo": "Escuta empática completa",
+    "acao": "Ouça alguém desabafar por cinco minutos sem dar conselho, corrigir ou contar uma história sua. No final, resuma o que ouviu e pergunte: “Entendi certo?”",
+    "por_que": "Rosenberg descrevia a empatia como presença plena diante do que o outro vive, e é ela que costuma acalmar antes de qualquer solução."
+   },
+   {
+    "titulo": "Antecipe as acusações",
+    "acao": "Antes de uma conversa difícil, liste as piores coisas que o outro pode pensar de você e diga a principal logo no começo: “Você deve estar achando que eu não ligo para o seu trabalho.”",
+    "por_que": "Voss chama isso de auditoria de acusações: nomear antes o que o outro teme tira o peso dessas ideias antes que virem armas."
+   },
+   {
+    "titulo": "Ouça o “não” por inteiro",
+    "acao": "Quando alguém recusar um pedido seu hoje, pergunte com curiosidade: “O que te impede?” Procure a necessidade por trás da recusa.",
+    "por_que": "Para Rosenberg, todo “não” esconde um “sim” a outra necessidade — e descobri-la abre alternativas."
+   },
+   {
+    "titulo": "Empatia consigo mesmo",
+    "acao": "Pense num erro recente seu e reescreva a autocrítica em CNV: o que aconteceu, o que você sente, que necessidade ficou sem atender e o que vai pedir a si mesmo.",
+    "por_que": "Rosenberg aplicava a CNV também ao diálogo interno, porque quem se ataca por dentro tende a atacar por fora."
+   },
+   {
+    "titulo": "A conversa adiada",
+    "acao": "Escolha aquela conversa que você vem adiando e tenha-a hoje — ou marque dia e hora —, usando o começo suave e os quatro passos.",
+    "por_que": "A habilidade só se torna sua quando aguenta o peso de uma situação real."
+   },
+   {
+    "titulo": "Cinco para um",
+    "acao": "Hoje, para cada comentário crítico que fizer a alguém próximo, ofereça cinco gestos positivos: um agradecimento, uma pergunta interessada, um toque, um elogio, um sorriso.",
+    "por_que": "Gottman encontrou, nos casais estáveis, cerca de cinco interações positivas para cada negativa durante os conflitos."
+   },
+   {
+    "titulo": "Revise e ensine",
+    "acao": "Releia suas anotações e escreva como era uma discussão sua há 21 dias e como é hoje. Depois, ensine os quatro passos da CNV a alguém da família ou do trabalho, usando um exemplo seu.",
+    "por_que": "Explicar para outra pessoa obriga você a organizar o que aprendeu — e é assim que a prática vira parte de quem você é."
+   }
+  ]
+ },
+ {
+  "id": "habitos",
+  "nome": "1% Melhor por Dia",
+  "subtitulo": "Pequenas ações diárias que, somadas, constroem uma nova versão de você.",
+  "para_quem": "Para quem já tentou mudar na força de vontade e desistiu — e quer um método que caiba na vida real.",
+  "fontes": "James Clear, BJ Fogg, Greg McKeown",
+  "dias": [
+   {
+    "titulo": "Quem você quer ser",
+    "acao": "Complete por escrito: “Eu sou uma pessoa que...” com a identidade que deseja — “que cuida do corpo”, “que lê”, “que chega no horário”. Escolha só uma.",
+    "por_que": "Clear propõe que hábitos duram mais quando nascem da identidade (quem quero ser) e não apenas da meta (o que quero alcançar)."
+   },
+   {
+    "titulo": "Seu dia no papel",
+    "acao": "Liste seus hábitos de hoje, do acordar ao dormir, e marque cada um com + (ajuda), − (atrapalha) ou = (neutro).",
+    "por_que": "Clear sugere esse placar de hábitos porque muitos comportamentos são automáticos e só mudam depois que ficam visíveis."
+   },
+   {
+    "titulo": "Ache os gatilhos",
+    "acao": "Escolha um hábito marcado com − e anote o que acontece logo antes dele: hora, lugar, emoção, pessoa por perto.",
+    "por_que": "Clear e Fogg mostram que todo hábito tem um gatilho; mudar o gatilho é mais fácil do que vencer o impulso na hora."
+   },
+   {
+    "titulo": "O que é essencial",
+    "acao": "Liste as dez coisas que mais ocupam sua semana e circule as duas que realmente importam. Escreva uma que poderia sair ou diminuir.",
+    "por_que": "McKeown defende que se dedicar ao essencial exige escolher o que deixar de fora — e espaço livre é pré-requisito para um hábito novo."
+   },
+   {
+    "titulo": "A versão minúscula",
+    "acao": "Pegue o hábito ligado à sua identidade e encolha-o até caber em 30 segundos: uma flexão, uma linha lida, um copo de água. Escreva essa versão.",
+    "por_que": "Fogg mostrou que comportamentos muito pequenos exigem pouca motivação, por isso acontecem até nos dias ruins."
+   },
+   {
+    "titulo": "Escolha sua âncora",
+    "acao": "Escolha algo que você já faz todo dia sem falhar — escovar os dentes, passar o café — e escreva a receita: “Depois que eu ___, vou ___.”",
+    "por_que": "Fogg chama isso de âncora: um hábito que já existe funciona como lembrete natural para o novo."
+   },
+   {
+    "titulo": "Comemore de propósito",
+    "acao": "Escolha um gesto de comemoração que te dê uma sensação boa na hora — um “isso!”, um punho fechado, um sorriso. Treine-o três vezes hoje, logo depois de concluir qualquer pequena tarefa.",
+    "por_que": "Fogg defende que é a emoção positiva logo após a ação que grava o hábito no cérebro, e não só a repetição."
+   },
+   {
+    "titulo": "Primeiro dia da receita",
+    "acao": "Execute hoje a receita completa: âncora, versão minúscula e comemoração. Só isso — não faça mais do que o combinado.",
+    "por_que": "Agora o objetivo é dominar o ato de aparecer; Clear lembra que um hábito precisa existir antes de poder ser melhorado."
+   },
+   {
+    "titulo": "Deixe à vista",
+    "acao": "Prepare hoje à noite o ambiente para o hábito: o livro sobre o travesseiro, o tênis ao lado da cama, a garrafa de água na mesa de trabalho.",
+    "por_que": "Clear mostra que o ambiente costuma vencer a motivação, e deixar o gatilho óbvio é a primeira lei da mudança de comportamento."
+   },
+   {
+    "titulo": "Esconda a tentação",
+    "acao": "No hábito marcado com −, crie atrito: tire o aplicativo da tela inicial, deixe o celular carregando fora do quarto, guarde o doce no alto do armário.",
+    "por_que": "Clear inverte as leis para quebrar maus hábitos: torná-los invisíveis e difíceis reduz a chance de acontecerem."
+   },
+   {
+    "titulo": "Regra dos dois minutos",
+    "acao": "Se hoje o hábito parecer pesado, reduza-o a uma versão de dois minutos e faça só ela. “Correr” vira “calçar o tênis e sair pela porta”.",
+    "por_que": "Clear propõe que qualquer hábito pode começar em dois minutos; o que importa é não quebrar o padrão."
+   },
+   {
+    "titulo": "Junte com o que gosta",
+    "acao": "Associe o hábito novo a algo prazeroso: seu podcast favorito só durante a caminhada, o café especial só depois da leitura.",
+    "por_que": "Clear chama isso de agrupamento de tentações: tornar o hábito atraente aumenta a vontade de repeti-lo."
+   },
+   {
+    "titulo": "Marque o X",
+    "acao": "Desenhe ou imprima um calendário de 21 dias e marque um X a cada dia cumprido. Coloque-o onde você olha toda manhã.",
+    "por_que": "Clear recomenda o registro visual porque ver a sequência crescer é uma recompensa imediata e um lembrete ao mesmo tempo."
+   },
+   {
+    "titulo": "Nunca falhe duas vezes",
+    "acao": "Se você já pulou algum dia, hoje é o dia de voltar, mesmo na versão mínima. Se não pulou, escreva o que fará no dia em que falhar.",
+    "por_que": "Clear lembra que perder um dia é um acidente; perder dois é o começo de um novo hábito — o de desistir."
+   },
+   {
+    "titulo": "Diga não a uma coisa",
+    "acao": "Recuse hoje, com gentileza, um pedido ou compromisso que não é essencial: “Agora não consigo assumir isso com a qualidade que merece.”",
+    "por_que": "McKeown mostra que cada sim a algo secundário é um não ao que importa; proteger seu tempo é proteger seu hábito."
+   },
+   {
+    "titulo": "E se fosse fácil?",
+    "acao": "Pergunte sobre a parte mais chata do seu hábito: “Como isso poderia ser fácil?” Mude uma coisa — preparar na véspera, cortar um passo, trocar o horário.",
+    "por_que": "Em “Sem Esforço”, McKeown defende buscar o caminho mais leve para fazer o essencial, em vez de forçar."
+   },
+   {
+    "titulo": "Suba um degrau",
+    "acao": "Se a versão minúscula já está automática, aumente só um pouco: de uma página para duas, de cinco minutos para sete. Apenas um degrau.",
+    "por_que": "Clear cita a “regra de Cachinhos Dourados”: a motivação se mantém com desafios na medida certa, nem fáceis nem difíceis demais."
+   },
+   {
+    "titulo": "Conte para alguém",
+    "acao": "Conte a uma pessoa de confiança qual é o seu hábito e combine de mandar uma mensagem a ela em cada dia cumprido desta semana.",
+    "por_que": "Clear lembra que saber que alguém acompanha torna o custo de falhar mais visível — e o prazer de cumprir, maior."
+   },
+   {
+    "titulo": "Votos de identidade",
+    "acao": "Conte quantos X você já marcou e escreva: “Cada X foi um voto para eu ser alguém que ___.” Releia sua frase do dia 1.",
+    "por_que": "Clear descreve cada ação como um voto na pessoa que você quer ser; a soma dos votos muda a forma como você se enxerga."
+   },
+   {
+    "titulo": "Segundo hábito encaixado",
+    "acao": "Escolha um segundo hábito minúsculo e encaixe-o logo depois do primeiro: “Depois que eu ___, vou ___.” Comece hoje.",
+    "por_que": "Clear chama isso de empilhamento de hábitos: um comportamento já consolidado vira gatilho para o próximo."
+   },
+   {
+    "titulo": "Revise a jornada",
+    "acao": "Releia o calendário e as anotações e escreva o que mudou em 21 dias, o que ainda trava e sua frase de identidade atualizada. Depois, ensine a alguém a receita âncora + versão minúscula + comemoração.",
+    "por_que": "Clear recomenda revisões periódicas para manter os hábitos alinhados com quem você quer ser, e ensinar reforça o que você aprendeu."
+   }
+  ]
+ },
+ {
+  "id": "casamento",
+  "nome": "Amor com Intenção",
+  "subtitulo": "Reacenda a conexão do casal com gestos pequenos e diários.",
+  "para_quem": "Para casais que se amam, mas sentem que a rotina, o cansaço e as obrigações foram ocupando o espaço da relação.",
+  "fontes": "Gary Chapman, John Gottman, David Richo, Harville Hendrix",
+  "dias": [
+   {
+    "titulo": "Quanto você sabe?",
+    "acao": "Responda por escrito sobre seu par: qual a maior preocupação dele(a) hoje, o nome de um amigo próximo e um sonho que ainda não realizou. Marque o que você não souber.",
+    "por_que": "Gottman chama isso de mapa do amor: casais que conhecem o mundo interno um do outro atravessam melhor as crises."
+   },
+   {
+    "titulo": "Sua linguagem do amor",
+    "acao": "Lembre de um momento em que você se sentiu muito amado(a) e marque qual das cinco linguagens de Chapman estava presente: palavras de afirmação, tempo de qualidade, presentes, atos de serviço ou toque físico.",
+    "por_que": "Chapman observou que cada pessoa sente o amor com mais força numa linguagem — e tende a dar amor na sua própria, não na do outro."
+   },
+   {
+    "titulo": "A linguagem do outro",
+    "acao": "Lembre do que seu par mais reclama ou pede. A queixa costuma revelar a linguagem: “você nunca tem tempo” aponta para tempo de qualidade. Anote seu palpite.",
+    "por_que": "Chapman sugere que as queixas repetidas são pistas da linguagem principal de quem amamos."
+   },
+   {
+    "titulo": "Repare nos convites",
+    "acao": "Durante o dia, perceba cada vez que seu par te chama para conexão: comenta algo, mostra um vídeo, suspira, pede opinião. Conte quantos foram e como você respondeu.",
+    "por_que": "Gottman chama esses pequenos chamados de “convites”, e viu que os casais que permanecem juntos respondem a eles na grande maioria das vezes."
+   },
+   {
+    "titulo": "Os cinco As",
+    "acao": "Conheça os cinco “As” que Richo descreve como o que todos precisamos receber: atenção, aceitação, apreciação, afeto e permissão para ser quem somos. Marque qual você mais oferece e qual menos.",
+    "por_que": "Richo propõe que um adulto maduro na relação aprende a oferecer esses cinco As, e não só a esperá-los."
+   },
+   {
+    "titulo": "Qual ferida dói?",
+    "acao": "Pense no comportamento do seu par que mais te irrita e pergunte-se: isso lembra algo que vivi na infância? Escreva uma linha sobre isso, só para você.",
+    "por_que": "Hendrix, criador da terapia Imago, propõe que costumamos escolher parceiros que tocam feridas antigas — reconhecê-las tira um peso de cima do outro."
+   },
+   {
+    "titulo": "Liste o que admira",
+    "acao": "Escreva cinco qualidades do seu par e, ao lado de cada uma, um episódio real em que ela apareceu. Guarde a lista.",
+    "por_que": "Gottman aponta o cultivo do carinho e da admiração como antídoto contra o desprezo, o padrão que ele mais associou ao fim dos casamentos."
+   },
+   {
+    "titulo": "Diga uma admiração",
+    "acao": "Escolha um item da lista de ontem e diga ao seu par hoje, de forma específica: “Admiro como você ___ quando ___.”",
+    "por_que": "Apreciação dita em voz alta é um dos cinco As de Richo e alimenta o que Gottman chama de cultura de apreciação no casal."
+   },
+   {
+    "titulo": "Vire-se para o convite",
+    "acao": "Hoje, responda de verdade a cada convite de conexão do seu par: tire os olhos do celular, olhe, comente. Mesmo que seja por poucos segundos.",
+    "por_que": "Gottman mostra que é nessas respostas pequenas e repetidas que a confiança do casal é construída."
+   },
+   {
+    "titulo": "Ame na língua do outro",
+    "acao": "Faça hoje um gesto na linguagem do seu par, não na sua: um bilhete, 15 minutos de conversa sem tela, um café levado até ele(a), uma tarefa assumida, um abraço demorado.",
+    "por_que": "Chapman mostra que o amor só “chega” quando é expresso na linguagem que o outro entende."
+   },
+   {
+    "titulo": "Beijo de seis segundos",
+    "acao": "Na despedida da manhã ou no reencontro da noite, troque o beijo rápido por um de seis segundos.",
+    "por_que": "Gottman recomenda esse ritual porque seis segundos bastam para transformar um gesto automático num momento de conexão real."
+   },
+   {
+    "titulo": "Conversa do fim do dia",
+    "acao": "Reserve 20 minutos à noite para cada um contar o que pesou no dia, fora da relação. Quem escuta só apoia — “que difícil”, “estou do seu lado” —, sem dar conselho.",
+    "por_que": "Gottman chama isso de conversa para reduzir o estresse: o par vira aliado contra o mundo, e não mais um problema."
+   },
+   {
+    "titulo": "Diálogo de espelho",
+    "acao": "Num assunto pequeno, pratiquem o diálogo Imago: um fala; o outro repete (“O que ouvi foi... entendi certo?”), valida (“Faz sentido, porque...”) e mostra empatia (“Imagino que você se sinta...”). Depois, invertam.",
+    "por_que": "Hendrix desenvolveu esse diálogo para que cada um se sinta ouvido antes de qualquer resposta, o que desarma a defensividade."
+   },
+   {
+    "titulo": "Aceite uma influência",
+    "acao": "Hoje, ceda numa decisão pequena em que seu par tenha opinião — o restaurante, o horário, o jeito de fazer — e diga: “Boa ideia, vamos do seu jeito.”",
+    "por_que": "Gottman observou que as relações são mais estáveis quando os dois aceitam ser influenciados um pelo outro."
+   },
+   {
+    "titulo": "Pedido em vez de crítica",
+    "acao": "Transforme uma queixa antiga num pedido positivo, específico e possível: “Você pode me mandar uma mensagem quando for se atrasar mais de 30 minutos?”",
+    "por_que": "Hendrix propõe pedidos concretos de mudança de comportamento no lugar de críticas, porque eles mostram ao outro um caminho, não um defeito."
+   },
+   {
+    "titulo": "Um dia sem negatividade",
+    "acao": "Combine consigo mesmo(a): hoje, nenhum comentário sarcástico, crítica ou revirar de olhos para o seu par. Se escapar, peça desculpas na hora e repare.",
+    "por_que": "Hendrix e Helen LaKelly Hunt propõem a “zero negatividade” como base para que o casal volte a se sentir seguro."
+   },
+   {
+    "titulo": "Aceite o que não muda",
+    "acao": "Escolha uma característica do seu par que você tenta mudar há anos. Diga a si: “Isso faz parte de quem ele(a) é” e solte a cobrança por hoje.",
+    "por_que": "Gottman verificou que boa parte dos conflitos de casal não tem solução definitiva, e Richo inclui a aceitação entre os cinco As: conviver bem importa mais que vencer."
+   },
+   {
+    "titulo": "Encontro de 30 minutos",
+    "acao": "Marquem um encontro curto só a dois, sem filhos e sem celular: um café, uma volta no quarteirão. Façam um ao outro três perguntas abertas sobre sonhos e planos.",
+    "por_que": "Atualizar o mapa do amor de Gottman exige perguntas abertas e tempo de qualidade — justamente o que a rotina mais rouba."
+   },
+   {
+    "titulo": "Ritual do casal",
+    "acao": "Criem juntos um ritual semanal fixo de conexão — o café de sábado, a caminhada de domingo, dez minutos de conversa antes de dormir — e coloquem na agenda.",
+    "por_que": "Gottman fala em rituais de conexão porque o que é combinado e repetido resiste melhor à correria."
+   },
+   {
+    "titulo": "Reunião do casal",
+    "acao": "Façam 20 minutos de conversa sobre a semana: comecem pelo que cada um apreciou no outro, depois tratem de um único ponto a ajustar e terminem dizendo do que cada um precisa na próxima semana.",
+    "por_que": "Gottman recomenda uma conversa periódica sobre a relação para que pequenos incômodos não se acumulem."
+   },
+   {
+    "titulo": "Carta dos 21 dias",
+    "acao": "Escreva uma carta curta ao seu par contando o que você percebeu nesta jornada, o que admira nele(a) e o que quer continuar fazendo. Entregue hoje e combinem juntos qual prática fica para sempre.",
+    "por_que": "Fechar a jornada com apreciação e compromisso transforma gestos soltos em identidade do casal: “nós somos assim”."
+   }
+  ]
+ },
+ {
+  "id": "filhos",
+  "nome": "Parentalidade Consciente",
+  "subtitulo": "Mais conexão e menos grito, com limites que educam.",
+  "para_quem": "Para mães, pais e cuidadores que querem educar com firmeza e afeto, mesmo cansados e com pouco tempo.",
+  "fontes": "Daniel Siegel & Tina Payne Bryson, Içami Tiba, Pamela Druckerman, Carol Dweck",
+  "dias": [
+   {
+    "titulo": "Seus gatilhos",
+    "acao": "Anote em que momentos você mais perde a paciência com seu filho: hora do banho, lição de casa, ir embora do parque? Escreva os dois mais frequentes.",
+    "por_que": "Siegel ensina que perceber quando nossas próprias emoções sobem é o que permite responder em vez de reagir."
+   },
+   {
+    "titulo": "O cérebro na mão",
+    "acao": "Feche a mão com o polegar dobrado por dentro: os dedos por cima são a parte que pensa, o polegar é a parte emocional. Levante os dedos de repente — isso é “perder a cabeça”. Mostre a seu filho, se a idade permitir.",
+    "por_que": "Siegel criou esse modelo da mão para explicar que, sob estresse, o cérebro emocional assume o comando e a parte racional “sai do ar” — em adultos e crianças."
+   },
+   {
+    "titulo": "Andar de cima e de baixo",
+    "acao": "Observe hoje uma birra ou crise e anote: a criança estava no “andar de baixo” (emoção, impulso) ou no “de cima” (raciocínio)? O que aconteceu antes?",
+    "por_que": "Siegel e Bryson usam essa imagem para lembrar que o andar de cima do cérebro ainda está em construção e só amadurece por volta dos vinte e poucos anos."
+   },
+   {
+    "titulo": "Como você elogia?",
+    "acao": "Durante o dia, anote os elogios que faz ao seu filho. Quantos falam de ser “inteligente”, “lindo”, “o melhor”? Quantos falam de esforço ou de estratégia?",
+    "por_que": "Dweck mostrou que elogiar a inteligência tende a gerar medo de errar, enquanto elogiar esforço e processo favorece a mentalidade de crescimento."
+   },
+   {
+    "titulo": "Inventário de limites",
+    "acao": "Escreva as cinco regras inegociáveis da casa (segurança, respeito, horário de sono...) e cinco coisas em que a criança pode escolher. Se houver outro responsável, comparem as listas.",
+    "por_que": "Druckerman descreve o “cadre” francês — uma moldura firme com liberdade dentro dela —, e Tiba insistia que pai e mãe precisam falar a mesma língua."
+   },
+   {
+    "titulo": "Responsabilidade por idade",
+    "acao": "Liste uma tarefa doméstica que seu filho já tem idade para fazer sozinho e que hoje você faz por ele: arrumar a cama, pôr a mesa, guardar a mochila.",
+    "por_que": "Tiba defendia que a criança com responsabilidades reais em casa desenvolve autonomia e senso de pertencimento."
+   },
+   {
+    "titulo": "Os quatro S",
+    "acao": "Conheça os quatro S de Siegel e Bryson — a criança precisa se sentir segura, vista, acalmada e confiante no vínculo — e dê a si mesmo uma nota de 0 a 10 em cada um.",
+    "por_que": "Os autores mostram que um vínculo seguro depende menos de perfeição e mais de presença repetida."
+   },
+   {
+    "titulo": "Dez minutos dele",
+    "acao": "Dedique 10 minutos hoje a brincar do que seu filho escolher, sem celular, sem corrigir e sem ensinar. Você só acompanha.",
+    "por_que": "Siegel e Bryson mostram que se sentir visto pelos pais é uma das bases de uma criança segura."
+   },
+   {
+    "titulo": "Conecte, depois redirecione",
+    "acao": "Na próxima birra, antes de corrigir, abaixe-se na altura dos olhos, fale baixo e acolha: “Você está muito bravo porque queria ficar.” Só depois mantenha o limite.",
+    "por_que": "Siegel e Bryson mostram que a conexão acalma o cérebro emocional e reabre o caminho para a parte racional ouvir o limite."
+   },
+   {
+    "titulo": "Nomeie para acalmar",
+    "acao": "Quando seu filho estiver chateado, ajude-o a contar o que aconteceu e a dar nome ao que sente: “Você ficou com raiva? Ou ficou triste?”",
+    "por_que": "Siegel e Bryson chamam isso de “nomear para acalmar”: pôr palavras na emoção ajuda o cérebro a integrar sentimento e razão."
+   },
+   {
+    "titulo": "Elogie o processo",
+    "acao": "Hoje, troque “você é inteligente” por frases sobre esforço e estratégia — “Você tentou de vários jeitos até conseguir” — pelo menos três vezes.",
+    "por_que": "Dweck mostrou que esse tipo de elogio ensina que a capacidade cresce com a prática."
+   },
+   {
+    "titulo": "O poder do “ainda”",
+    "acao": "Quando seu filho disser “não consigo”, complete: “Você ainda não consegue.” Em seguida, pergunte qual seria o próximo passo.",
+    "por_que": "Dweck usa o “ainda” para mostrar que a dificuldade é parte do caminho, não uma sentença."
+   },
+   {
+    "titulo": "Ensine a esperar",
+    "acao": "Quando seu filho pedir algo que não é urgente, responda com calma: “Espere um pouquinho, já vou.” E cumpra em poucos minutos.",
+    "por_que": "Druckerman relata que pais franceses ensinam a esperar desde cedo, e essa paciência treinada ajuda a criança a lidar com a frustração."
+   },
+   {
+    "titulo": "Entregue a tarefa",
+    "acao": "Ensine hoje a tarefa que você listou no dia 6: façam juntos uma vez e combinem que, a partir de amanhã, ela é dele. Aceite que no começo saia imperfeita.",
+    "por_que": "Tiba lembrava que fazer pelo filho o que ele já consegue fazer o impede de crescer."
+   },
+   {
+    "titulo": "Pergunte do erro",
+    "acao": "No jantar, pergunte: “Qual foi um erro que você cometeu hoje e o que aprendeu com ele?” Conte também um erro seu.",
+    "por_que": "Dweck mostra que falar de erros com naturalidade ensina que errar faz parte de aprender — e o exemplo dos pais pesa mais que o discurso."
+   },
+   {
+    "titulo": "Repare depois do grito",
+    "acao": "Se você perder a paciência, volte em até uma hora, abaixe-se e diga: “Eu gritei e isso não foi certo. Eu estava cansado(a), mas a culpa não é sua.”",
+    "por_que": "Siegel e Bryson mostram que rupturas acontecem em toda família; o que constrói segurança é o reparo."
+   },
+   {
+    "titulo": "Limite firme, voz calma",
+    "acao": "Diante de um “não” que vai gerar choro, mantenha o limite sem levantar a voz e sem sermão: diga uma vez, com gentileza, e fique por perto.",
+    "por_que": "Druckerman e Tiba convergem aqui: autoridade vem da firmeza tranquila e coerente, não do volume da voz."
+   },
+   {
+    "titulo": "Mexa o corpo",
+    "acao": "Quando a criança estiver agitada ou travada, proponha movimento antes da conversa: pular dez vezes, apostar corrida até a porta, um abraço de urso bem apertado.",
+    "por_que": "Siegel e Bryson indicam que movimentar o corpo ajuda a criança a recuperar o equilíbrio emocional."
+   },
+   {
+    "titulo": "A melhor parte do dia",
+    "acao": "Na hora de dormir, pergunte: “Qual foi a melhor parte do seu dia?” e conte a sua. Repita amanhã e transforme isso em ritual.",
+    "por_que": "Siegel e Bryson recomendam ajudar a criança a recontar o que viveu, porque isso fortalece a memória e a integração do cérebro."
+   },
+   {
+    "titulo": "Acordo de família",
+    "acao": "Reúna a família por 15 minutos e combinem por escrito duas regras da casa e um momento bom que todos ganham quando elas são cumpridas, como um passeio ou um jogo juntos. Cada um assina ou desenha.",
+    "por_que": "Tiba defendia que regras claras e coerentes, vividas por todos, educam mais do que broncas pontuais."
+   },
+   {
+    "titulo": "Carta para seu filho",
+    "acao": "Escreva uma carta curta ao seu filho contando algo que você admira nele e o que aprendeu sobre ser pai ou mãe nestes 21 dias. Leia para ele (ou guarde para quando crescer) e escolha a prática que fica.",
+    "por_que": "Os filhos aprendem pelo vínculo que vivem, e consolidar o tipo de pai ou mãe que você escolheu ser é o que transforma práticas em legado."
+   }
+  ]
+ },
+ {
+  "id": "emocoes",
+  "nome": "Domínio Emocional",
+  "subtitulo": "Sinta tudo, sem ser governado por nada.",
+  "para_quem": "Para quem explode, trava ou se arrepende do que disse — e quer aprender a responder em vez de reagir.",
+  "fontes": "Daniel Goleman, neurociência (amígdala × córtex pré-frontal), estoicos (Epicteto, Marco Aurélio), Provérbios",
+  "dias": [
+   {
+    "titulo": "Mapa das explosões",
+    "acao": "Anote os três últimos momentos em que você perdeu o controle ou se arrependeu do que disse: onde, com quem, a que horas e como estava seu corpo.",
+    "por_que": "Goleman coloca o autoconhecimento como a base da inteligência emocional: não se regula o que não se percebe."
+   },
+   {
+    "titulo": "Seu cérebro em dois tempos",
+    "acao": "Entenda o mecanismo: a amígdala dispara o alarme em frações de segundo, e o córtex pré-frontal, que pondera, chega depois. Anote hoje um momento em que o alarme tocou antes do pensamento.",
+    "por_que": "Goleman chamou de “sequestro da amígdala” o momento em que a reação emocional atropela a razão."
+   },
+   {
+    "titulo": "Escala de 0 a 10",
+    "acao": "Em três horários fixos — ao acordar, no almoço e antes de dormir —, dê uma nota de 0 a 10 para sua tensão e anote.",
+    "por_que": "Medir dá ao córtex pré-frontal um dado concreto, e você passa a enxergar padrões em vez de ser pego de surpresa."
+   },
+   {
+    "titulo": "Sono e fome",
+    "acao": "Cruze seu mapa de explosões com sono e alimentação: você estava cansado(a) ou com fome naqueles momentos? Escreva o que encontrou.",
+    "por_que": "Estudos de neuroimagem mostram que uma noite mal dormida deixa a amígdala mais reativa e enfraquece o freio do córtex pré-frontal."
+   },
+   {
+    "titulo": "Depende de mim?",
+    "acao": "Liste as preocupações de hoje em duas colunas: “depende de mim” e “não depende de mim”. Para cada item da primeira coluna, escreva um passo possível.",
+    "por_que": "Epicteto ensinava que a serenidade começa ao separar o que está sob nosso controle — nossos julgamentos e ações — do que não está."
+   },
+   {
+    "titulo": "Fato ou interpretação?",
+    "acao": "Pegue algo que te irritou hoje e escreva separadamente o fato e a interpretação que você fez dele. Fato: “não respondeu minha mensagem”; interpretação: “não me respeita”.",
+    "por_que": "Epicteto dizia que não são as coisas que nos perturbam, mas as opiniões que formamos sobre elas."
+   },
+   {
+    "titulo": "O sábio guarda o coração",
+    "acao": "Leia Provérbios 16:32 e 29:11 e escreva com suas palavras o que dizem sobre domínio próprio. Cole essa frase onde você vai vê-la amanhã cedo.",
+    "por_que": "Provérbios coloca o domínio de si acima da força: quem governa o próprio ânimo vale mais do que quem conquista uma cidade."
+   },
+   {
+    "titulo": "Nomeie para acalmar",
+    "acao": "Quando sentir uma emoção forte hoje, diga a si mesmo: “Isso é raiva” (ou medo, ou frustração). Só nomeie, sem agir.",
+    "por_que": "Pesquisas de Matthew Lieberman, na Universidade da Califórnia, mostraram que pôr a emoção em palavras reduz a ativação da amígdala."
+   },
+   {
+    "titulo": "O suspiro que acalma",
+    "acao": "Ao perceber tensão, faça duas inspirações seguidas pelo nariz — uma longa e outra curtinha para completar — e solte o ar devagar pela boca. Repita três vezes.",
+    "por_que": "Um estudo da Universidade Stanford, de 2023, encontrou nesse “suspiro fisiológico” uma forma rápida e eficaz de reduzir a ativação do corpo e melhorar o humor."
+   },
+   {
+    "titulo": "Espere 90 segundos",
+    "acao": "Na próxima onda de raiva, olhe o relógio e espere 90 segundos antes de responder qualquer coisa: respire, beba um copo de água.",
+    "por_que": "A neurocientista Jill Bolte Taylor descreve que a descarga química de uma emoção dura cerca de 90 segundos; o que passa disso é o pensamento realimentando o ciclo."
+   },
+   {
+    "titulo": "Resposta branda",
+    "acao": "Numa situação tensa hoje, baixe de propósito o volume e a velocidade da sua fala, mesmo que o outro esteja alterado.",
+    "por_que": "Provérbios 15:1 ensina que a resposta branda desvia o furor — e uma voz calma também sinaliza segurança ao cérebro de quem ouve."
+   },
+   {
+    "titulo": "Preparação da manhã",
+    "acao": "Ao acordar, diga a si: “Hoje posso encontrar pessoas apressadas, grosseiras ou injustas, e vou escolher como responder.” Pense numa situação provável e na resposta que quer dar.",
+    "por_que": "Marco Aurélio começava o dia se preparando para encontrar pessoas difíceis; ensaiar a resposta reduz a surpresa que dispara a amígdala."
+   },
+   {
+    "titulo": "Mude de lugar",
+    "acao": "Quando sua tensão passar de 7 na escala, levante e mude de ambiente por cinco minutos: caminhe, lave o rosto, suba um lance de escada.",
+    "por_que": "O movimento ajuda o corpo a gastar a energia de luta ou fuga que a amígdala preparou."
+   },
+   {
+    "titulo": "A visão de cima",
+    "acao": "Diante de um problema que parece enorme, imagine a cena vista do alto: o prédio, a cidade, o país. Pergunte-se: “Isso vai importar daqui a um ano?”",
+    "por_que": "Marco Aurélio praticava esse olhar do alto para devolver às coisas a sua proporção real."
+   },
+   {
+    "titulo": "Revisão da noite",
+    "acao": "Antes de dormir, revise o dia por três minutos: onde reagi mal, onde agi bem e o que farei diferente amanhã. Sem se condenar.",
+    "por_que": "Sêneca relatava fazer esse exame todas as noites; corrigir-se sem se punir é o que permite melhorar no dia seguinte."
+   },
+   {
+    "titulo": "Empatia antes da resposta",
+    "acao": "Quando alguém te irritar, pergunte-se antes de responder: “Que dia essa pessoa pode estar tendo?”",
+    "por_que": "Goleman inclui a empatia entre os pilares da inteligência emocional, e imaginar o lado do outro tende a baixar a sua própria reação."
+   },
+   {
+    "titulo": "Reconheça e repare",
+    "acao": "Se hoje você reagiu mal com alguém, volte e diga: “Eu me exaltei; não foi justo com você.” Sem “mas” no final.",
+    "por_que": "Assumir o erro sem desculpas reconstrói a confiança e exercita a humildade que Provérbios associa ao sábio."
+   },
+   {
+    "titulo": "Corpo em dia",
+    "acao": "Proteja hoje três bases: dormir no horário, caminhar 15 minutos e não pular refeições. À noite, compare sua nota de tensão com a da primeira semana.",
+    "por_que": "Um corpo descansado e alimentado dá ao córtex pré-frontal mais recursos para frear os impulsos."
+   },
+   {
+    "titulo": "Seu plano de crise",
+    "acao": "Escreva num cartão ou no celular seu protocolo pessoal: “Se eu sentir [sinal do corpo], então vou nomear, respirar, esperar 90 segundos e só depois responder.”",
+    "por_que": "Os estudos de Peter Gollwitzer sobre planos do tipo “se... então” mostram que decidir com antecedência torna a nova reação mais automática na hora quente."
+   },
+   {
+    "titulo": "Ensaie a cena difícil",
+    "acao": "Escolha a situação que mais te tira do sério e imagine-a em detalhes, com você aplicando seu protocolo. Faça isso por cinco minutos, de olhos fechados.",
+    "por_que": "O ensaio mental prepara o cérebro para agir do jeito ensaiado, e os estoicos já praticavam antecipar dificuldades para enfrentá-las com serenidade."
+   },
+   {
+    "titulo": "Quem você se tornou",
+    "acao": "Compare suas notas de tensão do dia 3 com as de hoje e releia o mapa do dia 1. Escreva “Hoje eu sou alguém que...” e ensine a uma pessoa próxima a ferramenta que mais te ajudou.",
+    "por_que": "Ensinar consolida o aprendizado, e reconhecer a própria mudança transforma práticas em identidade."
+   }
+  ]
+ }
+]
