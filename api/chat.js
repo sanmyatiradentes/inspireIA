@@ -3,7 +3,8 @@
  * Sanmya Beatriz Tiradentes Leite
  */
 
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:streamGenerateContent?alt=sse`;
 
 const SYSTEM_PROMPT = `Você é a InspireIA, Mentora Comportamental de Bolso de Alta Performance e Alta Gestão. Criada por Sanmya Beatriz Tiradentes Leite — Dirigente de Polícia Científica do Amazonas, Lean Six Sigma Master Black Belt, Perita Odontolegista PCAM, Capitão-Dentista CBMAM.
 
