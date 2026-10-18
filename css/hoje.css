@@ -82,3 +82,63 @@
   .hj-controles{align-items:flex-start;}
   .hj-card,.tr-detalhe{padding:1.25rem;}
 }
+
+/* MENU: no celular mostra só Hoje, Trilhas, Instalar e Chat */
+.nav-instalar{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;border-radius:6px;padding:.4rem .7rem;font-family:inherit;font-size:.83rem;cursor:pointer;}
+.nav-instalar[hidden],.btn-instalar[hidden]{display:none!important;}
+.cta-curto{display:none;}
+@media(max-width:600px){
+  nav{padding:0 .75rem!important;}
+  nav .nav-links{display:flex;gap:.1rem;align-items:center;}
+  .nav-links a:not(.nav-m){display:none;}
+  .nav-links a{padding:.4rem .5rem!important;}
+  .nav-instalar span,.cta-longo{display:none;}
+  .cta-curto{display:inline;}
+  .nav-logo-txt{font-size:1.05rem!important;}
+}
+
+/* PRIVACIDADE (bloco curto) */
+.priv{background:#fff;scroll-margin-top:62px;}
+.priv-box{max-width:820px;background:var(--paper);border:1px solid rgba(194,24,91,.12);border-radius:16px;padding:1.5rem 1.75rem;}
+.priv-box p{font-size:.88rem;line-height:1.7;color:rgba(13,17,23,.68);margin-bottom:.8rem;}
+.priv-box p:last-child{margin-bottom:0;}
+.priv-box a{color:var(--red);font-weight:600;}
+
+/* RODAPÉ no padrão dos outros produtos */
+footer.rod{background:#2b0a1b;padding:2.75rem 1.25rem calc(5.5rem + env(safe-area-inset-bottom));text-align:center;}
+footer.rod p{max-width:720px;margin:0 auto .7rem;font-size:.85rem;line-height:1.65;color:rgba(255,255,255,.62);}
+footer.rod .rod-proposito{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;color:rgba(255,255,255,.85);border-left:3px solid var(--gold);padding-left:.9rem;text-align:left;max-width:560px;}
+footer.rod .rod-amor{color:rgba(255,255,255,.85);font-size:.92rem;}
+footer.rod b{color:#fff;}
+footer.rod a{color:var(--gold);text-decoration:none;}
+footer.rod a:hover{text-decoration:underline;}
+.rod-contatos{display:flex;justify-content:center;flex-wrap:wrap;gap:.5rem 1.4rem;}
+.rod-contatos a{display:inline-flex;align-items:center;gap:.4rem;}
+.rod-contatos svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.rod-irmaos{font-size:.8rem!important;}
+.rod-fim{max-width:960px;margin:1.4rem auto 0;padding-top:1rem;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:.6rem 1.5rem;flex-wrap:wrap;font-size:.74rem;color:rgba(255,255,255,.45);text-align:left;}
+@media(max-width:600px){.rod-fim{justify-content:center;text-align:center;}}
+
+/* AJUDA PARA INSTALAR (iPhone) */
+.ajuda-instalar{position:fixed;inset:0;z-index:400;background:rgba(13,17,23,.55);display:flex;align-items:flex-end;justify-content:center;padding:1rem;}
+.ajuda-instalar[hidden]{display:none;}
+.ajuda-caixa{background:#fff;border-radius:18px;padding:1.5rem;max-width:420px;width:100%;text-align:center;margin-bottom:env(safe-area-inset-bottom);}
+.ajuda-caixa img{border-radius:14px;margin-bottom:.6rem;}
+.ajuda-caixa h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--navy);margin-bottom:.6rem;}
+.ajuda-caixa p{font-size:.88rem;line-height:1.6;color:rgba(13,17,23,.75);margin-bottom:.6rem;text-align:left;}
+.ajuda-caixa .btn-primary{margin-top:.4rem;justify-content:center;width:100%;}
+
+/* 18 princípios: mostra 6 até a pessoa pedir */
+#princ-grade.recolhido > div:nth-child(n+7){display:none;}
+
+/* WhatsApp e Instagram (mesmo padrão dos outros produtos) */
+.rod-social{display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem;margin:1rem 0 .8rem;}
+footer.rod .social{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;font-weight:700;font-size:.88rem;color:#fff;text-decoration:none;transition:transform .15s,filter .15s;}
+footer.rod .social:hover{transform:translateY(-1px);filter:brightness(1.08);text-decoration:none;}
+.social.wa{background:#128C4A;}
+.social.ig{background:linear-gradient(45deg,#C2492B,#8E3AA8);}
+footer.rod .rod-email{font-size:.8rem;}
+
+.wafab{position:fixed;left:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:300;width:56px;height:56px;border-radius:50%;background:#1faa54;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(31,170,84,.38);transition:transform .15s,opacity .2s;}
+.wafab:hover{background:#17903f;transform:scale(1.05);}
+.wafab.oculto{opacity:0;pointer-events:none;}

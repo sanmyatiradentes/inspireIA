@@ -1,0 +1,458 @@
+[
+ {
+  "id": "falar-em-publico",
+  "nome": "Falar em Público sem Medo",
+  "subtitulo": "Fale em reuniões, apresentações e encontros com clareza e o coração no lugar.",
+  "para_quem": "Para quem trava ao falar diante de outras pessoas, seja numa reunião de trabalho, numa apresentação ou na festa da família.",
+  "fontes": "Dale Carnegie, Chris Anderson, Carmine Gallo, pesquisas sobre respiração e ansiedade",
+  "dias": [
+   {
+    "titulo": "Dê nome ao medo",
+    "acao": "Escreva num papel a situação de fala que mais assusta você e o pior que imagina que pode acontecer. Ao lado, anote o que de fato aconteceu da última vez que você precisou falar.",
+    "por_que": "Estudos de neurociência mostram que colocar uma emoção em palavras reduz a reação de alarme do cérebro, e comparar o medo com os fatos costuma diminuí-lo."
+   },
+   {
+    "titulo": "Onde o corpo trava",
+    "acao": "Na próxima reunião ou conversa em grupo, repare nos sinais do seu corpo quando pensa em falar: mãos frias, coração acelerado, voz presa. Só observe e anote, sem tentar mudar nada.",
+    "por_que": "Reconhecer esses sinais como uma reação normal de alerta, e não como prova de incapacidade, tira deles parte do poder de assustar."
+   },
+   {
+    "titulo": "Grave um minuto",
+    "acao": "Grave no celular um áudio de um minuto explicando o que você faz no trabalho. Ouça uma única vez e anote uma coisa boa e uma coisa a melhorar.",
+    "por_que": "Ouvir a própria voz tira a fala do campo da imaginação, onde ela sempre parece pior, e a coloca no campo do que pode ser ajustado."
+   },
+   {
+    "titulo": "Fale do que você viveu",
+    "acao": "Liste três assuntos que você conhece por experiência própria, não só por leitura: uma habilidade do trabalho, um desafio superado, algo que ensina bem em casa. Guarde a lista para os próximos dias.",
+    "por_que": "Dale Carnegie ensinava que a confiança cresce quando falamos de algo que conquistamos pela experiência, porque aí o conteúdo já está dentro de nós."
+   },
+   {
+    "titulo": "Aprenda com bons oradores",
+    "acao": "Assista a uma palestra curta do TED, de até dezoito minutos, sobre um tema de que você goste. Anote o momento em que sua atenção ficou mais presa e o que o palestrante fez ali.",
+    "por_que": "Carmine Gallo, que estudou as palestras do TED, mostra que os bons oradores usam recursos que podem ser observados e copiados, não um dom misterioso."
+   },
+   {
+    "titulo": "O suspiro que acalma",
+    "acao": "Pratique três vezes hoje: puxe o ar duas vezes pelo nariz, uma longa e outra curta por cima, e solte devagar pela boca, bem mais demorado. Use antes de uma reunião ou de uma ligação difícil.",
+    "por_que": "Expirar mais longo do que inspirar aciona o freio natural do sistema nervoso, e pesquisas da Universidade Stanford com esse suspiro mostraram redução de ansiedade com poucos minutos diários."
+   },
+   {
+    "titulo": "Ansiedade vira empolgação",
+    "acao": "Antes de falar em público hoje, mesmo que seja numa reunião pequena, diga para si mesmo “estou animado” em vez de “calma”. Repare como o corpo responde.",
+    "por_que": "A pesquisadora Alison Wood Brooks, de Harvard, mostrou que reinterpretar o nervosismo como entusiasmo melhora o desempenho mais do que tentar se acalmar à força."
+   },
+   {
+    "titulo": "Uma ideia só",
+    "acao": "Pense na próxima fala que terá de fazer e escreva a ideia principal em no máximo quinze palavras. Se não couber, a mensagem ainda não está clara.",
+    "por_que": "Chris Anderson, curador do TED, defende que toda boa apresentação tem um fio condutor, uma ideia que amarra tudo e que a plateia leva para casa."
+   },
+   {
+    "titulo": "Comece com uma história",
+    "acao": "Prepare uma história real de um minuto ligada ao seu trabalho ou à sua vida, com começo, problema e desfecho. Conte-a hoje para alguém da família ou para um colega.",
+    "por_que": "Carmine Gallo lembra que histórias prendem a atenção e são lembradas muito mais do que dados soltos, porque o cérebro acompanha a narrativa como se a vivesse."
+   },
+   {
+    "titulo": "Organize em três",
+    "acao": "Pegue o assunto de uma fala que você terá em breve e divida em apenas três pontos. Escreva cada um numa linha e descarte o que não couber.",
+    "por_que": "Gallo destaca a regra de três: a memória de curto prazo guarda poucas informações de uma vez, e três pontos ficam fáceis de seguir para quem ouve e para quem fala."
+   },
+   {
+    "titulo": "Fale primeiro na reunião",
+    "acao": "Na próxima reunião, faça um comentário, uma pergunta ou um resumo nos primeiros dez minutos. Pode ser curto; o importante é quebrar o silêncio cedo.",
+    "por_que": "Carnegie ensinava que a coragem vem depois da ação, e cada fala cumprida enfraquece a expectativa de desastre que o medo alimenta."
+   },
+   {
+    "titulo": "Pausa no lugar do “né”",
+    "acao": "Em uma conversa ou apresentação de hoje, substitua o “né”, o “tipo” e o “então” por um segundo de silêncio. Peça a alguém de confiança para contar quantas vezes escapou.",
+    "por_que": "A pausa dá tempo ao cérebro de quem fala e de quem ouve, e transmite segurança, enquanto as muletas transmitem pressa."
+   },
+   {
+    "titulo": "Ensaie em voz alta",
+    "acao": "Ensaie de pé e em voz alta um trecho da sua próxima fala, não apenas na cabeça. Se possível, apresente para alguém de casa durante cinco minutos.",
+    "por_que": "Anderson observa que até palestrantes experientes ensaiam muitas vezes, porque o ensaio em voz alta transforma o conteúdo em memória automática e libera a atenção para a plateia."
+   },
+   {
+    "titulo": "Rostos amigos",
+    "acao": "Na próxima vez que falar para um grupo, escolha um rosto receptivo e mantenha o olhar nele por uma frase inteira, depois passe para outra pessoa. Evite olhar só para o papel ou para a tela.",
+    "por_que": "Olhar para uma pessoa de cada vez transforma a plateia em várias conversas individuais, o que acalma quem fala e aproxima quem ouve."
+   },
+   {
+    "titulo": "Uma pergunta para a plateia",
+    "acao": "Inclua na sua próxima fala uma pergunta simples para quem está ouvindo, como “alguém já passou por isso?”. Espere a resposta sem pressa.",
+    "por_que": "Envolver a plateia muda o foco do “estou sendo avaliado” para o “estamos conversando”, e isso reduz a pressão sobre quem fala."
+   },
+   {
+    "titulo": "Mãos que ajudam",
+    "acao": "Hoje, ao explicar algo, deixe as mãos livres e visíveis, sem cruzar os braços nem segurá-las no bolso. Use gestos naturais para mostrar tamanho, sequência ou contraste.",
+    "por_que": "Pesquisas sobre gestos mostram que mover as mãos ao falar ajuda a organizar o pensamento e torna a mensagem mais fácil de entender."
+   },
+   {
+    "titulo": "Plano para o branco",
+    "acao": "Escreva num cartão pequeno três palavras-chave da sua próxima fala e tenha uma frase pronta para o caso de esquecer, como “deixa eu retomar o ponto principal”. Leve o cartão com você.",
+    "por_que": "Saber o que fazer se der branco reduz o medo de que ele aconteça, e o medo é justamente o que mais provoca o branco."
+   },
+   {
+    "titulo": "Peça um retorno específico",
+    "acao": "Depois de falar em uma reunião ou apresentação, pergunte a uma pessoa: o que ficou mais claro e o que ficou confuso? Anote a resposta sem se justificar.",
+    "por_que": "Retornos específicos mostram o que manter e o que ajustar, enquanto o “foi bom” genérico não ensina nada."
+   },
+   {
+    "titulo": "Dois minutos de improviso",
+    "acao": "No jantar ou no carro, peça a alguém da família um tema qualquer e fale sobre ele por dois minutos, sem preparo. Riam juntos dos tropeços.",
+    "por_que": "Treinar o improviso em ambiente seguro ensina o cérebro que é possível sobreviver ao inesperado, o que dá folga para as situações reais."
+   },
+   {
+    "titulo": "Quem você está se tornando",
+    "acao": "Escreva a frase “sou uma pessoa que fala com clareza” e, embaixo, três evidências desta trilha que provam isso. Leia antes da próxima fala importante.",
+    "por_que": "Hábitos se firmam quando passam a fazer parte da identidade, e reunir provas concretas ajuda a mente a acreditar na nova imagem."
+   },
+   {
+    "titulo": "Revise e ensine",
+    "acao": "Releia suas anotações dos últimos vinte dias e marque as três práticas que mais ajudaram. Ensine uma delas a alguém que também tem medo de falar em público.",
+    "por_que": "Ensinar obriga a organizar o que se aprendeu e transforma a conquista em algo que você agora tem para oferecer."
+   }
+  ]
+ },
+ {
+  "id": "feedback",
+  "nome": "Feedback que Fortalece",
+  "subtitulo": "Elogie, corrija e receba críticas de um jeito que faz as pessoas crescerem.",
+  "para_quem": "Para quem lidera equipes, convive em família ou trabalha em grupo e quer dizer a verdade sem ferir nem se calar.",
+  "fontes": "Kim Scott, Amy Edmondson, Marshall Rosenberg, Center for Creative Leadership",
+  "dias": [
+   {
+    "titulo": "O feedback que marcou você",
+    "acao": "Lembre do melhor e do pior feedback que você já recebeu na vida. Escreva o que a pessoa disse, como disse e o que você sentiu em cada caso.",
+    "por_que": "Perceber na própria história o que faz uma conversa ajudar ou machucar dá um modelo concreto do que repetir e do que evitar."
+   },
+   {
+    "titulo": "Seu jeito de errar",
+    "acao": "Kim Scott descreve três armadilhas: criticar sem se importar com a pessoa, se importar e não dizer nada, ou nem se importar nem dizer. Pense nas suas últimas conversas difíceis e anote em qual armadilha você costuma cair.",
+    "por_que": "Em Empatia Assertiva, Kim Scott mostra que o feedback útil une dois movimentos: importar-se de verdade com a pessoa e desafiá-la diretamente."
+   },
+   {
+    "titulo": "Conte seus elogios",
+    "acao": "Ao fim do dia, anote quantas vezes você elogiou e quantas vezes corrigiu alguém, no trabalho e em casa. Só registre, sem se julgar.",
+    "por_que": "O que não é medido costuma parecer equilibrado, e a contagem revela se as pessoas ao seu redor ouvem mais o que fazem de errado do que o que fazem de certo."
+   },
+   {
+    "titulo": "Observar sem julgar",
+    "acao": "Reescreva três críticas que você costuma fazer trocando o rótulo pelo fato, como “você é desorganizado” por “o relatório chegou sem anexos duas vezes esta semana”. Guarde as novas versões.",
+    "por_que": "Marshall Rosenberg ensinava que misturar observação com avaliação faz o outro ouvir um ataque, enquanto o fato puro pode ser ouvido e discutido."
+   },
+   {
+    "titulo": "O clima do grupo",
+    "acao": "Na próxima reunião, repare se alguém fala de um erro, de uma dúvida ou de uma discordância. Anote o que acontece logo depois: acolhimento, silêncio ou ironia.",
+    "por_que": "Amy Edmondson chama de segurança psicológica a sensação de que é possível se expor sem ser punido, e sem ela nenhum feedback circula de verdade."
+   },
+   {
+    "titulo": "Seu gatilho de defesa",
+    "acao": "Lembre uma crítica recente que você recebeu e anote o que sentiu no corpo e o que teve vontade de responder. Pergunte-se o que havia de verdade nela, mesmo que pequena.",
+    "por_que": "Reconhecer o reflexo de defesa antes que ele assuma o controle é o primeiro passo para conseguir ouvir o que pode ser útil."
+   },
+   {
+    "titulo": "Peça antes de dar",
+    "acao": "Pergunte hoje a um colega ou familiar: “existe algo que eu possa fazer ou parar de fazer que torne mais fácil conviver comigo?”. Ouça até o fim e agradeça.",
+    "por_que": "Kim Scott recomenda começar pedindo feedback, porque mostra humildade e dá autoridade moral para oferecê-lo depois."
+   },
+   {
+    "titulo": "Elogio específico",
+    "acao": "Faça hoje um elogio dizendo exatamente o que a pessoa fez e qual foi o efeito, como “sua planilha ajudou a reunião a terminar meia hora antes”. Evite o “muito bom” genérico.",
+    "por_que": "O elogio específico ensina o que repetir, enquanto o genérico agrada por um instante e se esquece logo."
+   },
+   {
+    "titulo": "Situação, comportamento, impacto",
+    "acao": "Escolha uma correção que precisa fazer e escreva em três partes: em que situação, o que a pessoa fez e qual impacto teve. Use essa estrutura na conversa.",
+    "por_que": "O modelo situação-comportamento-impacto, criado pelo Center for Creative Leadership, mantém a conversa nos fatos e longe de ataques à personalidade."
+   },
+   {
+    "titulo": "Elogie em público, corrija a sós",
+    "acao": "Hoje, faça um reconhecimento na frente do grupo e deixe qualquer correção para um momento particular. Se precisar corrigir, combine um horário a sós com a pessoa.",
+    "por_que": "Ser exposto diante dos outros ativa a defesa e a vergonha, enquanto a correção reservada preserva a dignidade e aumenta a chance de mudança."
+   },
+   {
+    "titulo": "Conversa de dois minutos",
+    "acao": "Quando perceber algo a elogiar ou ajustar hoje, fale em até dois minutos, logo depois do fato. Não guarde para a avaliação do fim do ano.",
+    "por_que": "Kim Scott defende feedbacks curtos e frequentes, porque o retorno próximo do acontecimento é mais claro e menos pesado do que um acúmulo de queixas."
+   },
+   {
+    "titulo": "Diga o que você precisa",
+    "acao": "Em uma conversa difícil de hoje, use a sequência de Rosenberg: o fato observado, o que você sentiu, a necessidade por trás e um pedido. Escreva antes, se ajudar.",
+    "por_que": "A Comunicação Não-Violenta mostra que, quando o outro entende a necessidade por trás da queixa, ele deixa de se defender e passa a colaborar."
+   },
+   {
+    "titulo": "Um pedido possível",
+    "acao": "Transforme uma reclamação recorrente num pedido concreto e positivo, dizendo o que você quer, e não o que não quer. Por exemplo, “pode me avisar até as 15h se vai atrasar?”.",
+    "por_que": "Rosenberg ensinava que pedidos claros e realizáveis têm muito mais chance de ser atendidos do que reclamações vagas."
+   },
+   {
+    "titulo": "Agradeça a crítica",
+    "acao": "Na próxima crítica que receber, responda primeiro com “obrigado por me dizer” e uma pergunta para entender melhor. Deixe para decidir depois o que fazer com ela.",
+    "por_que": "Agradecer e perguntar antes de se defender mostra ao outro que é seguro falar a verdade com você, e isso faz mais verdades chegarem."
+   },
+   {
+    "titulo": "Admita o que não sabe",
+    "acao": "Em uma reunião ou conversa de hoje, diga em voz alta algo como “posso estar enganado, o que vocês estão vendo?”. Repare em quem passa a falar.",
+    "por_que": "Edmondson mostrou que, quando o líder reconhece os próprios limites, a equipe se sente autorizada a apontar problemas mais cedo."
+   },
+   {
+    "titulo": "Feedback em casa",
+    "acao": "Faça hoje a um filho, cônjuge ou parente um elogio específico de esforço, não de talento. Se houver algo a corrigir, faça a sós e em voz baixa.",
+    "por_que": "As mesmas regras que funcionam no trabalho protegem as relações de casa, onde as feridas costumam ser mais profundas."
+   },
+   {
+    "titulo": "Confira como chegou",
+    "acao": "Depois de dar um feedback hoje, pergunte: “como isso chegou para você?” ou “o que você entendeu do que eu disse?”. Ajuste se a mensagem chegou torta.",
+    "por_que": "Kim Scott lembra que a qualidade do feedback se mede no ouvido de quem recebe, não na boca de quem fala."
+   },
+   {
+    "titulo": "Note a melhora",
+    "acao": "Lembre de alguém que recebeu de você uma correção recentemente e procure um sinal de melhora. Reconheça essa mudança hoje, com palavras específicas.",
+    "por_que": "Reconhecer o progresso fecha o ciclo do feedback e mostra que a correção foi uma aposta na pessoa, não uma condenação."
+   },
+   {
+    "titulo": "Reconhecimento por escrito",
+    "acao": "Escreva uma mensagem curta reconhecendo o trabalho de alguém de outro setor ou de outra família que ajudou você. Envie com cópia para a chefia dela, se fizer sentido.",
+    "por_que": "Um reconhecimento escrito pode ser relido muitas vezes e, quando chega a quem lidera a pessoa, multiplica o efeito do elogio."
+   },
+   {
+    "titulo": "Seus princípios de feedback",
+    "acao": "Escreva em três frases como você quer dar e receber feedback daqui para frente. Cole o papel num lugar onde vai vê-lo antes de conversas difíceis.",
+    "por_que": "Transformar o aprendizado em princípios próprios faz a prática deixar de ser técnica e passar a ser parte de quem você é."
+   },
+   {
+    "titulo": "Revise e ensine",
+    "acao": "Releia suas anotações da trilha e marque a mudança que mais fez diferença nas suas relações. Ensine a alguém a regra de elogiar em público e corrigir em particular.",
+    "por_que": "Ensinar consolida o que foi aprendido e espalha uma cultura de feedback que também vai beneficiar você."
+   }
+  ]
+ },
+ {
+  "id": "proposito-gratidao",
+  "nome": "Propósito e Gratidão",
+  "subtitulo": "Encontre sentido no que você já faz e aprenda a enxergar o bem que já tem.",
+  "para_quem": "Para quem vive no piloto automático entre trabalho e casa e sente falta de sentido e de alegria no dia a dia.",
+  "fontes": "Rick Warren, Viktor Frankl, Luiz Gaziri, Salmos e Provérbios",
+  "dias": [
+   {
+    "titulo": "Não é só sobre mim",
+    "acao": "Ao fim do dia, anote suas principais preocupações e marque quais giram só em torno de você e quais envolvem servir alguém. Só observe a proporção.",
+    "por_que": "Rick Warren abre Uma vida com propósito lembrando que a vida não gira em torno de nós, e perceber isso alivia o peso de ter tudo centrado em si."
+   },
+   {
+    "titulo": "Contar os dias",
+    "acao": "Inspirado no Salmo 90:12, que pede sabedoria para contar os dias, escreva o que gostaria que as pessoas dissessem de você aos oitenta anos. Compare com como gastou a última semana.",
+    "por_que": "Lembrar que o tempo é limitado ajuda a separar o urgente do importante e a dar peso ao que realmente importa."
+   },
+   {
+    "titulo": "Três coisas boas",
+    "acao": "Antes de dormir, anote três coisas boas que aconteceram hoje e por que cada uma aconteceu. Podem ser pequenas, como um café quente ou uma ligação.",
+    "por_que": "Pesquisas da psicologia positiva, como as divulgadas por Luiz Gaziri, mostram que treinar a atenção para o que dá certo aumenta o bem-estar de forma duradoura."
+   },
+   {
+    "titulo": "Benefícios esquecidos",
+    "acao": "O Salmo 103:2 convida a não esquecer nenhum dos benefícios recebidos. Escreva um bem que você recebeu este ano e que já tinha passado despercebido.",
+    "por_que": "O cérebro se acostuma rápido ao que é bom e passa a tratar como normal, e lembrar de propósito devolve o valor ao que já temos."
+   },
+   {
+    "titulo": "A última liberdade",
+    "acao": "Escolha uma situação inevitável de hoje, como o trânsito, a fila ou uma reunião cansativa, e decida antes com que atitude vai atravessá-la. Anote como foi.",
+    "por_que": "Viktor Frankl, que sobreviveu aos campos de concentração, concluiu que mesmo quando tudo é tirado resta a liberdade de escolher a própria atitude."
+   },
+   {
+    "titulo": "Três fontes de sentido",
+    "acao": "Frankl apontava três caminhos de sentido: uma obra a realizar, uma pessoa ou experiência a amar e a atitude diante do sofrimento. Anote um exemplo de cada na sua semana.",
+    "por_que": "Em Em busca de sentido, Frankl mostra que o sentido não precisa ser inventado; ele pode ser descoberto no que já está diante de nós."
+   },
+   {
+    "titulo": "Seu jeito de servir",
+    "acao": "Liste seus dons, suas habilidades, as causas que tocam seu coração e as experiências difíceis que você já superou. Circule onde esses itens se cruzam.",
+    "por_que": "Rick Warren ensina que somos moldados para servir, e que até as experiências dolorosas fazem parte do que temos para oferecer."
+   },
+   {
+    "titulo": "Carta de gratidão",
+    "acao": "Escreva uma mensagem para alguém que fez diferença na sua vida e nunca foi agradecido como merecia. Envie por áudio, carta ou leia pessoalmente.",
+    "por_que": "A psicologia positiva mostra que expressar gratidão diretamente a alguém aumenta o bem-estar de quem escreve e fortalece o vínculo com quem recebe."
+   },
+   {
+    "titulo": "Gratidão à mesa",
+    "acao": "No jantar de hoje, proponha que cada pessoa conte algo bom que aconteceu no dia. Comece você, para dar o exemplo.",
+    "por_que": "Rituais simples em família tornam a gratidão um hábito compartilhado e ensinam as crianças a prestar atenção ao que dá certo."
+   },
+   {
+    "titulo": "Quem sua tarefa serve",
+    "acao": "Escolha a tarefa mais chata do seu trabalho e escreva o nome ou o rosto de quem se beneficia dela no fim da linha. Lembre dessa pessoa enquanto a executa.",
+    "por_que": "Frankl dizia que quem tem um porquê suporta quase qualquer como, e ver o rosto de quem é servido devolve sentido à rotina."
+   },
+   {
+    "titulo": "Entregue seus planos",
+    "acao": "Escreva os planos da sua semana e, com base em Provérbios 16:3, que fala em confiar ao Senhor o que se faz, ore ou reflita entregando cada um. Depois, faça a sua parte sem ansiedade.",
+    "por_que": "Fazer o melhor e soltar o controle do resultado reduz a ansiedade e libera energia para agir."
+   },
+   {
+    "titulo": "Gratidão no meio do problema",
+    "acao": "Pense num problema que você está enfrentando agora e encontre nele uma coisa pela qual ainda pode agradecer. Escreva essa frase e releia à noite.",
+    "por_que": "Frankl observou que atribuir sentido ao sofrimento não o elimina, mas o torna suportável, e a gratidão é uma forma de encontrar esse sentido."
+   },
+   {
+    "titulo": "Sirva sem ser visto",
+    "acao": "Faça hoje um bem a alguém sem que a pessoa saiba que foi você, como pagar um café, deixar um bilhete ou resolver algo pendente da casa. Não conte a ninguém.",
+    "por_que": "O serviço anônimo tira o foco do reconhecimento e mostra que o propósito pode existir mesmo sem aplauso."
+   },
+   {
+    "titulo": "Hoje é presente",
+    "acao": "O Salmo 118:24 celebra o dia que nos foi dado. Pare por um minuto hoje, em qualquer lugar, e repare em três detalhes bons à sua volta.",
+    "por_que": "Pausas breves de atenção ao presente interrompem o piloto automático e ajudam o cérebro a registrar momentos que passariam batido."
+   },
+   {
+    "titulo": "A dor que gerou algo",
+    "acao": "Lembre de uma fase difícil do passado e escreva o que ela trouxe de bom: uma força, uma amizade, uma mudança de rumo. Releia em voz baixa.",
+    "por_que": "Frankl mostrou que encontrar significado em sofrimentos passados fortalece a capacidade de enfrentar os presentes."
+   },
+   {
+    "titulo": "Quando o plano muda",
+    "acao": "Provérbios 19:21 lembra que fazemos muitos planos, mas o propósito de Deus é o que permanece. Pense num plano frustrado e anote o que de bom veio depois dele.",
+    "por_que": "Olhar para trás com calma mostra que desvios também conduzem, e isso dá serenidade diante dos imprevistos de agora."
+   },
+   {
+    "titulo": "Agradeça a quem ninguém agradece",
+    "acao": "Agradeça hoje, pelo nome e olhando nos olhos, a alguém cujo trabalho costuma passar despercebido: porteiro, equipe de limpeza, motorista, merendeira.",
+    "por_que": "A gratidão expressa a quem raramente é reconhecido tem um efeito grande para quem recebe e amplia o olhar de quem agradece."
+   },
+   {
+    "titulo": "Pare de comparar",
+    "acao": "Fique hoje uma hora a menos nas redes sociais e use o tempo para listar dez coisas da sua vida que você não trocaria. Guarde a lista no celular.",
+    "por_que": "Comparar a própria rotina com recortes da vida alheia rouba a gratidão, e voltar a atenção para o que se tem a devolve."
+   },
+   {
+    "titulo": "Sua frase de propósito",
+    "acao": "Escreva em uma frase para que você acredita que está aqui, juntando o que descobriu nesta trilha sobre seus dons, suas causas e sua fé. Deixe-a visível na mesa ou no espelho.",
+    "por_que": "Uma declaração de propósito funciona como bússola: diante de escolhas difíceis, ela lembra qual direção vale a pena."
+   },
+   {
+    "titulo": "Seu ritual diário",
+    "acao": "Escolha um momento fixo da rotina, como escovar os dentes à noite ou desligar o carro ao chegar em casa, para lembrar uma coisa pela qual agradecer. Faça hoje pela primeira vez de propósito.",
+    "por_que": "Ligar um hábito novo a um momento que já existe torna a gratidão automática, sem depender de força de vontade."
+   },
+   {
+    "titulo": "Revise e compartilhe",
+    "acao": "Releia suas anotações dos vinte dias e escolha o momento de gratidão e a descoberta de propósito que mais tocaram você. Conte essa experiência a alguém que precise ouvi-la.",
+    "por_que": "Partilhar o que se aprendeu fixa a lição na memória e pode acender o mesmo caminho em outra pessoa."
+   }
+  ]
+ },
+ {
+  "id": "amizades",
+  "nome": "Amizades e Conexão",
+  "subtitulo": "Cultive amizades verdadeiras mesmo com a rotina cheia de trabalho e família.",
+  "para_quem": "Para quem sente que os amigos foram ficando para trás entre o trabalho, a casa e as obrigações.",
+  "fontes": "Jack Schafer, Dale Carnegie, Charles Duhigg, Robert Waldinger e Marc Schulz (Estudo de Harvard sobre o Desenvolvimento Adulto)",
+  "dias": [
+   {
+    "titulo": "Seu mapa de relações",
+    "acao": "Escreva os nomes das pessoas mais importantes da sua vida fora de casa e, ao lado, quando foi a última conversa de verdade com cada uma. Só observe as datas.",
+    "por_que": "Robert Waldinger e Marc Schulz, em Uma boa vida, sugerem fazer um inventário das relações como quem confere a própria saúde."
+   },
+   {
+    "titulo": "O que Harvard descobriu",
+    "acao": "Leia sobre o Estudo de Harvard sobre o Desenvolvimento Adulto, que acompanha pessoas há mais de oitenta anos. Depois, escreva o nome de quem você poderia chamar numa madrugada de crise.",
+    "por_que": "O estudo concluiu que a qualidade das relações próximas é um dos melhores indicadores de saúde e felicidade ao longo da vida, mais do que dinheiro ou fama."
+   },
+   {
+    "titulo": "Sinais de amizade",
+    "acao": "Repare hoje nos sinais que você dá e recebe ao encontrar alguém: sobrancelhas que sobem rápido, cabeça levemente inclinada, sorriso que chega aos olhos. Tente oferecê-los a três pessoas.",
+    "por_que": "Jack Schafer, ex-agente do FBI, explica que o cérebro decide em segundos se o outro é amigo ou ameaça, com base nesses sinais sem palavras."
+   },
+   {
+    "titulo": "A fórmula da amizade",
+    "acao": "Pense numa amizade que esfriou e veja o que faltou: proximidade, frequência de encontros, duração das conversas ou intensidade do que se compartilha. Anote o elemento que sumiu.",
+    "por_que": "Schafer descreve a amizade como resultado da combinação desses quatro elementos, e entender qual falta mostra onde agir."
+   },
+   {
+    "titulo": "Amizade leva tempo",
+    "acao": "Some as horas que você passou com amigos na última semana, fora trabalho e família. Anote o número sem se culpar.",
+    "por_que": "O pesquisador Jeffrey Hall, da Universidade do Kansas, estimou que são precisas cerca de 50 horas juntos para um conhecido virar amigo casual e mais de 200 para uma amizade próxima."
+   },
+   {
+    "titulo": "Três tipos de conversa",
+    "acao": "Nas conversas de hoje, repare se o assunto é prático (o que fazer), emocional (como nos sentimos) ou social (quem somos). Anote qual tipo predomina na sua vida.",
+    "por_que": "Charles Duhigg, em Supercomunicadores, mostra que as conversas fluem quando as duas pessoas estão no mesmo tipo, e travam quando cada uma está num."
+   },
+   {
+    "titulo": "Quem esfriou",
+    "acao": "Escolha um amigo de quem você gosta, mas com quem perdeu o contato por falta de tempo. Escreva uma lembrança boa que vocês têm juntos.",
+    "por_que": "Waldinger compara as relações a músculos que atrofiam sem uso, e escolher uma delas é o primeiro passo para exercitá-la de novo."
+   },
+   {
+    "titulo": "Mande a mensagem",
+    "acao": "Envie ao amigo de ontem uma mensagem curta citando a lembrança que você escreveu e perguntando como ele está. Não espere ocasião especial.",
+    "por_que": "Pesquisas mostram que as pessoas subestimam o quanto os outros ficam felizes ao receber um contato inesperado de um amigo."
+   },
+   {
+    "titulo": "Guarde o nome",
+    "acao": "Ao conhecer alguém hoje, repita o nome da pessoa na conversa e anote-o depois. Na próxima vez, cumprimente-a pelo nome.",
+    "por_que": "Dale Carnegie ensinava que o nome de uma pessoa é, para ela, o som mais importante, e lembrá-lo comunica respeito e atenção."
+   },
+   {
+    "titulo": "Interesse genuíno",
+    "acao": "Em uma conversa de hoje, faça três perguntas sobre a vida da outra pessoa antes de falar de você. Ouça as respostas sem pensar no que vai dizer depois.",
+    "por_que": "Carnegie observou que se fazem mais amigos em pouco tempo interessando-se pelos outros do que tentando fazer os outros se interessarem por nós."
+   },
+   {
+    "titulo": "Perguntas mais profundas",
+    "acao": "Troque o “e aí, tudo bem?” por uma pergunta que convida a contar algo, como “o que tem dado mais alegria a você ultimamente?”. Use com um colega ou amigo.",
+    "por_que": "Duhigg mostra que perguntas sobre valores, sentimentos e experiências aproximam muito mais rápido do que perguntas sobre fatos."
+   },
+   {
+    "titulo": "Repita o que entendeu",
+    "acao": "Quando um amigo contar algo importante, repita com suas palavras o que entendeu e pergunte se acertou. Só depois dê sua opinião.",
+    "por_que": "Duhigg descreve esse movimento de confirmar o entendimento como uma das formas mais eficazes de fazer o outro se sentir ouvido."
+   },
+   {
+    "titulo": "Amigos no trabalho",
+    "acao": "Convide um colega com quem você simpatiza para um café ou almoço esta semana, sem falar de serviço por pelo menos metade do tempo. Marque hoje.",
+    "por_que": "O Estudo de Harvard mostra que as relações no trabalho também contam para o bem-estar, já que passamos ali boa parte da vida."
+   },
+   {
+    "titulo": "Encaixe na rotina",
+    "acao": "Transforme algo que você já faz, como caminhar, ir à feira ou levar o filho à aula, num encontro com um amigo. Combine o primeiro hoje.",
+    "por_que": "Schafer lembra que frequência e proximidade constroem amizade, e encaixar encontros no que já existe é o caminho mais realista para quem tem pouco tempo."
+   },
+   {
+    "titulo": "Presente na dificuldade",
+    "acao": "Lembre de alguém próximo que está passando por doença, luto ou um momento difícil. Mande uma mensagem, ligue ou faça uma visita curta hoje.",
+    "por_que": "As amizades se fortalecem sobretudo nos momentos difíceis, quando a presença vale mais do que qualquer palavra certa."
+   },
+   {
+    "titulo": "Celebre a boa notícia",
+    "acao": "Quando alguém contar uma conquista hoje, responda com entusiasmo e faça perguntas sobre ela, em vez de mudar de assunto ou falar de si.",
+    "por_que": "A psicóloga Shelly Gable mostrou que a forma como reagimos às boas notícias dos outros pesa tanto para o vínculo quanto o apoio nas horas ruins."
+   },
+   {
+    "titulo": "Mostre um pouco de você",
+    "acao": "Compartilhe com um amigo de confiança uma preocupação ou dúvida real que você está vivendo. Não precisa ser algo grave, só verdadeiro.",
+    "por_que": "Duhigg explica que a vulnerabilidade recíproca é o que transforma conversas sociais em vínculos emocionais."
+   },
+   {
+    "titulo": "Um encontro fixo",
+    "acao": "Proponha a um amigo ou grupo um encontro com data recorrente, como um café na primeira sexta do mês ou uma ligação a cada quinze dias. Marque a primeira data.",
+    "por_que": "Rituais fixos tiram a amizade da dependência da sobra de tempo, que quase nunca aparece numa rotina cheia."
+   },
+   {
+    "titulo": "Amizade dentro de casa",
+    "acao": "Faça hoje com cônjuge, filho ou irmão algo só pelo prazer da companhia, sem tarefa nem cobrança, por pelo menos vinte minutos.",
+    "por_que": "Waldinger e Schulz destacam que a qualidade dos vínculos familiares, e não apenas sua existência, está ligada à saúde na vida adulta."
+   },
+   {
+    "titulo": "Que amigo você é",
+    "acao": "Escreva o tipo de amigo que você quer ser daqui para frente, em três frases. Inclua uma atitude concreta que vai manter toda semana.",
+    "por_que": "Quando a amizade passa a fazer parte da identidade, cuidar das relações deixa de ser obrigação e vira expressão de quem se é."
+   },
+   {
+    "titulo": "Revise e conecte",
+    "acao": "Releia suas anotações da trilha e celebre os contatos que você retomou. Apresente dois amigos que ainda não se conhecem ou ensine a alguém uma prática desta jornada.",
+    "por_que": "Conectar pessoas multiplica os vínculos e transforma o que você aprendeu em algo que fortalece toda a sua rede."
+   }
+  ]
+ }
+]
